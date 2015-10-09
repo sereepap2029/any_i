@@ -8,7 +8,7 @@
           <h4>Stop coding non-responsive sites. Let users view sites from anywhere.</h4>
           <a class="button button-primary" href="http://getskeleton.com">Try Skeleton</a>
         </div>
-        <!--
+       <!--
         <div class="one-half column phones">
           <img class="phone" src="images/content/iphone.png">
         </div>
@@ -75,8 +75,8 @@
         <div class="four columns">
           <img class="u-max-full-width" src="images/content/placeholder.png">
         </div>
-        <div class="four columns">
-          <img class="u-max-full-width" src="images/content/placeholder.png">
+        <div class="twelve columns">
+          <img class="u-max-full-width  s5-1-img" src="images/content/placeholder.png">
         </div>
       </div>
     </div>
@@ -88,16 +88,16 @@
       <p class="section-description">Skeleton images sit easily in grid with .u-max-full-width class. I suggest exploring solution to serving different images based on device size.</p>
       <div class="row">
          <div class="three columns s6-1">
-          <img class="u-max-full-width" src="images/content/placeholder.png">
+          <img class="u-max-full-width" src="http://placehold.it/200x200">
         </div>
          <div class="three columns s6-1">
-          <img class="u-max-full-width" src="images/content/placeholder.png">
+          <img class="u-max-full-width" src="http://placehold.it/200x200">
         </div>
         <div class="three columns s6-1">
-          <img class="u-max-full-width" src="images/content/placeholder.png">
+          <img class="u-max-full-width" src="http://placehold.it/200x200">
         </div>
         <div class="three columns s6-1">
-          <img class="u-max-full-width" src="images/content/placeholder.png">
+          <img class="u-max-full-width" src="http://placehold.it/200x200">
         </div>
       </div>
     </div>

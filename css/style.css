@@ -505,20 +505,34 @@ $lg: "screen and (min-width: 960px)";
   background-size: cover;
   color: #fff;
 }
+@media screen and (min-width: 550px) {
+  .s5 .s5-1-img {
+    width: 30.6666666667%;
+  }
+}
 
 .s6 {
   background-color: #bdc3c7;
 }
+.s6 img {
+  border-radius: 50%;
+}
 .s6 .s6-1 {
   width: 50%;
+  padding: 10px;
 }
 @media screen and (min-width: 550px) {
   .s6 .s6-1 {
+    padding: 0px;
     width: 22%;
   }
 }
 
 /* End section *******************************/
+.s7 {
+  padding: 4rem 0 4rem;
+}
+
 /* 
 by Chanala Wilangka
 on 10/2015
