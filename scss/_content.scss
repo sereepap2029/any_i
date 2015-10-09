@@ -1,0 +1,100 @@
+ // Content //////////////////////////////////
+ /*  Grid
+================================================== */
+ /* Shared
+================================================== */
+ 
+ .button {
+     border-radius: 100px;
+ }
+ /* Sections
+================================================== */
+ 
+ .section {
+     padding: 8rem 0 7rem;
+     text-align: center;
+ }
+ 
+ .section-heading,
+ .section-description {
+     margin-bottom: 1.2rem;
+ }
+ /* Hero
+================================================== */
+ 
+ .phone {
+     position: relative;
+     max-width: 80%;
+     //margin: 3rem auto -12rem;
+ }
+ /* Values
+================================================== */
+ 
+ .values {
+     background-image: url('../images/content/values-bg.jpg');
+     background-size: cover;
+     color: #fff;
+     padding-bottom: 5rem;
+ }
+ 
+ .value-multiplier {
+     margin-bottom: .5rem;
+     color: #11DFC7;
+ }
+ 
+ .value-heading {
+     margin-bottom: .3rem;
+ }
+ 
+ .value-description {
+     opacity: .8;
+     font-weight: 300;
+ }
+ /* Help
+================================================== */
+ 
+ .get-help {
+     border-bottom: 1px solid #ddd;
+ }
+ /* Categories
+================================================== */
+ 
+
+ 
+ .categories .section-description {
+     margin-bottom: 4rem;
+ }
+ /* End Grid
+================================================== */
+ /* section *******************************/
+ 
+ .s1 {
+     background-color: #34495e;
+ }
+ 
+ .s2 {
+     background-color: #e74c3c;
+ }
+ 
+ .s3 {
+     background-image: url('../images/content/values-bg.jpg');
+     background-size: cover;
+     color: #fff;
+     padding-bottom: 5rem;
+ }
+ 
+ .s4 {
+     // background-color: #e74c3c;
+ } 
+ .s5 {
+     background-image: url('../images/content/values-bg.jpg');
+     background-size: cover;
+     color: #fff;
+ }
+
+ .center{
+ 	margin:0 auto;
+ }
+ /* End section *******************************/
+ 
+ // End Content //////////////////////////////////
