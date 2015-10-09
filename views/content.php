@@ -82,6 +82,27 @@
     </div>
   </div>
 
+  <div class="section s6">
+    <div class="container">
+      <h3 class="section-heading">Blah</h3>
+      <p class="section-description">Skeleton images sit easily in grid with .u-max-full-width class. I suggest exploring solution to serving different images based on device size.</p>
+      <div class="row">
+         <div class="three columns s6-1">
+          <img class="u-max-full-width" src="images/content/placeholder.png">
+        </div>
+         <div class="three columns s6-1">
+          <img class="u-max-full-width" src="images/content/placeholder.png">
+        </div>
+        <div class="three columns s6-1">
+          <img class="u-max-full-width" src="images/content/placeholder.png">
+        </div>
+        <div class="three columns s6-1">
+          <img class="u-max-full-width" src="images/content/placeholder.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
 

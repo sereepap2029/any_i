@@ -402,7 +402,7 @@ li {
 
 /*
 $sm: "screen and (min-width: 375px)";
-$md-600: "screen and (min-width: 600px)";
+
 $md: "screen and (min-width: 780px)";
 $lg: "screen and (min-width: 960px)";
 */
@@ -506,8 +506,16 @@ $lg: "screen and (min-width: 960px)";
   color: #fff;
 }
 
-.center {
-  margin: 0 auto;
+.s6 {
+  background-color: #bdc3c7;
+}
+.s6 .s6-1 {
+  width: 50%;
+}
+@media screen and (min-width: 550px) {
+  .s6 .s6-1 {
+    width: 22%;
+  }
 }
 
 /* End section *******************************/
