@@ -1,4 +1,17 @@
  // Header //////////////////////////////////
+ .section-header {
+     position: relative;
+     padding: 1.5rem 0 2rem;
+     text-align: center;
+     -webkit-transform: translateY(1px);
+     transform: translateY(1px);
+ }
  
+ .s0 {
+     background-color: #fff;
+     -webkit-clip-path: url(../#clip_path-head);
+     clip-path: url(../#clip_path-head);
+     z-index: 12;
+ }
  
  // End Header //////////////////////////////////

@@ -16,11 +16,23 @@ ob_start('ob_gzhandler');
 
     <body>
         <div id="wrapper">
-            <?php //include("views/header.php"); ?>
+            <?php include("views/header.php"); ?>
                 <?php include("views/content.php"); ?>
                     <?php include("views/footer.php"); ?>
                         <script type="text/javascript" src="js/main.js"></script>
         </div>
+        <!--/ SVG /***************************** -->
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0">
+            <defs>
+            <clipPath id="clip_path-head" clipPathUnits="objectBoundingBox">
+                    <ellipse rx=".9" ry="1" cx="0.5" cy="0" />
+                </clipPath>
+                <clipPath id="clip_path" clipPathUnits="objectBoundingBox">
+                    <ellipse rx="1.3" ry="1" cx="0.5" cy="0" />
+                </clipPath>
+            </defs>
+        </svg>
+        <!--/ End SVG /***************************** -->
     </body>
 
     </html>

@@ -102,14 +102,7 @@
     </div>
 </div>
 <!-- END CONTENT ************************** -->
-<!--/ SVG /***************************** -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0">
-    <defs>
-        <clipPath id="clip_path" clipPathUnits="objectBoundingBox">
-            <ellipse rx="1.3" ry="1" cx="0.5" cy="0" />
-        </clipPath>
-    </defs>
-</svg>
+
 <!-- SCRIPT ************************** -->
 <script type="text/javascript">
 </script>

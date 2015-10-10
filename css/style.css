@@ -420,6 +420,21 @@ $lg: "screen and (min-width: 960px)";
   *zoom: 1;
 }
 
+.section-header {
+  position: relative;
+  padding: 1.5rem 0 2rem;
+  text-align: center;
+  -webkit-transform: translateY(1px);
+  transform: translateY(1px);
+}
+
+.s0 {
+  background-color: #fff;
+  -webkit-clip-path: url(../#clip_path-head);
+  clip-path: url(../#clip_path-head);
+  z-index: 12;
+}
+
  /*  Grid
 ================================================== */
  /* Shared
@@ -492,6 +507,7 @@ $lg: "screen and (min-width: 960px)";
   background-color: #34495e;
   -webkit-clip-path: url(../#clip_path);
   clip-path: url(../#clip_path);
+  margin-top: -35px;
   z-index: 10;
 }
 
