@@ -97,11 +97,11 @@
 </div>
 <!-- END CONTENT ************************** -->
 <!--/ SVG /***************************** -->
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0">
     <defs>
-        <mask id="mask" maskUnits="objectBoundingBox" maskContentUnits="objectBoundingBox">
-           <ellipse cx="130%" cy="100%" rx="50%" ry="0%" fill="white"/>
-        </mask>
+        <clipPath id="clip_path" clipPathUnits="objectBoundingBox">
+            <ellipse rx="1.3" ry="1" cx="0.5" cy="0" />
+        </clipPath>
     </defs>
 </svg>
 <!-- SCRIPT ************************** -->
