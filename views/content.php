@@ -26,19 +26,20 @@
 </div>
 <div class="section s3">
     <div class="container">
+        <h3 class="section-heading"> Blah <br>Yeah Yeah</h3>
         <div class="row">
             <div class="four columns">
-                <h2 class="value-multiplier">67%</h2>
+                <img class="u-max-full-width" src="http://placehold.it/200x200">
                 <h5 class="value-heading">Purchase Increase</h5>
                 <p class="value-description">Percentage of users more likely to purchase on mobile friendly site.</p>
             </div>
             <div class="four columns">
-                <h2 class="value-multiplier">90%</h2>
+                <img class="u-max-full-width" src="http://placehold.it/200x200">
                 <h5 class="value-heading">Multi-device Users</h5>
                 <p class="value-description">Most of the world accesses the internet on multiple devices.</p>
             </div>
             <div class="four columns">
-                <h2 class="value-multiplier">66%</h2>
+                <img class="u-max-full-width" src="http://placehold.it/200x200">
                 <h5 class="value-heading">Sad Users</h5>
                 <p class="value-description">Percentage of users that are frustrated with page load times.</p>
             </div>
@@ -61,16 +62,24 @@
         <p class="section-description">Skeleton images sit easily in grid with .u-max-full-width class. I suggest exploring solution to serving different images based on device size.</p>
         <div class="row">
             <div class="four columns">
-                <img class="u-max-full-width" src="images/content/placeholder.png">
+                <img class="u-max-full-width" src="http://placehold.it/300x300">
+                <h5 class="value-heading">Purchase Increase</h5>
+                <p class="value-description">Percentage of users more likely to purchase on mobile friendly site.</p>
             </div>
             <div class="four columns">
-                <img class="u-max-full-width" src="images/content/placeholder.png">
+                <img class="u-max-full-width" src="http://placehold.it/300x300">
+                <h5 class="value-heading">Purchase Increase</h5>
+                <p class="value-description">Percentage of users more likely to purchase on mobile friendly site.</p>
             </div>
             <div class="four columns">
-                <img class="u-max-full-width" src="images/content/placeholder.png">
+                <img class="u-max-full-width" src="http://placehold.it/300x300">
+                <h5 class="value-heading">Purchase Increase</h5>
+                <p class="value-description">Percentage of users more likely to purchase on mobile friendly site.</p>
             </div>
             <div class="twelve columns">
-                <img class="u-max-full-width  s5-1-img" src="images/content/placeholder.png">
+                <img class="u-max-full-width" src="http://placehold.it/300x300">
+                <h5 class="value-heading">Purchase Increase</h5>
+                <p class="value-description">Percentage of users more likely to purchase on mobile friendly site.</p>
             </div>
         </div>
     </div>

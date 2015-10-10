@@ -12,11 +12,10 @@
  
  .section {
      position: relative;
-     padding: 8rem 0 7rem;
+     padding: 8rem 0 18rem;
      text-align: center;
      -webkit-transform: translateY(1px);
      transform: translateY(1px);
-
  }
  
  .section-heading,
@@ -82,25 +81,43 @@
      background-color: #e74c3c;
      -webkit-clip-path: url(../#clip_path);
      clip-path: url(../#clip_path);
-     margin-top: -25px;
+     margin-top: -35px;
      z-index: 9;
  }
  
  .s3 {
+     -webkit-clip-path: url(../#clip_path);
+     clip-path: url(../#clip_path);
+     margin-top: -35px;
+     z-index: 8;
      background-image: url('../images/content/values-bg.jpg');
      background-size: cover;
      color: #fff;
      padding-bottom: 5rem;
+     img {
+         border-radius: 50%;
+     }
  }
  
  .s4 {
-     // background-color: #e74c3c;
+     background-color: #fff;
+     -webkit-clip-path: url(../#clip_path);
+     clip-path: url(../#clip_path);
+     margin-top: -35px;
+     z-index: 7;
  }
  
  .s5 {
      background-image: url('../images/content/values-bg.jpg');
      background-size: cover;
      color: #fff;
+     -webkit-clip-path: url(../#clip_path);
+     clip-path: url(../#clip_path);
+     margin-top: -35px;
+     z-index: 6;
+     img {
+         border-radius: 50%;
+     }
      .s5-1-img {
          @media #{$md} {
              width: 30.6666666667%;
@@ -110,6 +127,10 @@
  
  .s6 {
      background-color: #bdc3c7;
+     -webkit-clip-path: url(../#clip_path);
+     clip-path: url(../#clip_path);
+     margin-top: -35px;
+     z-index: 5;
      img {
          border-radius: 50%;
      }
