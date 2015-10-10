@@ -488,6 +488,8 @@ $lg: "screen and (min-width: 960px)";
 /* section *******************************/
 .s1 {
   background-color: #34495e;
+  -webkit-clip-path: ellipse(130% 100% at 50% 0%);
+  mask: url(../#mask);
 }
 
 .s2 {
