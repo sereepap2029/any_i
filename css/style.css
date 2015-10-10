@@ -434,6 +434,7 @@ $lg: "screen and (min-width: 960px)";
   position: relative;
   padding: 8rem 0 7rem;
   text-align: center;
+  -webkit-transform: translateZ(1px);
 }
 
 .section-heading,
@@ -488,12 +489,14 @@ $lg: "screen and (min-width: 960px)";
 /* section *******************************/
 .s1 {
   background-color: #34495e;
-  clip-path: url(../#clip_path);
   -webkit-clip-path: url(../#clip_path);
+  clip-path: url(../#clip_path);
 }
 
 .s2 {
   background-color: #e74c3c;
+  -webkit-clip-path: url(../#clip_path);
+  clip-path: url(../#clip_path);
 }
 
 .s3 {
