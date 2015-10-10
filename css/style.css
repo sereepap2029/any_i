@@ -431,6 +431,7 @@ $lg: "screen and (min-width: 960px)";
  /* Sections
 ================================================== */
 .section {
+  position: relative;
   padding: 8rem 0 7rem;
   text-align: center;
 }
