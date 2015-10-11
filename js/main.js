@@ -7,7 +7,12 @@ $(document).ready(function() {
       navigation : false, // Show next and prev buttons
       slideSpeed : 300,
       paginationSpeed : 400,
-      singleItem:true
+      singleItem:true,
+      
+
+
+ 
+});
  
       // "singleItem:true" is a shortcut for:
       // items : 1, 
@@ -15,11 +20,13 @@ $(document).ready(function() {
       // itemsDesktopSmall : false,
       // itemsTablet: false,
       // itemsMobile : false
-  });
+
 
    /*End owlCarousel ***********************/
- 
-
+  var $slides = $('#slides-2');
+  $slides.superslides({
+            hashchange: false
+        });
 /*
    $(function() {
    
