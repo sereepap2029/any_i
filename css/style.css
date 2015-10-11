@@ -516,14 +516,15 @@ $lg: "screen and (min-width: 960px)";
   clip-path: url(../#clip_path);
   margin-top: -35px;
   z-index: 10;
+  overflow: hidden;
 }
-.s1 .owl-theme .owl-controls .owl-page span {
-  border: 1.5px solid #fff;
-  background: none;
+.s1 .container {
+  width: 100%;
+  max-width: none;
 }
-.s1 .owl-theme .owl-controls .owl-page.active span,
-.s1 .owl-theme .owl-controls.clickable .owl-page:hover span {
-  background: #fff;
+.s1 .owl-theme .owl-controls {
+  position: relative;
+  margin-top: -30px;
 }
 
 .s2 {
@@ -598,13 +599,27 @@ $lg: "screen and (min-width: 960px)";
 /* End section *******************************/
 /* owl-carousel *******************************/
 #owl-demo .item img {
-  display: block;
-  width: 100%;
-  height: auto;
+  padding: 0px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
 }
 
 .item h1 {
   margin: inherit;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  border: 2px solid #fff;
+  background: none;
+  opacity: 1;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  background: #fff;
 }
 
 /* End owl-carousel *******************************/

@@ -98,15 +98,16 @@
     clip-path: url(../#clip_path);
     margin-top: -35px;
     z-index: 10;
-    .owl-theme .owl-controls .owl-page span {
-        border: 1.5px solid #fff;
-        background: none;
-        // background: #fff;
+    overflow: hidden;
+    .container {
+        width: 100%;
+        max-width: none;
     }
-    .owl-theme .owl-controls .owl-page.active span,
-    .owl-theme .owl-controls.clickable .owl-page:hover span {
-        background: #fff;
+    .owl-theme .owl-controls {
+        position: relative;
+        margin-top: -30px;
     }
+    
 }
 
 .s2 {
@@ -183,13 +184,30 @@
 /* owl-carousel *******************************/
 
 #owl-demo .item img {
-    display: block;
-    width: 100%;
-    height: auto;
+    //background: #42bdc2;
+    padding: 0px;
+    //margin: 10px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
 }
 
 .item h1 {
     margin: inherit;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    border: 2px solid #fff;
+    background: none;
+    opacity: 1;
+    // background: #fff;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background: #fff;
 }
 
 
