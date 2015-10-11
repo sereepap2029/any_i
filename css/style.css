@@ -438,15 +438,15 @@ $lg: "screen and (min-width: 960px)";
   z-index: 12;
 }
 
- /*  Grid
+/*  Grid
 ================================================== */
- /* Shared
+/* Shared
 ================================================== */
 .button {
   border-radius: 100px;
 }
 
- /* Sections
+/* Sections
 ================================================== */
 .section {
   position: relative;
@@ -464,14 +464,14 @@ $lg: "screen and (min-width: 960px)";
   margin-bottom: 1.2rem;
 }
 
- /* Hero
+/* Hero
 ================================================== */
 .phone {
   position: relative;
   max-width: 80%;
 }
 
- /* Values
+/* Values
 ================================================== */
 .values {
   background-image: url("../images/content/values-bg.jpg");
@@ -494,19 +494,19 @@ $lg: "screen and (min-width: 960px)";
   font-weight: 300;
 }
 
- /* Help
+/* Help
 ================================================== */
 .get-help {
   border-bottom: 1px solid #ddd;
 }
 
- /* Categories
+/* Categories
 ================================================== */
 .categories .section-description {
   margin-bottom: 4rem;
 }
 
- /* End Grid
+/* End Grid
 ================================================== */
 /* section *******************************/
 .s1 {
@@ -516,6 +516,14 @@ $lg: "screen and (min-width: 960px)";
   clip-path: url(../#clip_path);
   margin-top: -35px;
   z-index: 10;
+}
+.s1 .owl-theme .owl-controls .owl-page span {
+  border: 1.5px solid #fff;
+  background: none;
+}
+.s1 .owl-theme .owl-controls .owl-page.active span,
+.s1 .owl-theme .owl-controls.clickable .owl-page:hover span {
+  background: #fff;
 }
 
 .s2 {

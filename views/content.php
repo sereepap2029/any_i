@@ -1,16 +1,15 @@
 <!-- CONTENT ************************** -->
-
 <div class="section s1">
     <div class="container">
         <div class="row">
             <div class="twelve columns">
                 <div id="owl-demo" class="owl-carousel owl-theme">
                     <div class="item"><img src="images/content/s1/fullimage1.jpg" alt="111">
-                        <h1>1</h1></div>
+                    </div>
                     <div class="item"><img src="images/content/s1/fullimage2.jpg" alt="2222">
-                        <h1>2</h1></div>
+                    </div>
                     <div class="item"><img src="images/content/s1/fullimage3.jpg" alt="333">
-                        <h1>3</h1></div>
+                    </div>
                 </div>
             </div>
             <!--
