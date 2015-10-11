@@ -14,8 +14,12 @@
      position: relative;
      padding: 8rem 0 18rem;
      text-align: center;
+     -ms-transform: translateY(1px);
+     -moz-transform: translateY(1px);
      -webkit-transform: translateY(1px);
      transform: translateY(1px);
+     //overflow: hidden;
+     display: list-item;
  }
  
  .section-heading,
@@ -70,6 +74,7 @@
  /* section *******************************/
  
  .s1 {
+ 	 padding: 0rem 0 0rem;
      background-color: #34495e;
      //-webkit-clip-path: ellipse(130% 100% at 50% 0%);
      -webkit-clip-path: url(../#clip_path);
@@ -145,5 +150,17 @@
      }
  }
  /* End section *******************************/
+ /* owl-carousel *******************************/
+ 
+ #owl-demo .item img {
+     display: block;
+     width: 100%;
+     height: auto;
+ }
+ 
+ .item h1 {
+     margin: inherit;
+ }
+ /* End owl-carousel *******************************/
  
  // End Content //////////////////////////////////

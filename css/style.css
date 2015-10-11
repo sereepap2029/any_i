@@ -424,8 +424,11 @@ $lg: "screen and (min-width: 960px)";
   position: relative;
   padding: 1.5rem 0 2rem;
   text-align: center;
+  -ms-transform: translateY(1px);
+  -moz-transform: translateY(1px);
   -webkit-transform: translateY(1px);
   transform: translateY(1px);
+  display: list-item;
 }
 
 .s0 {
@@ -449,8 +452,11 @@ $lg: "screen and (min-width: 960px)";
   position: relative;
   padding: 8rem 0 18rem;
   text-align: center;
+  -ms-transform: translateY(1px);
+  -moz-transform: translateY(1px);
   -webkit-transform: translateY(1px);
   transform: translateY(1px);
+  display: list-item;
 }
 
 .section-heading,
@@ -504,6 +510,7 @@ $lg: "screen and (min-width: 960px)";
 ================================================== */
 /* section *******************************/
 .s1 {
+  padding: 0rem 0 0rem;
   background-color: #34495e;
   -webkit-clip-path: url(../#clip_path);
   clip-path: url(../#clip_path);
@@ -581,6 +588,18 @@ $lg: "screen and (min-width: 960px)";
 }
 
 /* End section *******************************/
+/* owl-carousel *******************************/
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.item h1 {
+  margin: inherit;
+}
+
+/* End owl-carousel *******************************/
 .s7 {
   padding: 4rem 0 4rem;
 }

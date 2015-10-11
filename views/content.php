@@ -1,9 +1,17 @@
 <!-- CONTENT ************************** -->
+
 <div class="section s1">
     <div class="container">
         <div class="row">
             <div class="twelve columns">
-                <h4>Dolor sit amet, consectetur adipiscing elit</h4>
+                <div id="owl-demo" class="owl-carousel owl-theme">
+                    <div class="item"><img src="images/content/s1/fullimage1.jpg" alt="111">
+                        <h1>1</h1></div>
+                    <div class="item"><img src="images/content/s1/fullimage2.jpg" alt="2222">
+                        <h1>2</h1></div>
+                    <div class="item"><img src="images/content/s1/fullimage3.jpg" alt="333">
+                        <h1>3</h1></div>
+                </div>
             </div>
             <!--
         <div class="one-half column phones">
@@ -56,7 +64,7 @@
 <div class="section s5">
     <div class="container">
         <h3 class="section-heading">Blah Blah</h3>
-        <p class="section-description">Nullam consectetur vehicula porttitor.  Integer finibus consectetur interdum. Nunc tincidunt mattis nibh</p>
+        <p class="section-description">Nullam consectetur vehicula porttitor. Integer finibus consectetur interdum. Nunc tincidunt mattis nibh</p>
         <div class="row">
             <div class="four columns">
                 <img class="u-max-full-width" src="http://placehold.it/300x300">
@@ -84,7 +92,7 @@
 <div class="section s6">
     <div class="container">
         <h3 class="section-heading">Blah</h3>
-        <p class="section-description"> rhoncus accumsan quam justo in elit. Integer at quam velit.  id velit tristique fermentum. Mauris posuere felis dapibus sollicitudin dictum. Vestibulum ante ipsum primis in fauci</p>
+        <p class="section-description"> rhoncus accumsan quam justo in elit. Integer at quam velit. id velit tristique fermentum. Mauris posuere felis dapibus sollicitudin dictum. Vestibulum ante ipsum primis in fauci</p>
         <div class="row">
             <div class="three columns s6-1">
                 <img class="u-max-full-width" src="http://placehold.it/200x200">
@@ -102,7 +110,6 @@
     </div>
 </div>
 <!-- END CONTENT ************************** -->
-
 <!-- SCRIPT ************************** -->
 <script type="text/javascript">
 </script>
