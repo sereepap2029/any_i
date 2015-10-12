@@ -3,7 +3,7 @@ $(document).ready(function() {
     $slide = $('.section');
     winH = $window.height();
     winW = $window.width();
-    $slide.height(winH);
+    //$slide.height(winH);
 
     /* owlCarousel ***********************/
     $("#owl-demo").owlCarousel({

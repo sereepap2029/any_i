@@ -535,13 +535,14 @@ $lg: "screen and (min-width: 960px)";
 }
 .s1 .owl-dots {
   position: relative;
-  margin-top: -30px;
+  margin-top: -42px;
 }
 
 .s2 {
   background-color: #e74c3c;
   -webkit-clip-path: url(../#clip_path);
   clip-path: url(../#clip_path);
+  margin-top: -35px;
   z-index: 9;
 }
 

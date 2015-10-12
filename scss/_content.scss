@@ -25,6 +25,7 @@
     transform: translateY(1px);
     //overflow: hidden;
     display: list-item;
+
 }
 
 .section-heading,
@@ -108,7 +109,7 @@
     }
     .owl-dots {
         position: relative;
-        margin-top: -30px;
+        margin-top: -42px;
     }
     /*
     .owl-carousel {
@@ -127,7 +128,7 @@
     background-color: #e74c3c;
     -webkit-clip-path: url(../#clip_path);
     clip-path: url(../#clip_path);
-    //margin-top: -35px;
+    margin-top: -35px;
     z-index: 9;
 }
 
