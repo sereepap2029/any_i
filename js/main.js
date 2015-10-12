@@ -62,6 +62,7 @@ $(function() {
     var flag = 1;
     $('.nav-toggle').on('click', function() {
         $('.main-nav').toggleClass('open');
+        /* disable scrolling *************/
         if (flag < 1) {
             $("body,html").css("overflow", "visible");
             $('body').unbind('touchmove');

@@ -37,9 +37,7 @@ $lg: "screen and (min-width: 960px)";
 
 #wrapper {}
 $f_red: #c0392b;
-html{
-  overflow: hidden;
-}
+
 @import 'header';
 @import 'content';
 @import 'footer';
