@@ -80,26 +80,24 @@
 ================================================== */
 
 @mixin redtag {
-
-        ul {
-            display: inline-flex;
-        }
-        #redtag {
-            margin-left: -5px;
-            background-image: url("../images/content/redtag.png");
-            width: 42px;
-            height: 44px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            -webkit-clip-path: none;
-            clip-path: none;
-        }
-        p {
-            display: inline-block;
-            background-color: #991915;
-            padding: 10px;
-        }
-    
+    ul {
+        display: inline-flex;
+    }
+    #redtag {
+        margin-left: -5px;
+        background-image: url("../images/content/redtag.png");
+        width: 42px;
+        height: 44px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        -webkit-clip-path: none;
+        clip-path: none;
+    }
+    p {
+        display: inline-block;
+        background-color: #991915;
+        padding: 10px;
+    }
 }
 
 
@@ -214,7 +212,7 @@
 }
 
 .s2-tag {
-     @include redtag;
+    @include redtag;
 }
 
 .s3 {
@@ -301,8 +299,12 @@
         padding: 40px 40px 0px;
     }
     .s4-tag {
-       @include redtag;
+        @include redtag;
     }
+}
+
+.msie .s4 #redtag {
+    height: 43px;
 }
 
 .s4 .owl-carousel .owl-item img {

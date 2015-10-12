@@ -740,6 +740,10 @@ $lg: "screen and (min-width: 960px)";
   padding: 10px;
 }
 
+.msie .s4 #redtag {
+  height: 43px;
+}
+
 .s4 .owl-carousel .owl-item img {
   -webkit-clip-path: ellipse(130% 100% at 50% 0%);
 }

@@ -5,6 +5,7 @@ $(document).ready(function() {
     winW = $window.width();
     //$slide.height(winH);
     var browser = get_browser_info();
+    //console.log(browser);
     $('html').addClass(browser.toLowerCase());
 
     /* owlCarousel ***********************/

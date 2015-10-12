@@ -100,6 +100,7 @@
         <div class="row">
             <div class="twelve columns">
                 <div id="owl-desk-s4" class="owl-carousel owl-theme owl-loaded">
+                <!-- slide1 ========= -->
                     <div><img src="http://www.placehold.it/1280x840" alt="111">
                         <div class="s4-info">
                             <div class="s4-tag">
@@ -116,6 +117,7 @@
                             <p>blahhhhhhhhhhh</p>
                         </div>
                     </div>
+                    <!-- slide2 ========= -->
                     <div><img src="http://www.placehold.it/1280x840" alt="2222">
                         <div class="s4-info">
                             <div class="s4-tag">
@@ -132,6 +134,7 @@
                             <p>blahhhhhhhhhhh</p>
                         </div>
                     </div>
+                    <!-- slide3 ========= -->
                     <div><img src="http://www.placehold.it/1280x840" alt="333">
                         <div class="s4-info">
                             <div class="s4-tag">
