@@ -400,6 +400,15 @@ li {
   list-style-type: none;
 }
 
+@font-face {
+  font-family: 'fontawesome';
+  src: url("fonts/fontawesome-webfont.eot?v=4.1.0");
+  /* IE9 Compat Modes */
+  src: url("fonts/fontawesome-webfont.eot?#iefix&v=4.1.0") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff?v=4.1.0") format("woff"), url("fonts/fontawesome-webfont.ttf?v=4.1.0") format("truetype"), url("fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular") format("svg");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
 /*
 $sm: "screen and (min-width: 375px)";
 
@@ -659,7 +668,7 @@ $lg: "screen and (min-width: 960px)";
 }
 .s4 .owl-theme .owl-nav [class*='owl-'] {
   background: none;
-  font-size: 30px;
+  font-size: 40px;
 }
 .s4 .owl-theme .owl-nav [class*='owl-']:active {
   opacity: 0.7;
@@ -667,12 +676,12 @@ $lg: "screen and (min-width: 960px)";
 .s4 .owl-prev {
   position: absolute;
   left: 0;
-  bottom: 70%;
+  bottom: 65%;
 }
 .s4 .owl-next {
   position: absolute;
   right: 0;
-  bottom: 70%;
+  bottom: 65%;
 }
 .s4 .s4-info {
   text-align: left;

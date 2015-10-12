@@ -27,8 +27,8 @@ $(document).ready(function() {
         center: true,
         nav: true,
         navText: [
-            "<i class='icon-chevron-left icon-white'><</i>",
-            "<i class='icon-chevron-right icon-white'>></i>"
+            "<i class='fa fa-chevron-left'></i>",
+            "<i class='fa fa-chevron-right'></i>"
         ],
 
 

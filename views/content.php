@@ -92,12 +92,14 @@
                     </div>
                     <div><img src="http://www.placehold.it/1280x840" alt="2222">
                         <div class="s4-info">
+                        <div class="s4-tag"><p>anyyyyyyyyy</p></div>
                             <h1>title2</h1>
                             <p>blahhhhhhhhhhh</p>
                         </div>
                     </div>
                     <div><img src="http://www.placehold.it/1280x840" alt="333">
                         <div class="s4-info">
+                        <div class="s4-tag"><p>anyyyyyyyyyyyy3</p></div>
                             <h1>title3</h1>
                             <p>blahhhhhhhhhhh</p>
                         </div>

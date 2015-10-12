@@ -232,7 +232,7 @@
     }
     .owl-theme .owl-nav [class*='owl-']{
     	background: none;
-    	font-size: 30px;
+    	font-size: 40px;
     	&:active{
     		opacity: .7
     	}
@@ -240,12 +240,12 @@
     .owl-prev {
         position: absolute;
         left: 0;
-        bottom: 70%;
+        bottom: 65%;
     }
     .owl-next {
         position: absolute;
         right: 0;
-        bottom: 70%;
+        bottom: 65%;
     }
     /* End owl-carousel s4 *******************************/
     .s4-info {
