@@ -693,6 +693,11 @@ $lg: "screen and (min-width: 960px)";
   padding: 10px;
 }
 
+.s4 .owl-carousel .owl-item img {
+  -webkit-clip-path: url(../#clip_path-head);
+  clip-path: url(../#clip_path-head);
+}
+
 .chrome .s4 {
   overflow: hidden;
 }
