@@ -51,7 +51,11 @@
     <div class="container">
         <div class="row">
             <div class="twelve columns">
-                <h4>Vivamus fringilla placerat ex, sed pellentesque ipsum mollis vitae.</h4>
+                <div class="s2-info">
+                        <div class="s2-tag"><p>anyyy</p></div>
+                            <h1>title</h1>
+                            <p>blahhhhhhhhhhh</p>
+                        </div>
             </div>
         </div>
     </div>

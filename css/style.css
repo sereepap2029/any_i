@@ -432,10 +432,10 @@ $lg: "screen and (min-width: 960px)";
 .section-header {
   position: relative;
   text-align: center;
-  -ms-transform: translateY(1px);
-  -moz-transform: translateY(1px);
-  -webkit-transform: translateY(1px);
-  transform: translateY(1px);
+  -ms-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
   display: list-item;
 }
 
@@ -468,10 +468,10 @@ $lg: "screen and (min-width: 960px)";
   position: relative;
   padding: 8rem 0 8rem;
   text-align: center;
-  -ms-transform: translateY(1px);
-  -moz-transform: translateY(1px);
-  -webkit-transform: translateY(1px);
-  transform: translateY(1px);
+  -ms-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
 }
 
 .section-heading,
@@ -498,8 +498,9 @@ $lg: "screen and (min-width: 960px)";
 }
 
 .value-description {
-  opacity: .8;
   font-weight: 300;
+  margin-bottom: 3.5rem;
+  line-height: 20px;
 }
 
 /* Help
@@ -615,6 +616,20 @@ $lg: "screen and (min-width: 960px)";
   clip-path: url(../#clip_path);
   margin-top: -50px;
   z-index: 9;
+}
+
+.s2-info {
+  text-align: left;
+  padding: 10px 40px 0px;
+}
+.s2-info h1 {
+  margin: 0px;
+}
+
+.s2-tag p {
+  display: inline-block;
+  background-color: #c0392b;
+  padding: 10px;
 }
 
 .s3 {
