@@ -457,7 +457,7 @@ $lg: "screen and (min-width: 960px)";
 ================================================== */
 .section {
   position: relative;
-  padding: 8rem 0 18rem;
+  padding: 8rem 0 8rem;
   text-align: center;
   -ms-transform: translateY(1px);
   -moz-transform: translateY(1px);
@@ -656,6 +656,23 @@ $lg: "screen and (min-width: 960px)";
 .s4 .owl-theme .owl-dots .owl-dot.active span,
 .s4 .owl-theme .owl-dots .owl-dot:hover span {
   background: #c0392b;
+}
+.s4 .owl-theme .owl-nav [class*='owl-'] {
+  background: none;
+  font-size: 30px;
+}
+.s4 .owl-theme .owl-nav [class*='owl-']:active {
+  opacity: 0.7;
+}
+.s4 .owl-prev {
+  position: absolute;
+  left: 0;
+  bottom: 70%;
+}
+.s4 .owl-next {
+  position: absolute;
+  right: 0;
+  bottom: 70%;
 }
 .s4 .s4-info {
   text-align: left;

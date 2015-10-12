@@ -14,10 +14,27 @@ $(document).ready(function() {
         loop: true,
         //nav: true,
         items: 1,
-        center:true,
+        center: true,
 
 
     });
+
+    $("#owl-desk-s4").owlCarousel({
+
+        dots: true,
+        loop: true,
+        items: 1,
+        center: true,
+        nav: true,
+        navText: [
+            "<i class='icon-chevron-left icon-white'><</i>",
+            "<i class='icon-chevron-right icon-white'>></i>"
+        ],
+
+
+    });
+
+
 
     // "singleItem:true" is a shortcut for:
     // items : 1, 

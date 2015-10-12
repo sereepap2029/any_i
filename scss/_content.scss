@@ -17,7 +17,7 @@
 
 .section {
     position: relative;
-    padding: 8rem 0 18rem;
+    padding: 8rem 0 8rem;
     text-align: center;
     -ms-transform: translateY(1px);
     -moz-transform: translateY(1px);
@@ -229,6 +229,23 @@
     .owl-theme .owl-dots .owl-dot.active span,
     .owl-theme .owl-dots .owl-dot:hover span {
         background: #c0392b;
+    }
+    .owl-theme .owl-nav [class*='owl-']{
+    	background: none;
+    	font-size: 30px;
+    	&:active{
+    		opacity: .7
+    	}
+    }
+    .owl-prev {
+        position: absolute;
+        left: 0;
+        bottom: 70%;
+    }
+    .owl-next {
+        position: absolute;
+        right: 0;
+        bottom: 70%;
     }
     /* End owl-carousel s4 *******************************/
     .s4-info {
