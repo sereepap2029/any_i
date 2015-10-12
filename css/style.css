@@ -657,6 +657,15 @@ $lg: "screen and (min-width: 960px)";
 .s4 .owl-theme .owl-dots .owl-dot:hover span {
   background: #c0392b;
 }
+.s4 .s4-info {
+  text-align: left;
+  padding: 40px 40px 0px;
+}
+.s4 .s4-tag p {
+  display: inline-block;
+  background-color: #c0392b;
+  padding: 10px;
+}
 
 .chrome .s4 {
   overflow: hidden;

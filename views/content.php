@@ -85,6 +85,7 @@
                 <div id="owl-desk" class="owl-carousel owl-theme owl-loaded">
                     <div><img src="http://www.placehold.it/1280x840" alt="111">
                         <div class="s4-info">
+                        <div class="s4-tag"><p>anyyy</p></div>
                             <h1>title</h1>
                             <p>blahhhhhhhhhhh</p>
                         </div>

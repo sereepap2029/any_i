@@ -128,8 +128,8 @@
         min-width: 100%;
         width: inherit;
         height: auto;
-         @media #{$md} {
-           width: 100%;
+        @media #{$md} {
+            width: 100%;
         }
     }
     .owl-item h1 {
@@ -231,6 +231,17 @@
         background: #c0392b;
     }
     /* End owl-carousel s4 *******************************/
+    .s4-info {
+        text-align: left;
+        padding: 40px 40px 0px;
+    }
+    .s4-tag {
+        p {
+            display: inline-block;
+            background-color: #c0392b;
+            padding: 10px;
+        }
+    }
 }
 
 .chrome .s4 {
