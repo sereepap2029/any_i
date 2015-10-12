@@ -2,7 +2,8 @@
 <div class="section s1">
     <div class="container">
         <div class="row">
-            <div class="twelve columns">            
+            <div class="twelve columns">
+                <!-- owl_s1-desk ========================= -->
                 <div id="owl_s1-desk" class="owl-carousel owl-theme owl-loaded">
                     <div><img src="images/content/s1/fullimage1.jpg" alt="111">
                     </div>
@@ -11,10 +12,10 @@
                     <div><img src="images/content/s1/fullimage3.jpg" alt="333">
                     </div>
                 </div>
-
+                <!-- owl_s1-res ========================= -->
                 <div id="owl_s1-res" class="owl-carousel owl-theme owl-loaded">
                     <div><img src="http://www.placehold.it/320x480" alt="111">
-                    </div>
+                        <h1 class="s1-title">wtfffff</h1></div>
                     <div><img src="http://www.placehold.it/320x480" alt="2222">
                     </div>
                     <div><img src="http://www.placehold.it/320x480" alt="333">

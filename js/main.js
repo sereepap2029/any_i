@@ -14,6 +14,7 @@ $(document).ready(function() {
         loop: true,
         //nav: true,
         items: 1,
+        center:true,
 
 
     });

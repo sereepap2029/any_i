@@ -566,6 +566,13 @@ $lg: "screen and (min-width: 960px)";
     display: none;
   }
 }
+.s1 .s1-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 40px;
+  bottom: 30%;
+}
 
 .chrome .s1 {
   overflow: hidden;

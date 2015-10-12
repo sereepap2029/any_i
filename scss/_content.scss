@@ -24,7 +24,7 @@
     -webkit-transform: translateY(1px);
     transform: translateY(1px);
     //overflow: hidden;
-   // display: list-item;
+    // display: list-item;
 }
 
 .section-heading,
@@ -100,9 +100,9 @@
     z-index: 10;
     //overflow: hidden;
     //height: 300px;
-    @media #{$md}{
-      margin-top: -35px;
-     }
+    @media #{$md} {
+        margin-top: -35px;
+    }
     .container {
         width: 100%;
         max-width: none;
@@ -124,6 +124,13 @@
         @media #{$md} {
             display: none;
         }
+    }
+    .s1-title {
+        position: absolute;
+        left: 0;
+        right: 0;
+        font-size: 40px;
+        bottom: 30%;
     }
     /*
     .owl-carousel img {
