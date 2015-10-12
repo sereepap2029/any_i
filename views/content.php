@@ -3,11 +3,13 @@
     <div class="container">
         <div class="row">
             <div class="twelve columns">
-            <!--
+                <!--
                 <div id="slides-2">
-
                     <ul class="slides-container">
                         <li><img src="images/content/s1/fullimage1.jpg" width="100%" height="100%">
+                            <div class="container">
+                                Slide one
+                            </div>
                         </li>
                         <li><img src="images/content/s1/fullimage2.jpg" width="100%" height="100%">
                         </li>
@@ -19,20 +21,25 @@
                         <a href="#" class="prev"><i class="fa fa-chevron-left"></i></a>
                     </nav>
                     <div class="arrow_white">
-                        <a href="#slide-3"><img class="arrow_white_img" src="images/content/arrow_white.png"></a>
+                        <a href="#"><img class="arrow_white_img" src="images/content/arrow_white.png"></a>
                     </div>
                 </div>
                 -->
-                <div id="owl-demo" class="owl-carousel owl-theme">
-                    <div class="item"><img src="images/content/s1/fullimage1.jpg" alt="111">
+                <div id="owl-demo" class="owl-carousel owl-theme owl-loaded">
+                    <div><img src="images/content/s1/fullimage1.jpg" alt="111">
                     </div>
-                    <div class="item"><img src="images/content/s1/fullimage2.jpg" alt="2222">
+                    <div><img src="images/content/s1/fullimage2.jpg" alt="2222">
                     </div>
-                    <div class="item"><img src="images/content/s1/fullimage3.jpg" alt="333">
+                    <div><img src="images/content/s1/fullimage3.jpg" alt="333">
                     </div>
+                    <!--
+                    <div class="owl-dots">
+                        <div class="owl-dot active"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                    </div>
+                    -->
                 </div>
-            </div>
-            
             </div>
         </div>
     </div>
@@ -125,6 +132,6 @@
         </div>
     </div>
     <!-- END CONTENT ************************** -->
-    <!-- SCRIPT ************************** -->
-    <script type="text/javascript">
-    </script>
+                    <!-- SCRIPT ************************** -->
+                    <script type="text/javascript">
+                    </script>

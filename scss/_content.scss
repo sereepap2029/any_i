@@ -98,26 +98,28 @@
     clip-path: url(../#clip_path);
     margin-top: -35px;
     z-index: 10;
-    overflow: hidden;
-    .owl-demo{
-    	width: 100%;
-	height: 100%;
-    }
+    //overflow: hidden;
+    //height: 300px;
     .container {
         width: 100%;
         max-width: none;
         padding: 0px;
-        height: 500px;
+       // height: 500px;
     }
-    .owl-theme .owl-controls {
+    .owl-dots {
         position: relative;
         margin-top: -30px;
     }
-
-    #owl-demo .item img{
-    	width: 100%;
+    .owl-carousel {
+       max-width: 100%;
+       height: auto;
+   }
+   
+    /*
+ 	 .owl-carousel .item img{
+    	max-width: 100%;
     }
-
+    */
 }
 
 .s2 {
@@ -193,6 +195,7 @@
 
 /* owl-carousel *******************************/
 
+/*
 #owl-demo .item img {
     //background: #42bdc2;
     padding: 0px;
@@ -204,22 +207,22 @@
     text-align: center;
 }
 
-.item h1 {
+.owl-item h1 {
     margin: inherit;
 }
 
-.owl-theme .owl-controls .owl-page span {
+.owl-theme .owl-controls .owl-dots span {
     border: 2px solid #fff;
     background: none;
     opacity: 1;
     // background: #fff;
 }
 
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls.clickable .owl-page:hover span {
+.owl-theme .owl-controls .owl-dots.active span,
+.owl-theme .owl-controls.clickable .owl-dots:hover span {
     background: #fff;
 }
-
+*/
 
 /* End owl-carousel *******************************/
 

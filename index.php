@@ -10,9 +10,12 @@ ob_start('ob_gzhandler');
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" src="js/jquery-1.11.3.min.js?v=1001"></script>
         <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/enquire.min.js"></script>
+        <script type="text/javascript" src="js/hammer.min.js"></script>
+        <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/owl.theme.css">
-        <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
 
