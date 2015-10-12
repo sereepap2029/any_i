@@ -657,6 +657,8 @@ $lg: "screen and (min-width: 960px)";
 }
 .s3 img {
   border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 .s3 .section-heading,
 .s3 .value-heading {
@@ -765,6 +767,8 @@ $lg: "screen and (min-width: 960px)";
 }
 .s5 img {
   border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 .s5 .section-heading,
 .s5 .value-heading {
@@ -790,6 +794,8 @@ $lg: "screen and (min-width: 960px)";
 }
 .s6 img {
   border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
 .s6 .s6-1 {
   width: 50%;
