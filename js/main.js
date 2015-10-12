@@ -8,7 +8,7 @@ $(document).ready(function() {
     $('html').addClass(browser.toLowerCase());
 
     /* owlCarousel ***********************/
-    $("#owl_s1-desk,#owl_s1-res").owlCarousel({
+    $("#owl-desk,#owl-res").owlCarousel({
 
         dots: true,
         loop: true,
