@@ -8,13 +8,11 @@ $(document).ready(function() {
     /* owlCarousel ***********************/
     $("#owl-demo").owlCarousel({
 
-        navigation: false, // Show next and prev buttons
+        dots: true, 
         loop: true,
-        slideSpeed: 300,
-        paginationSpeed: 400,
-
         //singleItem: true,
         items: 1,
+
 
 
 

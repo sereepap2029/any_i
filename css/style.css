@@ -510,13 +510,19 @@ $lg: "screen and (min-width: 960px)";
 ================================================== */
 /* section *******************************/
 .s1 {
-  padding: 0rem 0 18rem;
+  padding: 0rem 0 0rem;
   background-color: #34495e;
   -webkit-clip-path: url(../#clip_path);
   clip-path: url(../#clip_path);
   margin-top: -35px;
   z-index: 10;
    /*
+   .owl-carousel {
+      max-width: 100%;
+      height: auto;
+  }
+  
+   
 	 .owl-carousel .item img{
    	max-width: 100%;
    }
@@ -531,16 +537,11 @@ $lg: "screen and (min-width: 960px)";
   position: relative;
   margin-top: -30px;
 }
-.s1 .owl-carousel {
-  max-width: 100%;
-  height: auto;
-}
 
 .s2 {
   background-color: #e74c3c;
   -webkit-clip-path: url(../#clip_path);
   clip-path: url(../#clip_path);
-  margin-top: -35px;
   z-index: 9;
 }
 
@@ -607,34 +608,30 @@ $lg: "screen and (min-width: 960px)";
 
 /* End section *******************************/
 /* owl-carousel *******************************/
-/*
 #owl-demo .item img {
-    //background: #42bdc2;
-    padding: 0px;
-    //margin: 10px;
-    color: #FFF;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    text-align: center;
+  padding: 0px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
 }
 
 .owl-item h1 {
-    margin: inherit;
+  margin: inherit;
 }
 
 .owl-theme .owl-controls .owl-dots span {
-    border: 2px solid #fff;
-    background: none;
-    opacity: 1;
-    // background: #fff;
+  border: 2px solid #fff;
+  background: none;
+  opacity: 1;
 }
 
-.owl-theme .owl-controls .owl-dots.active span,
-.owl-theme .owl-controls.clickable .owl-dots:hover span {
-    background: #fff;
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #fff;
 }
-*/
+
 /* End owl-carousel *******************************/
 .s7 {
   padding: 4rem 0 4rem;
