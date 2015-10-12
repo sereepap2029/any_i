@@ -84,10 +84,22 @@
             <div class="twelve columns">
                 <div id="owl-desk" class="owl-carousel owl-theme owl-loaded">
                     <div><img src="http://www.placehold.it/1280x840" alt="111">
+                        <div class="s4-info">
+                            <h1>title</h1>
+                            <p>blahhhhhhhhhhh</p>
+                        </div>
                     </div>
                     <div><img src="http://www.placehold.it/1280x840" alt="2222">
+                        <div class="s4-info">
+                            <h1>title2</h1>
+                            <p>blahhhhhhhhhhh</p>
+                        </div>
                     </div>
                     <div><img src="http://www.placehold.it/1280x840" alt="333">
+                        <div class="s4-info">
+                            <h1>title3</h1>
+                            <p>blahhhhhhhhhhh</p>
+                        </div>
                     </div>
                 </div>
             </div>
