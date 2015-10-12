@@ -628,7 +628,7 @@ $lg: "screen and (min-width: 960px)";
 
 .s2-tag p {
   display: inline-block;
-  background-color: #c0392b;
+  background-color: #9F0208;
   padding: 10px;
 }
 
@@ -645,10 +645,12 @@ $lg: "screen and (min-width: 960px)";
 .s3 img {
   border-radius: 50%;
 }
-.s3 .section-heading, .s3 .value-heading {
+.s3 .section-heading,
+.s3 .value-heading {
   color: #c0392b;
 }
-.s3 .section-description, .s3 .value-description {
+.s3 .section-description,
+.s3 .value-description {
   color: #444444;
 }
 
@@ -706,10 +708,17 @@ $lg: "screen and (min-width: 960px)";
   text-align: left;
   padding: 40px 40px 0px;
 }
-.s4 .s4-tag p {
+.s4 .s4-tag p,
+.s4 .s4-tag span {
   display: inline-block;
-  background-color: #c0392b;
+  background-color: #9f0208;
   padding: 10px;
+}
+.s4 .s4-tag span {
+  margin-left: -5px;
+  color: #9f0208;
+  -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+  clip-path: url(../#clip_tag);
 }
 
 .s4 .owl-carousel .owl-item img {
@@ -734,10 +743,12 @@ $lg: "screen and (min-width: 960px)";
 .s5 img {
   border-radius: 50%;
 }
-.s5 .section-heading, .s5 .value-heading {
+.s5 .section-heading,
+.s5 .value-heading {
   color: #c0392b;
 }
-.s5 .section-description, .s5 .value-description {
+.s5 .section-description,
+.s5 .value-description {
   color: #444444;
 }
 @media screen and (min-width: 550px) {

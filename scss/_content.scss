@@ -79,6 +79,8 @@
 /* End Grid
 ================================================== */
 
+@mixin tag {}
+
 
 /* section *******************************/
 
@@ -193,14 +195,14 @@
 .s2-tag {
     p {
         display: inline-block;
-        background-color: #c0392b;
+        background-color: #9F0208;
         padding: 10px;
     }
 }
 
 .s3 {
-	 background-image: url('../images/content/fff-bg.jpg');
-	 background-repeat: repeat;
+    background-image: url('../images/content/fff-bg.jpg');
+    background-repeat: repeat;
     //background-size: cover;
     //-webkit-clip-path: url(../#clip_path-s3);
     -webkit-clip-path: ellipse(220% 100% at 50% 0%);
@@ -212,11 +214,13 @@
     img {
         border-radius: 50%;
     }
-    .section-heading, .value-heading{
-    	color:#c0392b
+    .section-heading,
+    .value-heading {
+        color: #c0392b
     }
-    .section-description, .value-description{
-    	color: #444444;
+    .section-description,
+    .value-description {
+        color: #444444;
     }
 }
 
@@ -280,17 +284,25 @@
         padding: 40px 40px 0px;
     }
     .s4-tag {
-        p {
+        p,
+        span {
             display: inline-block;
-            background-color: #c0392b;
+            background-color: #9f0208;
             padding: 10px;
+        }
+        span {
+            margin-left: -5px;
+            color: #9f0208;
+            -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+            //clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+            //-webkit-clip-path: url(../#clip_tag);
+            clip-path: url(../#clip_tag);
         }
     }
 }
 
 .s4 .owl-carousel .owl-item img {
-   -webkit-clip-path: ellipse(130% 100% at 50% 0%);
-
+    -webkit-clip-path: ellipse(130% 100% at 50% 0%);
 }
 
 .chrome .s4 {
@@ -302,7 +314,7 @@
 }
 
 .s5 {
-	background-color: #fff;
+    background-color: #fff;
     //background-image: url('../images/content/values-bg.jpg');
     //background-size: cover;
     -webkit-clip-path: ellipse(270% 100% at 50% 0%);
@@ -313,11 +325,13 @@
     img {
         border-radius: 50%;
     }
-    .section-heading, .value-heading{
-    	color:#c0392b
+    .section-heading,
+    .value-heading {
+        color: #c0392b
     }
-    .section-description, .value-description{
-    	color: #444444;
+    .section-description,
+    .value-description {
+        color: #444444;
     }
     .s5-1-img {
         @media #{$md} {
