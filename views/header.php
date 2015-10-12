@@ -1,12 +1,13 @@
 <!-- Header ************************** -->
 <div class="row">
     <div class="twelve columns">
+    <!-- Menu ========= -->
         <nav class="main-nav">
-         <div class="nav-toggle"><i class="fa fa-times"></i></div>
+            <div class="nav-toggle"><i class="fa fa-times"></i></div>
             <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">any</a></li>
-                <li><a href="#">contact</a></li>
+                <li><a href="#">home <i class="fa fa-angle-right arrow-right"></i></span></a></li>
+                <li><a href="#">any <i class="fa fa-angle-right arrow-right"></i></span></a></li>
+                <li><a href="#">contact <i class="fa fa-angle-right arrow-right"></i></span></a></li>
                 <li><a href="#">th</a></li>
                 <li><a href="#">en</a></li>
             </ul>
@@ -14,6 +15,7 @@
     </div>
 </div>
 <div class="section-header s0">
+<!-- Hamburger ========= -->
     <div class="nav-toggle"><i class="fa fa-bars"></i></div>
     <div class="container">
         <div class="row">

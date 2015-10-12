@@ -34,18 +34,9 @@ $(document).ready(function() {
 
 
     });
-
-
-
-    // "singleItem:true" is a shortcut for:
-    // items : 1, 
-    // itemsDesktop : false,
-    // itemsDesktopSmall : false,
-    // itemsTablet: false,
-    // itemsMobile : false
-
-
     /*End owlCarousel ***********************/
+
+
     /* Superslide ***********************/
     var $slides = $('#slides-2');
     Hammer($slide[1]).on("swipeleft", function(e) {
@@ -63,20 +54,17 @@ $(document).ready(function() {
         //play: 2000,
     });
     /*End Superslide ***********************/
-    /*
-       $(function() {
-       
-      });
-    */
-
 
 });
+
+/* Nav ***********************/
 $(function() {
     $('.nav-toggle').on('click', function() {
         $('.main-nav').toggleClass('open');
     });
 });
 
+/* Check browser ***********************/
 function get_browser_info() {
     var ua = navigator.userAgent,
         tem, M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
