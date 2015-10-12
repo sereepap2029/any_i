@@ -514,9 +514,13 @@ $lg: "screen and (min-width: 960px)";
   background-color: #34495e;
   -webkit-clip-path: url(../#clip_path);
   clip-path: url(../#clip_path);
-  margin-top: -35px;
   z-index: 10;
    /*
+   .owl-carousel img {
+       max-width: 100%;
+       max-height: 100%;
+   }
+   
    .owl-carousel {
       max-width: 100%;
       height: auto;
@@ -536,6 +540,23 @@ $lg: "screen and (min-width: 960px)";
 .s1 .owl-dots {
   position: relative;
   margin-top: -42px;
+}
+.s1 #owl_s1-desk {
+  display: none;
+}
+@media screen and (min-width: 550px) {
+  .s1 #owl_s1-desk {
+    display: block;
+  }
+}
+@media screen and (min-width: 550px) {
+  .s1 #owl_s1-res {
+    display: none;
+  }
+}
+
+.chrome .s1 {
+  overflow: hidden;
 }
 
 .s2 {
@@ -609,13 +630,11 @@ $lg: "screen and (min-width: 960px)";
 
 /* End section *******************************/
 /* owl-carousel *******************************/
-#owl-demo .item img {
-  padding: 0px;
-  color: #FFF;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  text-align: center;
+.owl-carousel .owl-item img {
+  display: block;
+  min-width: 100%;
+  width: inherit;
+  height: auto;
 }
 
 .owl-item h1 {

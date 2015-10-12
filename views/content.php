@@ -2,7 +2,24 @@
 <div class="section s1">
     <div class="container">
         <div class="row">
-            <div class="twelve columns">
+            <div class="twelve columns">            
+                <div id="owl_s1-desk" class="owl-carousel owl-theme owl-loaded">
+                    <div><img src="images/content/s1/fullimage1.jpg" alt="111">
+                    </div>
+                    <div><img src="images/content/s1/fullimage2.jpg" alt="2222">
+                    </div>
+                    <div><img src="images/content/s1/fullimage3.jpg" alt="333">
+                    </div>
+                </div>
+
+                <div id="owl_s1-res" class="owl-carousel owl-theme owl-loaded">
+                    <div><img src="http://www.placehold.it/320x480" alt="111">
+                    </div>
+                    <div><img src="http://www.placehold.it/320x480" alt="2222">
+                    </div>
+                    <div><img src="http://www.placehold.it/320x480" alt="333">
+                    </div>
+                </div>
                 <!--
                 <div id="slides-2">
                     <ul class="slides-container">
@@ -25,21 +42,6 @@
                     </div>
                 </div>
                 -->
-                <div id="owl-demo" class="owl-carousel owl-theme owl-loaded">
-                    <div><img src="images/content/s1/fullimage1.jpg" alt="111">
-                    </div>
-                    <div><img src="images/content/s1/fullimage2.jpg" alt="2222">
-                    </div>
-                    <div><img src="images/content/s1/fullimage3.jpg" alt="333">
-                    </div>
-                    <!--
-                    <div class="owl-dots">
-                        <div class="owl-dot active"><span></span></div>
-                        <div class="owl-dot"><span></span></div>
-                        <div class="owl-dot"><span></span></div>
-                    </div>
-                    -->
-                </div>
             </div>
         </div>
     </div>

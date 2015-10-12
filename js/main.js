@@ -4,19 +4,16 @@ $(document).ready(function() {
     winH = $window.height();
     winW = $window.width();
     //$slide.height(winH);
+    var browser = get_browser_info();
+    $('html').addClass(browser.toLowerCase());
 
     /* owlCarousel ***********************/
-    $("#owl-demo").owlCarousel({
+    $("#owl_s1-desk,#owl_s1-res").owlCarousel({
 
-        dots: true, 
+        dots: true,
         loop: true,
-        //singleItem: true,
+        //nav: true,
         items: 1,
-
-
-
-
-
 
 
     });
@@ -55,3 +52,23 @@ $(document).ready(function() {
 
 
 });
+
+function get_browser_info() {
+    var ua = navigator.userAgent,
+        tem, M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+    if (/trident/i.test(M[1])) {
+        tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
+        return 'msie';
+    }
+    if (M[1] === 'Chrome') {
+        tem = ua.match(/\bOPR\/(\d+)/)
+        if (tem != null) {
+            return 'opera'
+        }
+    }
+    M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
+    if ((tem = ua.match(/version\/(\d+)/i)) != null) {
+        M.splice(1, 1, tem[1]);
+    }
+    return M[0];
+}
