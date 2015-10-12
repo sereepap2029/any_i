@@ -1,4 +1,5 @@
 <!-- CONTENT ************************** -->
+<!-- S1 ========================= -->
 <div class="section s1">
     <div class="container">
         <div class="row">
@@ -47,19 +48,30 @@
         </div>
     </div>
 </div>
+<!-- S2 ========================= -->
 <div class="section s2">
     <div class="container">
         <div class="row">
             <div class="twelve columns">
                 <div class="s2-info">
-                        <div class="s2-tag"><p>anyyy</p></div>
-                            <h1>title</h1>
-                            <p>blahhhhhhhhhhh</p>
-                        </div>
+                    <div class="s2-tag">
+                        <ul>
+                            <li>
+                                <p>anyyy</p>
+                            </li>
+                            <li>
+                                <div id="redtag"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1>title</h1>
+                    <p>blahhhhhhhhhhh</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<!-- S3 ========================= -->
 <div class="section s3">
     <div class="container">
         <h3 class="section-heading"> Blah <br>Yeah Yeah</h3>
@@ -82,6 +94,7 @@
         </div>
     </div>
 </div>
+<!-- S4 ========================= -->
 <div class="section s4">
     <div class="container">
         <div class="row">
@@ -89,21 +102,48 @@
                 <div id="owl-desk-s4" class="owl-carousel owl-theme owl-loaded">
                     <div><img src="http://www.placehold.it/1280x840" alt="111">
                         <div class="s4-info">
-                        <div class="s4-tag"><p>anyyy</p><span>_</span></div>
+                            <div class="s4-tag">
+                                <ul>
+                                    <li>
+                                        <p>anyyy</p>
+                                    </li>
+                                    <li>
+                                        <div id="redtag"></div>
+                                    </li>
+                                </ul>
+                            </div>
                             <h1>title</h1>
                             <p>blahhhhhhhhhhh</p>
                         </div>
                     </div>
                     <div><img src="http://www.placehold.it/1280x840" alt="2222">
                         <div class="s4-info">
-                        <div class="s4-tag"><p>anyyyyyyyyy</p><span>_</span></div>
+                            <div class="s4-tag">
+                                <ul>
+                                    <li>
+                                        <p>anyyyyyyyyyyyyy2</p>
+                                    </li>
+                                    <li>
+                                        <div id="redtag"></div>
+                                    </li>
+                                </ul>
+                            </div>
                             <h1>title2</h1>
                             <p>blahhhhhhhhhhh</p>
                         </div>
                     </div>
                     <div><img src="http://www.placehold.it/1280x840" alt="333">
                         <div class="s4-info">
-                        <div class="s4-tag"><p>anyyyyyyyyyyyy3</p><span>_</span></div>
+                            <div class="s4-tag">
+                                <ul>
+                                    <li>
+                                        <p>anyyyyyyyy3</p>
+                                    </li>
+                                    <li>
+                                        <div id="redtag"></div>
+                                    </li>
+                                </ul>
+                            </div>
                             <h1>title3</h1>
                             <p>blahhhhhhhhhhh</p>
                         </div>
@@ -113,6 +153,7 @@
         </div>
     </div>
 </div>
+<!-- S5 ========================= -->
 <div class="section s5">
     <div class="container">
         <h3 class="section-heading">Blah Blah</h3>
@@ -141,6 +182,7 @@
         </div>
     </div>
 </div>
+<!-- S6 ========================= -->
 <div class="section s6">
     <div class="container">
         <h3 class="section-heading">Blah</h3>

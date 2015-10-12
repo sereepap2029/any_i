@@ -626,9 +626,22 @@ $lg: "screen and (min-width: 960px)";
   margin: 0px;
 }
 
+.s2-tag ul {
+  display: inline-flex;
+}
+.s2-tag #redtag {
+  margin-left: -5px;
+  background-image: url("../images/content/redtag.png");
+  width: 42px;
+  height: 44px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-clip-path: none;
+  clip-path: none;
+}
 .s2-tag p {
   display: inline-block;
-  background-color: #9F0208;
+  background-color: #991915;
   padding: 10px;
 }
 
@@ -708,17 +721,23 @@ $lg: "screen and (min-width: 960px)";
   text-align: left;
   padding: 40px 40px 0px;
 }
-.s4 .s4-tag p,
-.s4 .s4-tag span {
-  display: inline-block;
-  background-color: #9f0208;
-  padding: 10px;
+.s4 .s4-tag ul {
+  display: inline-flex;
 }
-.s4 .s4-tag span {
+.s4 .s4-tag #redtag {
   margin-left: -5px;
-  color: #9f0208;
-  -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
-  clip-path: url(../#clip_tag);
+  background-image: url("../images/content/redtag.png");
+  width: 42px;
+  height: 44px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-clip-path: none;
+  clip-path: none;
+}
+.s4 .s4-tag p {
+  display: inline-block;
+  background-color: #991915;
+  padding: 10px;
 }
 
 .s4 .owl-carousel .owl-item img {

@@ -79,7 +79,28 @@
 /* End Grid
 ================================================== */
 
-@mixin tag {}
+@mixin redtag {
+
+        ul {
+            display: inline-flex;
+        }
+        #redtag {
+            margin-left: -5px;
+            background-image: url("../images/content/redtag.png");
+            width: 42px;
+            height: 44px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            -webkit-clip-path: none;
+            clip-path: none;
+        }
+        p {
+            display: inline-block;
+            background-color: #991915;
+            padding: 10px;
+        }
+    
+}
 
 
 /* section *******************************/
@@ -193,11 +214,7 @@
 }
 
 .s2-tag {
-    p {
-        display: inline-block;
-        background-color: #9F0208;
-        padding: 10px;
-    }
+     @include redtag;
 }
 
 .s3 {
@@ -284,20 +301,7 @@
         padding: 40px 40px 0px;
     }
     .s4-tag {
-        p,
-        span {
-            display: inline-block;
-            background-color: #9f0208;
-            padding: 10px;
-        }
-        span {
-            margin-left: -5px;
-            color: #9f0208;
-            -webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
-            //clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
-            //-webkit-clip-path: url(../#clip_tag);
-            clip-path: url(../#clip_tag);
-        }
+       @include redtag;
     }
 }
 
