@@ -71,6 +71,11 @@ $(document).ready(function() {
 
 
 });
+$(function() {
+    $('.nav-toggle').on('click', function() {
+        $('.main-nav').toggleClass('open');
+    });
+});
 
 function get_browser_info() {
     var ua = navigator.userAgent,
