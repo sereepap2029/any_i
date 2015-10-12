@@ -5,11 +5,11 @@
             <div class="twelve columns">
                 <!-- owl-desk ========================= -->
                 <div id="owl-desk" class="owl-carousel owl-theme owl-loaded">
-                    <div><img src="images/content/s1/fullimage1.jpg" alt="111">
+                    <div><img src="http://www.placehold.it/1280x840" alt="111">
                     </div>
-                    <div><img src="images/content/s1/fullimage2.jpg" alt="2222">
+                    <div><img src="http://www.placehold.it/1280x840" alt="2222">
                     </div>
-                    <div><img src="images/content/s1/fullimage3.jpg" alt="333">
+                    <div><img src="http://www.placehold.it/1280x840" alt="333">
                     </div>
                 </div>
                 <!-- owl-res ========================= -->
@@ -83,11 +83,11 @@
         <div class="row">
             <div class="twelve columns">
                 <div id="owl-desk" class="owl-carousel owl-theme owl-loaded">
-                    <div><img src="images/content/s1/fullimage1.jpg" alt="111">
+                    <div><img src="http://www.placehold.it/1280x840" alt="111">
                     </div>
-                    <div><img src="images/content/s1/fullimage2.jpg" alt="2222">
+                    <div><img src="http://www.placehold.it/1280x840" alt="2222">
                     </div>
-                    <div><img src="images/content/s1/fullimage3.jpg" alt="333">
+                    <div><img src="http://www.placehold.it/1280x840" alt="333">
                     </div>
                 </div>
             </div>
