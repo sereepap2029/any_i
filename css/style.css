@@ -442,7 +442,7 @@ $lg: "screen and (min-width: 960px)";
 .s0 {
   width: 100%;
   background-color: #fff;
-  -webkit-clip-path: url(../#clip_path-head);
+  -webkit-clip-path: ellipse(90% 100% at 50% 0%);
   clip-path: url(../#clip_path-head);
   z-index: 12;
   position: absolute;
@@ -633,23 +633,27 @@ $lg: "screen and (min-width: 960px)";
 }
 
 .s3 {
-  -webkit-clip-path: url(../#clip_path-s3);
+  background-image: url("../images/content/fff-bg.jpg");
+  background-repeat: repeat;
+  -webkit-clip-path: ellipse(220% 100% at 50% 0%);
   clip-path: url(../#clip_path-s3);
   margin-top: -35px;
   z-index: 8;
-  background-image: url("../images/content/values-bg.jpg");
-  background-size: cover;
   color: #fff;
   padding-bottom: 5rem;
 }
 .s3 img {
   border-radius: 50%;
 }
+.s3 .section-heading, .s3 .value-heading {
+  color: #c0392b;
+}
+.s3 .section-description, .s3 .value-description {
+  color: #444444;
+}
 
 .s4 {
   background-color: #fff;
-  -webkit-clip-path: url(../#clip_path);
-  clip-path: url(../#clip_path);
   margin-top: -35px;
   z-index: 7;
   /* owl-carousel s4 *******************************/
@@ -709,8 +713,7 @@ $lg: "screen and (min-width: 960px)";
 }
 
 .s4 .owl-carousel .owl-item img {
-  -webkit-clip-path: url(../#clip_path-head);
-  clip-path: url(../#clip_path-head);
+  -webkit-clip-path: ellipse(130% 100% at 50% 0%);
 }
 
 .chrome .s4 {
@@ -722,16 +725,20 @@ $lg: "screen and (min-width: 960px)";
 }
 
 .s5 {
-  background-image: url("../images/content/values-bg.jpg");
-  background-size: cover;
-  color: #fff;
-  -webkit-clip-path: url(../#clip_path-s5);
+  background-color: #fff;
+  -webkit-clip-path: ellipse(270% 100% at 50% 0%);
   clip-path: url(../#clip_path-s5);
-  margin-top: -35px;
+  margin-top: -45px;
   z-index: 6;
 }
 .s5 img {
   border-radius: 50%;
+}
+.s5 .section-heading, .s5 .value-heading {
+  color: #c0392b;
+}
+.s5 .section-description, .s5 .value-description {
+  color: #444444;
 }
 @media screen and (min-width: 550px) {
   .s5 .s5-1-img {
@@ -742,7 +749,7 @@ $lg: "screen and (min-width: 960px)";
 .s6 {
   background-color: #bdc3c7;
   padding: 8rem 0 8rem;
-  -webkit-clip-path: url(../#clip_path);
+  -webkit-clip-path: ellipse(150% 100% at 50% 0%);
   clip-path: url(../#clip_path);
   margin-top: -35px;
   z-index: 5;

@@ -14,7 +14,8 @@
  .s0 {
      width: 100%;
      background-color: #fff;
-     -webkit-clip-path: url(../#clip_path-head);
+     -webkit-clip-path: ellipse(90% 100% at 50% 0%);
+    // -webkit-clip-path: url(../#clip_path-head);
      clip-path: url(../#clip_path-head);
      z-index: 12;
      position: absolute;

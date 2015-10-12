@@ -199,23 +199,32 @@
 }
 
 .s3 {
-    -webkit-clip-path: url(../#clip_path-s3);
+	 background-image: url('../images/content/fff-bg.jpg');
+	 background-repeat: repeat;
+    //background-size: cover;
+    //-webkit-clip-path: url(../#clip_path-s3);
+    -webkit-clip-path: ellipse(220% 100% at 50% 0%);
     clip-path: url(../#clip_path-s3);
     margin-top: -35px;
     z-index: 8;
-    background-image: url('../images/content/values-bg.jpg');
-    background-size: cover;
     color: #fff;
     padding-bottom: 5rem;
     img {
         border-radius: 50%;
     }
+    .section-heading, .value-heading{
+    	color:#c0392b
+    }
+    .section-description, .value-description{
+    	color: #444444;
+    }
 }
 
 .s4 {
     background-color: #fff;
-    -webkit-clip-path: url(../#clip_path);
-    clip-path: url(../#clip_path);
+    //-webkit-clip-path: url(../#clip_path);
+    //-webkit-clip-path: ellipse(130% 100% at 50% 0%);
+    //clip-path: url(../#clip_path);
     margin-top: -35px;
     z-index: 7;
     .owl-carousel {
@@ -280,8 +289,8 @@
 }
 
 .s4 .owl-carousel .owl-item img {
-    -webkit-clip-path: url(../#clip_path-head);
-    clip-path: url(../#clip_path-head);
+   -webkit-clip-path: ellipse(130% 100% at 50% 0%);
+
 }
 
 .chrome .s4 {
@@ -293,15 +302,22 @@
 }
 
 .s5 {
-    background-image: url('../images/content/values-bg.jpg');
-    background-size: cover;
-    color: #fff;
-    -webkit-clip-path: url(../#clip_path-s5);
+	background-color: #fff;
+    //background-image: url('../images/content/values-bg.jpg');
+    //background-size: cover;
+    -webkit-clip-path: ellipse(270% 100% at 50% 0%);
+    //-webkit-clip-path: url(../#clip_path-s5);
     clip-path: url(../#clip_path-s5);
-    margin-top: -35px;
+    margin-top: -45px;
     z-index: 6;
     img {
         border-radius: 50%;
+    }
+    .section-heading, .value-heading{
+    	color:#c0392b
+    }
+    .section-description, .value-description{
+    	color: #444444;
     }
     .s5-1-img {
         @media #{$md} {
@@ -313,7 +329,8 @@
 .s6 {
     background-color: #bdc3c7;
     padding: 8rem 0 8rem;
-    -webkit-clip-path: url(../#clip_path);
+    -webkit-clip-path: ellipse(150% 100% at 50% 0%);
+    //-webkit-clip-path: url(../#clip_path);
     clip-path: url(../#clip_path);
     margin-top: -35px;
     z-index: 5;
