@@ -429,6 +429,10 @@ $lg: "screen and (min-width: 960px)";
   *zoom: 1;
 }
 
+html {
+  overflow: hidden;
+}
+
 .section-header {
   position: relative;
   text-align: center;
