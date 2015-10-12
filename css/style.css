@@ -591,8 +591,8 @@ $lg: "screen and (min-width: 960px)";
 }
 
 .s3 {
-  -webkit-clip-path: url(../#clip_path);
-  clip-path: url(../#clip_path);
+  -webkit-clip-path: url(../#clip_path-s3);
+  clip-path: url(../#clip_path-s3);
   margin-top: -35px;
   z-index: 8;
   background-image: url("../images/content/values-bg.jpg");
@@ -616,8 +616,8 @@ $lg: "screen and (min-width: 960px)";
   background-image: url("../images/content/values-bg.jpg");
   background-size: cover;
   color: #fff;
-  -webkit-clip-path: url(../#clip_path);
-  clip-path: url(../#clip_path);
+  -webkit-clip-path: url(../#clip_path-s5);
+  clip-path: url(../#clip_path-s5);
   margin-top: -35px;
   z-index: 6;
 }
@@ -632,6 +632,7 @@ $lg: "screen and (min-width: 960px)";
 
 .s6 {
   background-color: #bdc3c7;
+  padding: 8rem 0 8rem;
   -webkit-clip-path: url(../#clip_path);
   clip-path: url(../#clip_path);
   margin-top: -35px;

@@ -35,7 +35,13 @@ ob_start('ob_gzhandler');
                     <ellipse rx=".9" ry="1" cx="0.5" cy="0" />
                 </clipPath>
                 <clipPath id="clip_path" clipPathUnits="objectBoundingBox">
-                    <ellipse rx="1.3" ry="1" cx="0.5" cy="0" />
+                    <ellipse rx="1.5" ry="1" cx="0.5" cy="0" />
+                </clipPath>
+                 <clipPath id="clip_path-s3" clipPathUnits="objectBoundingBox">
+                    <ellipse rx="2.2" ry="1" cx="0.5" cy="0" />
+                </clipPath>
+                <clipPath id="clip_path-s5" clipPathUnits="objectBoundingBox">
+                    <ellipse rx="2.7" ry="1" cx="0.5" cy="0" />
                 </clipPath>
             </defs>
         </svg>
