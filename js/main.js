@@ -59,9 +59,18 @@ $(document).ready(function() {
 
 /* Nav ***********************/
 $(function() {
+    var flag = 1;
     $('.nav-toggle').on('click', function() {
         $('.main-nav').toggleClass('open');
+        if (flag < 1) {
+            $("body,html").css("overflow", "visible");
+             flag = 1;
+        } else {
+            $('body,html').css("overflow", "hidden");
+            flag = 0;
+        }
     });
+
 });
 
 /* Check browser ***********************/
