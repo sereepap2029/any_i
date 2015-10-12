@@ -1,5 +1,7 @@
 // Content //////////////////////////////////
 
+
+
 /*  Grid
 ================================================== */
 
@@ -82,6 +84,7 @@
 @mixin redtag {
     ul {
         display: inline-flex;
+        margin-bottom: 0px;
     }
     #redtag {
         margin-left: -5px;
@@ -233,7 +236,7 @@
     }
     .section-heading,
     .value-heading {
-        color: #c0392b
+        color: $f_red;
     }
     .section-description,
     .value-description {
@@ -269,14 +272,14 @@
         margin: inherit;
     }
     .owl-theme .owl-controls .owl-dots span {
-        border: 2px solid #c0392b;
+        border: 2px solid $f_red;
         background: none;
         opacity: 1;
         // background: #fff;
     }
     .owl-theme .owl-dots .owl-dot.active span,
     .owl-theme .owl-dots .owl-dot:hover span {
-        background: #c0392b;
+        background: $f_red;
     }
     .owl-theme .owl-nav [class*='owl-'] {
         background: none;
@@ -337,7 +340,7 @@
     }
     .section-heading,
     .value-heading {
-        color: #c0392b
+        color: $f_red;
     }
     .section-description,
     .value-description {
