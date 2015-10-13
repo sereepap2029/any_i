@@ -956,8 +956,6 @@ nav ul li a:active, nav ul li a:hover {
   font-family: 'rsu_b';
   background-color: #bdc3c7;
   padding: 8rem 0 8rem;
-  clip-path: url(../#clip_path-s6);
-  -webkit-clip-path: ellipse(180% 100% at 50% 0%);
   margin-top: -35px;
   z-index: 5;
 }
@@ -985,6 +983,17 @@ nav ul li a:active, nav ul li a:hover {
   font-size: 40px;
   color: #666666;
   line-height: 45px;
+}
+
+.end-bg {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  width: inherit !important;
+  bottom: 0;
+  border-radius: 0 !important;
+  z-index: 200;
 }
 
 /* End section *******************************/

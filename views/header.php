@@ -1,7 +1,7 @@
 <!-- Header ************************** -->
 <div class="row">
     <div class="twelve columns">
-        <!-- Menu ========= -->
+        <!-- Menu Res ========= -->
         <nav class="main-nav">
             <div class="nav-toggle"><i class="fa fa-times"></i></div>
             <ul>
@@ -15,7 +15,7 @@
     </div>
 </div>
 <div class="section-header s0">
-    <!-- Hamburger ========= -->
+    <!-- Hamburger Res ========= -->
     <div class="nav-toggle"><i class="fa fa-bars"></i></div>
     <div class="container">
         <div class="row">

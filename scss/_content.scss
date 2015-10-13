@@ -425,8 +425,8 @@
     background-color: #bdc3c7;
     padding: 8rem 0 8rem;
     //-webkit-clip-path: url(../#clip_path);
-    clip-path: url(../#clip_path-s6);
-    -webkit-clip-path: ellipse(180% 100% at 50% 0%);
+    //clip-path: url(../#clip_path-s6);
+    //-webkit-clip-path: ellipse(180% 100% at 50% 0%);
     margin-top: -35px;
     z-index: 5;
     img {
@@ -454,7 +454,16 @@
     }
 }
 
-
+.end-bg {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    width: inherit !important;
+    bottom: 0;
+    border-radius: 0 !important;
+    z-index: 200;
+ }
 /* End section *******************************/
 
 // End Content //////////////////////////////////
