@@ -741,12 +741,14 @@ nav ul li a:active, nav ul li a:hover {
   min-width: 100%;
   width: inherit;
   height: auto;
+  max-height: 700px;
   clip-path: url(../#clip_path);
   -webkit-clip-path: ellipse(150% 100% at 50% 0%);
 }
 @media screen and (min-width: 1000px) {
   .s1 .owl-carousel .owl-item img {
     width: 100%;
+    margin-top: -1%;
   }
 }
 .s1 .owl-item h1 {
@@ -783,6 +785,11 @@ nav ul li a:active, nav ul li a:hover {
   .s2 {
     padding: 10rem 0 25rem;
     margin-top: -60px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .s2 {
+    padding: 20rem 0 30rem;
   }
 }
 
@@ -850,6 +857,11 @@ nav ul li a:active, nav ul li a:hover {
     -webkit-clip-path: ellipse(160% 100% at 50% 0%);
   }
 }
+@media screen and (min-width: 1000px) {
+  .s3 {
+    padding: 13rem 0 11rem;
+  }
+}
 .s3 img {
   border-radius: 50%;
   width: 150px;
@@ -893,6 +905,11 @@ nav ul li a:active, nav ul li a:hover {
   z-index: 7;
   /* owl-carousel s4 *******************************/
   /* End owl-carousel s4 *******************************/
+}
+@media screen and (min-width: 1000px) {
+  .s4 {
+    padding: 0rem 0 0rem;
+  }
 }
 .s4 .owl-carousel {
   margin-top: -55px;
@@ -954,6 +971,13 @@ nav ul li a:active, nav ul li a:hover {
   color: #666666;
   text-align: left;
 }
+@media screen and (min-width: 1000px) {
+  .s4 .s4-info {
+    position: absolute;
+    top: 40%;
+    padding: 40px 50% 0px 13%;
+  }
+}
 .s4 .s4-info p {
   margin-bottom: 0px;
   font-size: 24px;
@@ -1008,6 +1032,13 @@ nav ul li a:active, nav ul li a:hover {
 @media screen and (min-width: 550px) {
   .s4 .owl-carousel .owl-item img {
     -webkit-clip-path: ellipse(120% 100% at 50% 0%);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .s4 .owl-dots {
+    position: relative;
+    margin-top: -60px;
   }
 }
 

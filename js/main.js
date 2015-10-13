@@ -56,8 +56,10 @@ $(document).ready(function() {
     /*End Superslide ***********************/
     /* Fullpage  ***********************/
     if (winW > 1000) {
-        $('#fullpage').fullpage({
+        $('#fullpage1').fullpage({
             css3:true,
+            autoScrolling: false,
+
         });
     }
     /*End Fullpage  ***********************/
