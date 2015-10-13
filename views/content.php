@@ -1,4 +1,5 @@
 <!-- CONTENT ************************** -->
+<div id="fullpage"> <!-- fullpage -->
 <!-- S1 ========================= -->
 <div class="section s1">
     <div class="container">
@@ -223,6 +224,7 @@
     </div>
     <img src="images/footer/footer-bg.png" class="end-bg">
 </div>
+</div> <!--end fullpage-->
 <!-- END CONTENT ************************** -->
 <!-- SCRIPT ************************** -->
 <script type="text/javascript">

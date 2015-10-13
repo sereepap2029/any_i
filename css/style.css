@@ -447,6 +447,14 @@ p, h1 {
   font-family: 'rsu_b';
 }
 
+.nav-res {
+  display: block;
+}
+
+.nav-desk {
+  display: none;
+}
+
 .section-header {
   position: relative;
   padding: 0rem 0 50%;
@@ -470,7 +478,7 @@ p, h1 {
   clip-path: url(../#clip_path-head);
   -webkit-clip-path: ellipse(90% 100% at 50% 0%);
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1000px) {
   .s0 {
     position: relative;
   }
@@ -636,7 +644,7 @@ nav ul li a:active, nav ul li a:hover {
    */
   /* End owl-carousel s1 *******************************/
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1000px) {
   .s1 {
     margin-top: -35px;
   }
@@ -654,12 +662,12 @@ nav ul li a:active, nav ul li a:hover {
 .s1 #owl-desk {
   display: none;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1000px) {
   .s1 #owl-desk {
     display: block;
   }
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1000px) {
   .s1 #owl-res {
     display: none;
   }
@@ -679,7 +687,7 @@ nav ul li a:active, nav ul li a:hover {
   clip-path: url(../#clip_path);
   -webkit-clip-path: ellipse(150% 100% at 50% 0%);
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1000px) {
   .s1 .owl-carousel .owl-item img {
     width: 100%;
   }
@@ -923,7 +931,7 @@ nav ul li a:active, nav ul li a:hover {
 .s5 img {
   border-radius: 50%;
   width: 200px;
-  height: 200px;
+  height: auto;
 }
 .s5 .value-heading {
   color: #c0392b;
@@ -946,7 +954,7 @@ nav ul li a:active, nav ul li a:hover {
   color: #666666;
   line-height: 25px;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 1000px) {
   .s5 .s5-1-img {
     width: 30.6666666667%;
   }
@@ -959,16 +967,21 @@ nav ul li a:active, nav ul li a:hover {
   margin-top: -35px;
   z-index: 5;
 }
+@media screen and (min-width: 750px) {
+  .s6 {
+    padding: 14rem 0 16rem;
+  }
+}
 .s6 img {
   border-radius: 50%;
   width: 150px;
   height: auto;
 }
 .s6 .s6-1 {
-  width: 50%;
+  max-width: 50%;
   padding: 10px;
 }
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 750px) {
   .s6 .s6-1 {
     padding: 0px;
     width: 22%;

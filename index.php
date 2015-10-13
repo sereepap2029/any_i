@@ -15,6 +15,7 @@ ob_start('ob_gzhandler');
         <script type="text/javascript" src="js/enquire.min.js"></script>
         <script type="text/javascript" src="js/hammer.min.js"></script>
         <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/jquery.fullpage.css">
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/owl.theme.css">
         <link rel="stylesheet" href="css/style.css">
@@ -25,6 +26,7 @@ ob_start('ob_gzhandler');
             <?php include("views/header.php"); ?>
                 <?php include("views/content.php"); ?>
                     <?php include("views/footer.php"); ?>
+                        <script src="js/jquery.fullpage.js"></script>
                         <script src="js/owl.carousel.min.js"></script>
                         <script src="js/jquery.superslides.js"></script>
                         <script type="text/javascript" src="js/main.js"></script>

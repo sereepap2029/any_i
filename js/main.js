@@ -54,7 +54,11 @@ $(document).ready(function() {
         //play: 2000,
     });
     /*End Superslide ***********************/
-
+    /* Fullpage  ***********************/
+    if (winW > 768) {
+        $('#fullpage').fullpage();
+    }
+    /*End Fullpage  ***********************/
 });
 
 /* Nav ***********************/
@@ -66,10 +70,12 @@ $(function() {
         if (flag < 1) {
             $("body,html").css("overflow", "visible");
             $('body').unbind('touchmove');
-             flag = 1;
+            flag = 1;
         } else {
             $('body,html').css("overflow", "hidden");
-            $('body').bind('touchmove', function(e){e.preventDefault()});
+            $('body').bind('touchmove', function(e) {
+                e.preventDefault()
+            });
             flag = 0;
         }
     });

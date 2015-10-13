@@ -1,4 +1,12 @@
  // Header //////////////////////////////////
+ .nav-res {
+     display: block;
+ }
+ 
+ .nav-desk {
+     display: none;
+ }
+ 
  .section-header {
      position: relative;
      padding: 0rem 0 50%;
@@ -25,7 +33,7 @@
      // -webkit-clip-path: url(../#clip_path-head);
      //opacity: .5;
      //display: none;
-     @media #{$md} {
+     @media #{$lg} {
          position: relative;
      }
  }
