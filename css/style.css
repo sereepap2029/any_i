@@ -450,9 +450,19 @@ p, h1 {
 .nav-res {
   display: block;
 }
+@media screen and (min-width: 1000px) {
+  .nav-res {
+    display: none;
+  }
+}
 
 .nav-desk {
   display: none;
+}
+@media screen and (min-width: 1000px) {
+  .nav-desk {
+    display: block;
+  }
 }
 
 .section-header {

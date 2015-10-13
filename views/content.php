@@ -224,8 +224,5 @@
     </div>
     <img src="images/footer/footer-bg.png" class="end-bg">
 </div>
-</div> <!--end fullpage-->
+
 <!-- END CONTENT ************************** -->
-<!-- SCRIPT ************************** -->
-<script type="text/javascript">
-</script>

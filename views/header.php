@@ -32,17 +32,13 @@
 </div>
 <!-- Nav Desk ========= -->
 <div class="nav-desk">
-    <div class="section-header s0">
-        <!-- Hamburger Res ========= -->
-        <div class="nav-toggle"><i class="fa fa-bars"></i></div>
-        <div class="container">
-            <div class="row">
-                <div class="twelve columns">
-                    <!--
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <!--
                 <img class="u-max-full-width" src="http://placehold.it/200x50">
                 <h4>Dolor sit amet, consectetur adipiscing elit</h4>
                 -->
-                </div>
             </div>
         </div>
     </div>

@@ -1,10 +1,16 @@
  // Header //////////////////////////////////
  .nav-res {
      display: block;
+     @media #{$lg}{
+        display: none;
+     }
  }
  
  .nav-desk {
      display: none;
+     @media #{$lg}{
+        display: block;
+     }
  }
  
  .section-header {
