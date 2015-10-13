@@ -706,6 +706,8 @@ nav ul li a:active, nav ul li a:hover {
 }
 
 .s2-tag ul {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   margin-bottom: 0px;
 }
@@ -804,6 +806,8 @@ nav ul li a:active, nav ul li a:hover {
   padding: 40px 40px 0px;
 }
 .s4 .s4-tag ul {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   margin-bottom: 0px;
 }
