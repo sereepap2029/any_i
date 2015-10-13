@@ -465,6 +465,11 @@ p, h1 {
   transform: translateY(0px);
   display: list-item;
 }
+@media screen and (min-width: 550px) {
+  .section-header {
+    padding: 0rem 0 45%;
+  }
+}
 
 .s0 {
   background: url("../images/header/header-bg.jpg");
@@ -672,6 +677,11 @@ nav ul li a:active, nav ul li a:hover {
     display: none;
   }
 }
+@media screen and (min-width: 550px) {
+  .s1 .owl-theme .owl-nav {
+    margin-top: 0px;
+  }
+}
 .s1 .s1-title {
   position: absolute;
   left: 0;
@@ -722,6 +732,12 @@ nav ul li a:active, nav ul li a:hover {
   margin-top: -50px;
   z-index: 9;
 }
+@media screen and (min-width: 550px) {
+  .s2 {
+    padding: 10rem 0 25rem;
+    margin-top: -60px;
+  }
+}
 
 .s2-info {
   color: #666666;
@@ -738,6 +754,11 @@ nav ul li a:active, nav ul li a:hover {
   margin-bottom: 5px;
   line-height: 1;
   font-weight: bold;
+}
+@media screen and (min-width: 550px) {
+  .s2-info h1 {
+    margin: 15px 0px;
+  }
 }
 
 .s2-tag ul {
@@ -780,7 +801,7 @@ nav ul li a:active, nav ul li a:hover {
 .s3 img {
   border-radius: 50%;
   width: 150px;
-  height: 150px;
+  height: auto;
 }
 .s3 .section-heading {
   color: #c0392b;
@@ -791,12 +812,23 @@ nav ul li a:active, nav ul li a:hover {
   color: #c0392b;
   font-size: 36px;
 }
+@media screen and (min-width: 550px) {
+  .s3 .value-heading {
+    font-size: 25px;
+  }
+}
 .s3 .section-description,
 .s3 .value-description {
   color: #666666;
   font-size: 24px;
   line-height: 25px;
   text-align: left;
+}
+@media screen and (min-width: 550px) {
+  .s3 .section-description,
+  .s3 .value-description {
+    font-size: 18px;
+  }
 }
 .s3 .section-heading,
 .s3 .section-description {
@@ -938,6 +970,11 @@ nav ul li a:active, nav ul li a:hover {
   font-size: 36px;
   line-height: 30px;
 }
+@media screen and (min-width: 550px) {
+  .s5 .value-heading {
+    font-size: 30px;
+  }
+}
 .s5 .section-heading {
   color: #c0392b;
   font-size: 36px;
@@ -953,6 +990,12 @@ nav ul li a:active, nav ul li a:hover {
   font-size: 24px;
   color: #666666;
   line-height: 25px;
+}
+@media screen and (min-width: 550px) {
+  .s5 .section-description,
+  .s5 .value-description {
+    font-size: 20px;
+  }
 }
 @media screen and (min-width: 1000px) {
   .s5 .s5-1-img {
@@ -981,10 +1024,10 @@ nav ul li a:active, nav ul li a:hover {
   max-width: 50%;
   padding: 10px;
 }
-@media screen and (min-width: 750px) {
-  .s6 .s6-1 {
-    padding: 0px;
-    width: 22%;
+@media screen and (min-width: 550px) {
+  .s6 .three.columns.s6-1 {
+    width: 50%;
+    margin: 0 auto;
   }
 }
 .s6 .section-heading {

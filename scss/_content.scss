@@ -142,6 +142,11 @@
             display: none;
         }
     }
+    .owl-theme .owl-nav {
+        @media #{$sm} {
+            margin-top: 0px;
+        }
+    }
     .s1-title {
         position: absolute;
         left: 0;
@@ -212,6 +217,10 @@
     -webkit-clip-path: ellipse(150% 100% at 50% 0%);
     margin-top: -50px;
     z-index: 9;
+    @media #{$sm} {
+        padding: 10rem 0 25rem;
+        margin-top: -60px;
+    }
 }
 
 .s2-info {
@@ -229,6 +238,9 @@
         margin-bottom: 5px;
         line-height: 1;
         font-weight: bold;
+        @media #{$sm} {
+            margin: 15px 0px;
+        }
     }
 }
 
@@ -251,7 +263,7 @@
     img {
         border-radius: 50%;
         width: 150px;
-        height: 150px;
+        height: auto;
     }
     .section-heading {
         color: $f_red;
@@ -261,6 +273,9 @@
     .value-heading {
         color: $f_red;
         font-size: 36px;
+        @media #{$sm} {
+            font-size: 25px;
+        }
     }
     .section-description,
     .value-description {
@@ -268,6 +283,9 @@
         font-size: 24px;
         line-height: 25px;
         text-align: left;
+        @media #{$sm} {
+            font-size: 18px;
+        }
     }
     .section-heading,
     .section-description {
@@ -396,6 +414,9 @@
         color: $f_red;
         font-size: 36px;
         line-height: 30px;
+        @media #{$sm} {
+            font-size: 30px;
+        }
     }
     .section-heading {
         color: $f_red;
@@ -412,6 +433,9 @@
         font-size: 24px;
         color: #666666;
         line-height: 25px;
+        @media #{$sm} {
+            font-size: 20px;
+        }
     }
     .s5-1-img {
         @media #{$lg} {
@@ -440,9 +464,11 @@
     .s6-1 {
         max-width: 50%;
         padding: 10px;
-        @media #{$md} {
-            padding: 0px;
-            width: 22%;
+    }
+    .three.columns.s6-1 {
+        @media #{$sm} {
+            width: 50%;
+            margin: 0 auto;
         }
     }
     .section-heading {

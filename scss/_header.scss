@@ -17,6 +17,9 @@
      transform: translateY(0px);
      //overflow: hidden;
      display: list-item;
+     @media #{$sm}{
+        padding: 0rem 0 45%;
+     }
  }
  
  .s0 {

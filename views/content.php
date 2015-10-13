@@ -175,19 +175,19 @@
         <p class="section-description">any i มีทีมงานที่เชี่ยวชาญใน หลากหลายด้าน สามารถให้คำปรึกษา เฉพาะทางได้สำหรับทุกช่วงการเติบโตของธุรกิจ
         </p>
         <div class="row">
-            <div class="four columns">
+            <div class="two four columns">
                 <img class="u-max-full-width" src="http://placehold.it/200x200">
                 <h5 class="value-heading">Accounting & Audit Advisor</h5>
                 <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
                     <br> ตำแหน่ง xxxxxxxxx</p>
             </div>
-            <div class="four columns">
+            <div class="two four columns">
                 <img class="u-max-full-width" src="http://placehold.it/200x200">
                 <h5 class="value-heading">IT Advisor</h5>
                 <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
                     <br> ตำแหน่ง xxxxxxxxx</p>
             </div>
-            <div class="four columns">
+            <div class="two four columns">
                 <img class="u-max-full-width" src="http://placehold.it/200x200">
                 <h5 class="value-heading">Finance Advisor</h5>
                 <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
