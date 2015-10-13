@@ -1,7 +1,5 @@
 // Content //////////////////////////////////
 
-
-
 /*  Grid
 ================================================== */
 
@@ -110,8 +108,8 @@
     padding: 0rem 0 0rem;
     background-color: #34495e;
     //-webkit-clip-path: ellipse(130% 100% at 50% 0%);
-    -webkit-clip-path: url(../#clip_path);
     clip-path: url(../#clip_path);
+    -webkit-clip-path: url(../#clip_path);
     z-index: 10;
     // margin-top: -35px;
     //overflow: hidden;
@@ -200,8 +198,8 @@
 
 .s2 {
     background-color: #e74c3c;
-    -webkit-clip-path: url(../#clip_path);
     clip-path: url(../#clip_path);
+    -webkit-clip-path: url(../#clip_path);
     margin-top: -50px;
     z-index: 9;
 }
@@ -223,8 +221,8 @@
     background-repeat: repeat;
     //background-size: cover;
     //-webkit-clip-path: url(../#clip_path-s3);
-    -webkit-clip-path: ellipse(220% 100% at 50% 0%);
     clip-path: url(../#clip_path-s3);
+    -webkit-clip-path: ellipse(220% 100% at 50% 0%);
     margin-top: -35px;
     z-index: 8;
     color: #fff;
@@ -328,9 +326,9 @@
     background-color: #fff;
     //background-image: url('../images/content/values-bg.jpg');
     //background-size: cover;
-    -webkit-clip-path: ellipse(270% 100% at 50% 0%);
     //-webkit-clip-path: url(../#clip_path-s5);
     clip-path: url(../#clip_path-s5);
+    -webkit-clip-path: ellipse(270% 100% at 50% 0%);
     margin-top: -45px;
     z-index: 6;
     img {
@@ -356,9 +354,9 @@
 .s6 {
     background-color: #bdc3c7;
     padding: 8rem 0 8rem;
-    -webkit-clip-path: ellipse(150% 100% at 50% 0%);
     //-webkit-clip-path: url(../#clip_path);
     clip-path: url(../#clip_path);
+    -webkit-clip-path: ellipse(150% 100% at 50% 0%);
     margin-top: -35px;
     z-index: 5;
     img {

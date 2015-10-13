@@ -1,7 +1,7 @@
  // Header //////////////////////////////////
  .section-header {
      position: relative;
-     //padding: 1.5rem 0 2rem;
+     padding: 0rem 0 50%;
      text-align: center;
      -ms-transform: translateY(0px);
      -moz-transform: translateY(0px);
@@ -12,13 +12,17 @@
  }
  
  .s0 {
+     background: url('../images/header/header-bg.jpg');
+     background-position: center center;
+     background-size: cover;
      width: 100%;
+     margin-top: -15px;
      background-color: #fff;
-     -webkit-clip-path: ellipse(90% 100% at 50% 0%);
-     // -webkit-clip-path: url(../#clip_path-head);
-     clip-path: url(../#clip_path-head);
      z-index: 12;
      position: absolute;
+     clip-path: url(../#clip_path-head);
+     -webkit-clip-path: ellipse(90% 100% at 50% 0%);
+     // -webkit-clip-path: url(../#clip_path-head);
      //opacity: .5;
      //display: none;
      @media #{$md} {
@@ -31,7 +35,7 @@
      font-size: 30px;
      color: $f_red;
      right: 15px;
-     top: 0;
+     top: 30px;
      cursor: pointer;
      &:active,
      &:hover {
@@ -70,6 +74,7 @@
      height: 100%;
      z-index: 200;
      transform: translateX(100%);
+     @include transform(translateX(100%));
      transition: transform .4s ease;
  }
  
@@ -84,10 +89,13 @@
  
  .open {
      transform: translateX(0%);
+     @include transform(translateX(0%));
+
  }
  
  .close {
      transform: translateX(100%);
+     @include transform(translateX(100%));
  }
  
  // End Header //////////////////////////////////

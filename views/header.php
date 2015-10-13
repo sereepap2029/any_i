@@ -1,7 +1,7 @@
 <!-- Header ************************** -->
 <div class="row">
     <div class="twelve columns">
-    <!-- Menu ========= -->
+        <!-- Menu ========= -->
         <nav class="main-nav">
             <div class="nav-toggle"><i class="fa fa-times"></i></div>
             <ul>
@@ -15,13 +15,15 @@
     </div>
 </div>
 <div class="section-header s0">
-<!-- Hamburger ========= -->
+    <!-- Hamburger ========= -->
     <div class="nav-toggle"><i class="fa fa-bars"></i></div>
     <div class="container">
         <div class="row">
             <div class="twelve columns">
+                <!--
                 <img class="u-max-full-width" src="http://placehold.it/200x50">
                 <h4>Dolor sit amet, consectetur adipiscing elit</h4>
+                -->
             </div>
         </div>
     </div>
