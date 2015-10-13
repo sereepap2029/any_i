@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'fontawesome';
-  src: url('fonts/fontawesome-webfont.eot?v=4.1.0'); /* IE9 Compat Modes */
-  src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), /* Modern Browsers */
-       url('fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), /* Safari, Android, iOS */
-       url('fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');/* Legacy iOS */
+  src: url('../css/fonts/fontawesome-webfont.eot?v=4.1.0'); /* IE9 Compat Modes */
+  src: url('../css/fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), /* IE6-IE8 */
+       url('../css/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), /* Modern Browsers */
+       url('../css/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), /* Safari, Android, iOS */
+       url('../css/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');/* Legacy iOS */
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
     font-family: 'rsu_b';
-    src: url('rsu_bold-webfont.eot');
-    src: url('rsu_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('rsu_bold-webfont.woff2') format('woff2'),
-         url('rsu_bold-webfont.woff') format('woff'),
-         url('rsu_bold-webfont.ttf') format('truetype');
+    src: url('../css/fonts/rsu_bold-webfont.eot');
+    src: url('../css/fonts/rsu_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../css/fonts/rsu_bold-webfont.woff2') format('woff2'),
+         url('../css/fonts/rsu_bold-webfont.woff') format('woff'),
+         url('../css/fonts/rsu_bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -26,11 +26,11 @@
 
 @font-face {
     font-family: 'rsu_r';
-    src: url('rsu_regular-webfont.eot');
-    src: url('rsu_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('rsu_regular-webfont.woff2') format('woff2'),
-         url('rsu_regular-webfont.woff') format('woff'),
-         url('rsu_regular-webfont.ttf') format('truetype');
+    src: url('../css/fonts/rsu_regular-webfont.eot');
+    src: url('../css/fonts/rsu_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../css/fonts/rsu_regular-webfont.woff2') format('woff2'),
+         url('../css/fonts/rsu_regular-webfont.woff') format('woff'),
+         url('../css/fonts/rsu_regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
