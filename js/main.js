@@ -56,7 +56,9 @@ $(document).ready(function() {
     /*End Superslide ***********************/
     /* Fullpage  ***********************/
     if (winW > 1000) {
-        $('#fullpage').fullpage();
+        $('#fullpage').fullpage({
+            
+        });
     }
     /*End Fullpage  ***********************/
 });
