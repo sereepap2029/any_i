@@ -5,11 +5,11 @@
         <nav class="main-nav">
             <div class="nav-toggle"><i class="fa fa-times"></i></div>
             <ul>
-                <li><a href="#">home <i class="fa fa-angle-right arrow-right"></i></span></a></li>
-                <li><a href="#">any <i class="fa fa-angle-right arrow-right"></i></span></a></li>
-                <li><a href="#">contact <i class="fa fa-angle-right arrow-right"></i></span></a></li>
-                <li><a href="#">th</a></li>
-                <li><a href="#">en</a></li>
+                <li><a href="#">Home<i class="fa fa-angle-right arrow-right"></i></span></a></li>
+                <li><a href="#">any i in Action<i class="fa fa-angle-right arrow-right"></i></span></a></li>
+                <li><a href="#">Contact Us<i class="fa fa-angle-right arrow-right"></i></span></a></li>
+                <li><a href="#">TH</a></li>
+                <li><a href="#">EN</a></li>
             </ul>
         </nav>
     </div>

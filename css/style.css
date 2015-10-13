@@ -495,7 +495,8 @@ nav ul li {
   margin-bottom: 0px;
 }
 nav ul li a {
-  font-size: 20px;
+  font-family: 'rsu_b';
+  font-size: 24px;
   color: #fff;
   text-align: left;
   text-decoration: none;
@@ -571,11 +572,6 @@ nav ul li a:active, nav ul li a:hover {
   transform: translateY(0px);
 }
 
-.section-heading,
-.section-description {
-  margin-bottom: 1.2rem;
-}
-
 /* Values
 ================================================== */
 .values {
@@ -595,6 +591,7 @@ nav ul li a:active, nav ul li a:hover {
 }
 
 .value-description {
+  font-size: 24px;
   font-weight: 300;
   margin-bottom: 3.5rem;
   line-height: 20px;
@@ -618,7 +615,7 @@ nav ul li a:active, nav ul li a:hover {
 .s1 {
   padding: 0rem 0 0rem;
   clip-path: url(../#clip_path);
-  -webkit-clip-path: ellipse(130% 100% at 50% 0%);
+  -webkit-clip-path: ellipse(150% 100% at 50% 0%);
   z-index: 10;
   /* owl-carousel s1 *******************************/
    /*
@@ -671,7 +668,7 @@ nav ul li a:active, nav ul li a:hover {
   position: absolute;
   left: 0;
   right: 0;
-  font-size: 40px;
+  font-size: 50px;
   bottom: 30%;
 }
 .s1 .owl-carousel .owl-item img {
@@ -679,7 +676,8 @@ nav ul li a:active, nav ul li a:hover {
   min-width: 100%;
   width: inherit;
   height: auto;
-  -webkit-clip-path: ellipse(130% 100% at 50% 0%);
+  clip-path: url(../#clip_path);
+  -webkit-clip-path: ellipse(150% 100% at 50% 0%);
 }
 @media screen and (min-width: 550px) {
   .s1 .owl-carousel .owl-item img {
@@ -708,20 +706,26 @@ nav ul li a:active, nav ul li a:hover {
 }
 
 .s2 {
-  background-color: #e74c3c;
+  padding: 10rem 0 30rem;
+  background-image: url("../images/content/values-bg.jpg");
+  background-size: cover;
   clip-path: url(../#clip_path);
-  -webkit-clip-path: ellipse(130% 100% at 50% 0%);
+  -webkit-clip-path: ellipse(150% 100% at 50% 0%);
   margin-top: -50px;
   z-index: 9;
 }
 
 .s2-info {
+  color: #666666;
   text-align: left;
 }
 .s2-info p {
   margin-bottom: 0px;
+  font-size: 24px;
+  line-height: 28px;
 }
 .s2-info h1 {
+  font-size: 40px;
   margin: 0px;
   margin-bottom: 5px;
   line-height: 1;
@@ -738,21 +742,24 @@ nav ul li a:active, nav ul li a:hover {
   margin-left: -5px;
   background-image: url("../images/content/redtag.png");
   width: 42px;
-  height: 44px;
+  height: 57px;
   background-size: contain;
   background-repeat: no-repeat;
   -webkit-clip-path: none;
   clip-path: none;
 }
 .s2-tag p {
+  font-size: 36px;
+  line-height: 1.6;
   display: inline-block;
   background-color: #991915;
-  padding: 10px;
+  padding: 0px 10px 0px 10px;
   font-weight: bold;
   color: #fff;
 }
 
 .s3 {
+  font-family: 'rsu_b';
   background-image: url("../images/content/fff-bg.jpg");
   background-repeat: repeat;
   clip-path: url(../#clip_path-s3);
@@ -767,13 +774,25 @@ nav ul li a:active, nav ul li a:hover {
   width: 150px;
   height: 150px;
 }
-.s3 .section-heading,
+.s3 .section-heading {
+  color: #c0392b;
+  font-size: 40px;
+  line-height: 1;
+}
 .s3 .value-heading {
   color: #c0392b;
+  font-size: 36px;
 }
 .s3 .section-description,
 .s3 .value-description {
-  color: #444444;
+  color: #666666;
+  font-size: 24px;
+  line-height: 25px;
+  text-align: left;
+}
+.s3 .section-heading,
+.s3 .section-description {
+  margin-bottom: 1.2rem;
 }
 
 .s4 {
@@ -819,16 +838,37 @@ nav ul li a:active, nav ul li a:hover {
 .s4 .owl-prev {
   position: absolute;
   left: 0;
-  bottom: 65%;
+  bottom: 75%;
 }
 .s4 .owl-next {
   position: absolute;
   right: 0;
-  bottom: 65%;
+  bottom: 75%;
 }
 .s4 .s4-info {
+  font-family: 'rsu_b';
   text-align: left;
   padding: 40px 40px 0px;
+  color: #666666;
+  text-align: left;
+}
+.s4 .s4-info p {
+  margin-bottom: 0px;
+  font-size: 24px;
+  line-height: 28px;
+}
+.s4 .s4-info h1 {
+  color: #c0392b;
+  font-size: 40px;
+  margin: 0px;
+  margin-bottom: 5px;
+  line-height: 1;
+  font-weight: bold;
+}
+.s4 .s4-info a {
+  color: #c0392b;
+  font-size: 24px;
+  text-decoration: underline;
 }
 .s4 .s4-tag ul {
   display: -webkit-inline-flex;
@@ -840,22 +880,24 @@ nav ul li a:active, nav ul li a:hover {
   margin-left: -5px;
   background-image: url("../images/content/redtag.png");
   width: 42px;
-  height: 44px;
+  height: 57px;
   background-size: contain;
   background-repeat: no-repeat;
   -webkit-clip-path: none;
   clip-path: none;
 }
 .s4 .s4-tag p {
+  font-size: 36px;
+  line-height: 1.6;
   display: inline-block;
   background-color: #991915;
-  padding: 10px;
+  padding: 0px 10px 0px 10px;
   font-weight: bold;
   color: #fff;
 }
 
 .msie .s4 #redtag {
-  height: 43px;
+  height: 58px;
 }
 
 .s4 .owl-carousel .owl-item img {
@@ -871,6 +913,7 @@ nav ul li a:active, nav ul li a:hover {
 }
 
 .s5 {
+  font-family: 'rsu_b';
   background-color: #fff;
   clip-path: url(../#clip_path-s5);
   -webkit-clip-path: ellipse(270% 100% at 50% 0%);
@@ -882,13 +925,26 @@ nav ul li a:active, nav ul li a:hover {
   width: 200px;
   height: 200px;
 }
-.s5 .section-heading,
 .s5 .value-heading {
   color: #c0392b;
+  font-size: 36px;
+  line-height: 30px;
+}
+.s5 .section-heading {
+  color: #c0392b;
+  font-size: 36px;
+  line-height: 5px;
+}
+.s5 .section-heading2 {
+  font-size: 40px;
+  color: #666666;
+  line-height: 45px;
 }
 .s5 .section-description,
 .s5 .value-description {
-  color: #444444;
+  font-size: 24px;
+  color: #666666;
+  line-height: 25px;
 }
 @media screen and (min-width: 550px) {
   .s5 .s5-1-img {
@@ -897,6 +953,7 @@ nav ul li a:active, nav ul li a:hover {
 }
 
 .s6 {
+  font-family: 'rsu_b';
   background-color: #bdc3c7;
   padding: 8rem 0 8rem;
   clip-path: url(../#clip_path-s6);
@@ -919,10 +976,27 @@ nav ul li a:active, nav ul li a:hover {
     width: 22%;
   }
 }
+.s6 .section-heading {
+  color: #c0392b;
+  font-size: 36px;
+  line-height: 0px;
+}
+.s6 .section-heading2 {
+  font-size: 40px;
+  color: #666666;
+  line-height: 45px;
+}
 
 /* End section *******************************/
 .s7 {
-  padding: 4rem 0 4rem;
+  padding: 5rem 0 4rem;
+}
+.s7 .section-description {
+  font-family: 'rsu_r';
+  font-size: 18px;
+  width: 60%;
+  /* text-align: center; */
+  margin: 0 auto;
 }
 
 /* 

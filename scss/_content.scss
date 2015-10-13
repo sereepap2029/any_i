@@ -25,12 +25,6 @@
     transform: translateY(0px);
     //overflow: hidden;
     // display: list-item;
-    
-}
-
-.section-heading,
-.section-description {
-    margin-bottom: 1.2rem;
 }
 
 
@@ -55,6 +49,7 @@
 
 .value-description {
     // opacity: .8;
+    font-size: 24px;
     font-weight: 300;
     margin-bottom: 3.5rem;
     line-height: 20px;
@@ -91,18 +86,20 @@
         margin-left: -5px;
         background-image: url("../images/content/redtag.png");
         width: 42px;
-        height: 44px;
+        height: 57px;
         background-size: contain;
         background-repeat: no-repeat;
         -webkit-clip-path: none;
         clip-path: none;
     }
     p {
+        font-size: 36px;
+        line-height: 1.6;
         display: inline-block;
         background-color: #991915;
-        padding: 10px;
+        padding: 0px 10px 0px 10px;
         font-weight: bold;
-        color:#fff;  
+        color: #fff;
     }
 }
 
@@ -114,7 +111,7 @@
     //background-color: #34495e;
     clip-path: url(../#clip_path);
     //-webkit-clip-path: url(../#clip_path);
-    -webkit-clip-path: ellipse(130% 100% at 50% 0%);
+    -webkit-clip-path: ellipse(150% 100% at 50% 0%);
     z-index: 10;
     // margin-top: -35px;
     //overflow: hidden;
@@ -149,7 +146,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        font-size: 40px;
+        font-size: 50px;
         bottom: 30%;
     }
     .owl-carousel .owl-item img {
@@ -157,7 +154,9 @@
         min-width: 100%;
         width: inherit;
         height: auto;
-        -webkit-clip-path: ellipse(130% 100% at 50% 0%);
+        clip-path: url(../#clip_path);
+        //-webkit-clip-path: url(../#clip_path);
+        -webkit-clip-path: ellipse(150% 100% at 50% 0%);
         @media #{$md} {
             width: 100%;
         }
@@ -203,21 +202,29 @@
 }
 
 .s2 {
-    background-color: #e74c3c;
+    padding: 10rem 0 30rem;
+    //background-color: #e74c3c;
+    background-image: url('../images/content/values-bg.jpg');
+    background-size: cover;
+    //background-position: center;
     clip-path: url(../#clip_path);
     //-webkit-clip-path: url(../#clip_path);
-    -webkit-clip-path: ellipse(130% 100% at 50% 0%);
+    -webkit-clip-path: ellipse(150% 100% at 50% 0%);
     margin-top: -50px;
     z-index: 9;
 }
 
 .s2-info {
+    color: #666666;
     text-align: left;
     // padding: 10px 8px 0px;
     p {
         margin-bottom: 0px;
+        font-size: 24px;
+        line-height: 28px;
     }
     h1 {
+        font-size: 40px;
         margin: 0px;
         margin-bottom: 5px;
         line-height: 1;
@@ -230,6 +237,7 @@
 }
 
 .s3 {
+    font-family: 'rsu_b';
     background-image: url('../images/content/fff-bg.jpg');
     background-repeat: repeat;
     //background-size: cover;
@@ -245,13 +253,25 @@
         width: 150px;
         height: 150px;
     }
-    .section-heading,
+    .section-heading {
+        color: $f_red;
+        font-size: 40px;
+        line-height: 1;
+    }
     .value-heading {
         color: $f_red;
+        font-size: 36px;
     }
     .section-description,
     .value-description {
-        color: #444444;
+        color: #666666;
+        font-size: 24px;
+        line-height: 25px;
+        text-align: left;
+    }
+    .section-heading,
+    .section-description {
+        margin-bottom: 1.2rem;
     }
 }
 
@@ -302,17 +322,39 @@
     .owl-prev {
         position: absolute;
         left: 0;
-        bottom: 65%;
+        bottom: 75%;
     }
     .owl-next {
         position: absolute;
         right: 0;
-        bottom: 65%;
+        bottom: 75%;
     }
     /* End owl-carousel s4 *******************************/
     .s4-info {
+        font-family: 'rsu_b';
         text-align: left;
         padding: 40px 40px 0px;
+        color: #666666;
+        text-align: left;
+        // padding: 10px 8px 0px;
+        p {
+            margin-bottom: 0px;
+            font-size: 24px;
+            line-height: 28px;
+        }
+        h1 {
+            color: $f_red;
+            font-size: 40px;
+            margin: 0px;
+            margin-bottom: 5px;
+            line-height: 1;
+            font-weight: bold;
+        }
+        a {
+            color: $f_red;
+            font-size: 24px;
+            text-decoration: underline;
+        }
     }
     .s4-tag {
         @include redtag;
@@ -320,7 +362,7 @@
 }
 
 .msie .s4 #redtag {
-    height: 43px;
+    height: 58px;
 }
 
 .s4 .owl-carousel .owl-item img {
@@ -336,6 +378,7 @@
 }
 
 .s5 {
+    font-family: 'rsu_b';
     background-color: #fff;
     //background-image: url('../images/content/values-bg.jpg');
     //background-size: cover;
@@ -349,13 +392,26 @@
         width: 200px;
         height: 200px;
     }
-    .section-heading,
     .value-heading {
         color: $f_red;
+        font-size: 36px;
+        line-height: 30px;
+    }
+    .section-heading {
+        color: $f_red;
+        font-size: 36px;
+        line-height: 5px;
+    }
+    .section-heading2 {
+        font-size: 40px;
+        color: #666666;
+        line-height: 45px;
     }
     .section-description,
     .value-description {
-        color: #444444;
+        font-size: 24px;
+        color: #666666;
+        line-height: 25px;
     }
     .s5-1-img {
         @media #{$md} {
@@ -365,6 +421,7 @@
 }
 
 .s6 {
+    font-family: 'rsu_b';
     background-color: #bdc3c7;
     padding: 8rem 0 8rem;
     //-webkit-clip-path: url(../#clip_path);
@@ -384,6 +441,16 @@
             padding: 0px;
             width: 22%;
         }
+    }
+    .section-heading {
+        color: $f_red;
+        font-size: 36px;
+        line-height: 0px;
+    }
+    .section-heading2 {
+        font-size: 40px;
+        color: #666666;
+        line-height: 45px;
     }
 }
 

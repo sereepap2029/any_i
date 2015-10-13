@@ -16,11 +16,11 @@
                 <!-- owl-res ========================= -->
                 <div id="owl-res" class="owl-carousel owl-theme owl-loaded">
                     <div><img src="http://www.placehold.it/320x480" alt="111">
-                        <h1 class="s1-title">wtfffff</h1></div>
+                        <h1 class="s1-title">Business advisory<br>| venture</h1></div>
                     <div><img src="http://www.placehold.it/320x480" alt="2222">
-                    </div>
+                        <h1 class="s1-title">Business advisory<br>| venture</h1></div>
                     <div><img src="http://www.placehold.it/320x480" alt="333">
-                    </div>
+                        <h1 class="s1-title">Business advisory<br>| venture</h1></div>
                 </div>
                 <!--
                 <div id="slides-2">
@@ -64,8 +64,9 @@
                             </li>
                         </ul>
                     </div>
-                    <h1>Cras in <br>fringilla nulla.</h1>
-                    <p>Phasellus fermentum, nunc sed cursus fermentum, elit felis tincidunt lorem, nec lobortis ante diam et metus. Cras pretium suscipit mauris, at egestas diam feugiat vel.</p>
+                    <h1>เพราะ “โอกาส”<br>คือสิ่งที่เราเชื่อมั่น </h1>
+                    <p>any i ตั้งมั่นที่จะช่วยเหลือเรื่องการให้ โอกาสในการลงทุนกับคนที่มีความฝัน มีความมุ่งมั่นอยากให้ธุรกิจของตัวเอง เติบโตและประสบความสำเร็จ โดยมีเรา เป็นส่วนหนึ่งในการผลักดันให้ฝัน ของคุณเป็นจริง
+                    </p>
                 </div>
             </div>
         </div>
@@ -74,22 +75,25 @@
 <!-- S3 ========================= -->
 <div class="section s3">
     <div class="container">
-        <h3 class="section-heading"> Blah <br>Yeah Yeah</h3>
+        <h3 class="section-heading">ผลักดันคุณ
+<br>ไปสู่ฝัน</h3>
         <div class="row">
             <div class="four columns">
                 <img class="u-max-full-width" src="http://placehold.it/150x150">
-                <h5 class="value-heading">Title one</h5>
-                <p class="value-description">Elementum orci. Fusce nec risus eros. Curabitur erat, id hendrerit mauris. </p>
+                <h5 class="value-heading">การสนับสนุน</h5>
+                <p class="value-description">เมื่อคุณมุ่งมั่นทุ่มเทลงทุนในความฝัน any i ก็พร้อมร่วมสนับสนุนให้ให้ธุรกิจ ในฝันของคุณเติบโตและแข็งแรงมากขึ้น จนกลายเป็นความจริง
+                </p>
             </div>
             <div class="four columns">
                 <img class="u-max-full-width" src="http://placehold.it/150x150">
-                <h5 class="value-heading">Title two</h5>
-                <p class="value-description">Quisque placerat tortor id velit tristique sollicitudin dictum. Vestibulum ante.</p>
+                <h5 class="value-heading">คำปรึกษา</h5>
+                <p class="value-description">ทีมงานของ any i มาจากการทำงาน ในหลากหลายสาขา และล้วนมี ความรู้ ความเชี่ยวชาญเฉพาะทาง ให้คุณมั่นใจได้ว่าทุกคำแนะนำใน ทุกขั้นตอนของการดำเนินธุรกิจ จะเป็นไปอย่างถูกต้องแม่นยำ</p>
             </div>
             <div class="four columns">
                 <img class="u-max-full-width" src="http://placehold.it/150x150">
-                <h5 class="value-heading">Title three</h5>
-                <p class="value-description">Pellentesque laoreet, est nec laoreet vestibulum, lorem justo sagittis felis, feugiat .</p>
+                <h5 class="value-heading">แรงบันดาลใจ</h5>
+                <p class="value-description">เรารู้ว่าในการทำงาน เรื่องของใจ สำคัญไม่แพ้สิ่งใด any i พร้อมแชร์ ประสบการณ์และแนวคิดจากการ ทำงานเพื่อสร้างแรงบันดาลใจให้ คุณพร้อมที่จะฝ่าฟันไปให้ถึงเส้นชัย
+                </p>
             </div>
         </div>
     </div>
@@ -106,15 +110,17 @@
                             <div class="s4-tag">
                                 <ul>
                                     <li>
-                                        <p>anyyy</p>
+                                        <p>any i in Action</p>
                                     </li>
                                     <li>
                                         <div id="redtag"></div>
                                     </li>
                                 </ul>
                             </div>
-                            <h1>title</h1>
-                            <p>blahhhhhhhhhhh</p>
+                            <h1>PAC SolarAire</h1>
+                            <p>“วันที่เราหยุดไม่ได้เพราะมาไกลแล้ว แต่จะเดินต่อก็ยังหาทางไปไม่ถูก การที่มีคนเดินเข้ามาช่วยชี้ทางให้ มันเหมือนกับเราเห็นทาง และโอกาสใหม่ที่จะไปต่อได้แล้ว”
+                            </p>
+                            <br><a href="#">Read more</a>
                         </div>
                     </div>
                     <!-- slide2 ========= -->
@@ -123,15 +129,17 @@
                             <div class="s4-tag">
                                 <ul>
                                     <li>
-                                        <p>anyyyyyyyyyyyyy2</p>
+                                        <p>any i in Action</p>
                                     </li>
                                     <li>
                                         <div id="redtag"></div>
                                     </li>
                                 </ul>
                             </div>
-                            <h1>title2</h1>
-                            <p>blahhhhhhhhhhh</p>
+                            <h1>PAC SolarAire</h1>
+                            <p>“วันที่เราหยุดไม่ได้เพราะมาไกลแล้ว แต่จะเดินต่อก็ยังหาทางไปไม่ถูก การที่มีคนเดินเข้ามาช่วยชี้ทางให้ มันเหมือนกับเราเห็นทาง และโอกาสใหม่ที่จะไปต่อได้แล้ว”
+                            </p>
+                            <br><a href="#">Read more</a>
                         </div>
                     </div>
                     <!-- slide3 ========= -->
@@ -140,15 +148,17 @@
                             <div class="s4-tag">
                                 <ul>
                                     <li>
-                                        <p>anyyyyyyyy3</p>
+                                        <p>any i in Action</p>
                                     </li>
                                     <li>
                                         <div id="redtag"></div>
                                     </li>
                                 </ul>
                             </div>
-                            <h1>title3</h1>
-                            <p>blahhhhhhhhhhh</p>
+                            <h1>PAC SolarAire</h1>
+                            <p>“วันที่เราหยุดไม่ได้เพราะมาไกลแล้ว แต่จะเดินต่อก็ยังหาทางไปไม่ถูก การที่มีคนเดินเข้ามาช่วยชี้ทางให้ มันเหมือนกับเราเห็นทาง และโอกาสใหม่ที่จะไปต่อได้แล้ว”
+                            </p>
+                            <br><a href="#">Read more</a>
                         </div>
                     </div>
                 </div>
@@ -159,28 +169,34 @@
 <!-- S5 ========================= -->
 <div class="section s5">
     <div class="container">
-        <h3 class="section-heading">Blah Blah</h3>
-        <p class="section-description">Nullam consectetur vehicula porttitor. Integer finibus consectetur interdum. Nunc tincidunt mattis nibh</p>
+        <h3 class="section-heading">Our Trusted Advisor</h3>
+        <h3 class="section-heading2">เชี่ยวชาญเฉพาะทาง<br>ตอบโจทย์ได้ตรงจุด</h3>
+        <p class="section-description">any i มีทีมงานที่เชี่ยวชาญใน หลากหลายด้าน สามารถให้คำปรึกษา เฉพาะทางได้สำหรับทุกช่วงการเติบโตของธุรกิจ
+        </p>
         <div class="row">
             <div class="four columns">
                 <img class="u-max-full-width" src="http://placehold.it/200x200">
-                <h5 class="value-heading">People one</h5>
-                <p class="value-description">Etiam suscipit interdum vulputate. Sed ante libero, varius iacul efficitur nunc. </p>
+                <h5 class="value-heading">Accounting & Audit Advisor</h5>
+                <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
+                    <br> ตำแหน่ง xxxxxxxxx</p>
             </div>
             <div class="four columns">
                 <img class="u-max-full-width" src="http://placehold.it/200x200">
-                <h5 class="value-heading">People two</h5>
-                <p class="value-description">Etiam suscipit interdum vulputate. Sed ante libero, varius iaculis dui vel, finibus efficitur nunc. </p>
+                <h5 class="value-heading">IT Advisor</h5>
+                <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
+                    <br> ตำแหน่ง xxxxxxxxx</p>
             </div>
             <div class="four columns">
                 <img class="u-max-full-width" src="http://placehold.it/200x200">
-                <h5 class="value-heading">People three</h5>
-                <p class="value-description">Etiam suscipit interdum vulputatvel, finibus efficitur nunc. </p>
+                <h5 class="value-heading">Finance Advisor</h5>
+                <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
+                    <br> ตำแหน่ง xxxxxxxxx</p>
             </div>
             <div class="twelve columns">
                 <img class="u-max-full-width" src="http://placehold.it/200x200">
-                <h5 class="value-heading">People four</h5>
-                <p class="value-description">Etiam suscipit interdum vulputatro, variel, finibus efficitur nunc. </p>
+                <h5 class="value-heading">Finance Advisor</h5>
+                <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
+                    <br> ตำแหน่ง xxxxxxxxx</p>
             </div>
         </div>
     </div>
@@ -188,8 +204,8 @@
 <!-- S6 ========================= -->
 <div class="section s6">
     <div class="container">
-        <h3 class="section-heading">Blah</h3>
-        <p class="section-description"> rhoncus accumsan quam justo in elit. Integer at quam velit. id velit tristique fermentum. Mauris posuere felis dapibus sollicitudin dictum. Vestibulum ante ipsum primis in fauci</p>
+        <h3 class="section-heading">Our Business Partner</h3>
+        <h3 class="section-heading2">ผู้ร่วมลงทุนของเรา</h3>
         <div class="row">
             <div class="three columns s6-1">
                 <img class="u-max-full-width" src="http://placehold.it/150x150">
