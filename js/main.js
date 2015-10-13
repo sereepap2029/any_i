@@ -57,7 +57,7 @@ $(document).ready(function() {
     /* Fullpage  ***********************/
     if (winW > 1000) {
         $('#fullpage').fullpage({
-            
+            css3:true,
         });
     }
     /*End Fullpage  ***********************/
