@@ -17,8 +17,8 @@
      transform: translateY(0px);
      //overflow: hidden;
      display: list-item;
-     @media #{$sm}{
-        padding: 0rem 0 45%;
+     @media #{$sm} {
+         padding: 0rem 0 45%;
      }
  }
  
@@ -52,11 +52,20 @@
      &:hover {
          opacity: .5;
      }
+     @media #{$sm} {
+         font-size: 35px;
+     }
+     @media #{$md} {
+         right: 45px;
+     }
  }
  
  nav {
      ul {
          margin-top: 7.5rem;
+         @media #{$sm} {
+             margin-top: 11.5rem;
+         }
          li {
              margin-bottom: 0px;
              a {
@@ -71,6 +80,12 @@
                  &:hover {
                      background-color: #CC0000;
                      color: #fff;
+                 }
+                 @media #{$sm} {
+                     font-size: 30px;
+                 }
+                 @media #{$md} {
+                     padding: 10px 50px 10px 70px;
                  }
              }
          }

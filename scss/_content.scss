@@ -153,6 +153,14 @@
         right: 0;
         font-size: 50px;
         bottom: 30%;
+        @media #{$sm} {
+            font-size: 60px;
+            bottom: 28%;
+        }
+        @media #{$md} {
+            font-size: 70px;
+            bottom: 27%;
+        }
     }
     .owl-carousel .owl-item img {
         display: block;
@@ -260,6 +268,9 @@
     z-index: 8;
     color: #fff;
     padding-bottom: 5rem;
+    @media #{$sm} {
+        -webkit-clip-path: ellipse(160% 100% at 50% 0%);
+    }
     img {
         border-radius: 50%;
         width: 150px;
@@ -341,11 +352,17 @@
         position: absolute;
         left: 0;
         bottom: 75%;
+        @media #{$sm} {
+            bottom: 66%;
+        }
     }
     .owl-next {
         position: absolute;
         right: 0;
         bottom: 75%;
+        @media #{$sm} {
+            bottom: 66%;
+        }
     }
     /* End owl-carousel s4 *******************************/
     .s4-info {
@@ -385,6 +402,9 @@
 
 .s4 .owl-carousel .owl-item img {
     -webkit-clip-path: ellipse(130% 100% at 50% 0%);
+    @media #{$sm} {
+        -webkit-clip-path: ellipse(120% 100% at 50% 0%);
+    }
 }
 
 .chrome .s4 {
@@ -405,6 +425,9 @@
     -webkit-clip-path: ellipse(270% 100% at 50% 0%);
     margin-top: -45px;
     z-index: 6;
+    @media #{$sm} {
+        -webkit-clip-path: ellipse(220% 100% at 50% 0%);
+    }
     img {
         border-radius: 50%;
         width: 200px;
@@ -469,6 +492,10 @@
         @media #{$sm} {
             width: 50%;
             margin: 0 auto;
+        }
+        @media #{$md} {
+            width: 22%;
+            margin: 0 0 0 3%;
         }
     }
     .section-heading {

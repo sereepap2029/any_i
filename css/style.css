@@ -500,9 +500,24 @@ p, h1 {
 .nav-toggle:active, .nav-toggle:hover {
   opacity: .5;
 }
+@media screen and (min-width: 550px) {
+  .nav-toggle {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .nav-toggle {
+    right: 45px;
+  }
+}
 
 nav ul {
   margin-top: 7.5rem;
+}
+@media screen and (min-width: 550px) {
+  nav ul {
+    margin-top: 11.5rem;
+  }
 }
 nav ul li {
   margin-bottom: 0px;
@@ -519,6 +534,16 @@ nav ul li a {
 nav ul li a:active, nav ul li a:hover {
   background-color: #CC0000;
   color: #fff;
+}
+@media screen and (min-width: 550px) {
+  nav ul li a {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 750px) {
+  nav ul li a {
+    padding: 10px 50px 10px 70px;
+  }
 }
 
 .main-nav {
@@ -689,6 +714,18 @@ nav ul li a:active, nav ul li a:hover {
   font-size: 50px;
   bottom: 30%;
 }
+@media screen and (min-width: 550px) {
+  .s1 .s1-title {
+    font-size: 60px;
+    bottom: 28%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .s1 .s1-title {
+    font-size: 70px;
+    bottom: 27%;
+  }
+}
 .s1 .owl-carousel .owl-item img {
   display: block;
   min-width: 100%;
@@ -798,6 +835,11 @@ nav ul li a:active, nav ul li a:hover {
   color: #fff;
   padding-bottom: 5rem;
 }
+@media screen and (min-width: 550px) {
+  .s3 {
+    -webkit-clip-path: ellipse(160% 100% at 50% 0%);
+  }
+}
 .s3 img {
   border-radius: 50%;
   width: 150px;
@@ -880,10 +922,20 @@ nav ul li a:active, nav ul li a:hover {
   left: 0;
   bottom: 75%;
 }
+@media screen and (min-width: 550px) {
+  .s4 .owl-prev {
+    bottom: 66%;
+  }
+}
 .s4 .owl-next {
   position: absolute;
   right: 0;
   bottom: 75%;
+}
+@media screen and (min-width: 550px) {
+  .s4 .owl-next {
+    bottom: 66%;
+  }
 }
 .s4 .s4-info {
   font-family: 'rsu_b';
@@ -943,6 +995,11 @@ nav ul li a:active, nav ul li a:hover {
 .s4 .owl-carousel .owl-item img {
   -webkit-clip-path: ellipse(130% 100% at 50% 0%);
 }
+@media screen and (min-width: 550px) {
+  .s4 .owl-carousel .owl-item img {
+    -webkit-clip-path: ellipse(120% 100% at 50% 0%);
+  }
+}
 
 .chrome .s4 {
   overflow: hidden;
@@ -959,6 +1016,11 @@ nav ul li a:active, nav ul li a:hover {
   -webkit-clip-path: ellipse(270% 100% at 50% 0%);
   margin-top: -45px;
   z-index: 6;
+}
+@media screen and (min-width: 550px) {
+  .s5 {
+    -webkit-clip-path: ellipse(220% 100% at 50% 0%);
+  }
 }
 .s5 img {
   border-radius: 50%;
@@ -1028,6 +1090,12 @@ nav ul li a:active, nav ul li a:hover {
   .s6 .three.columns.s6-1 {
     width: 50%;
     margin: 0 auto;
+  }
+}
+@media screen and (min-width: 750px) {
+  .s6 .three.columns.s6-1 {
+    width: 22%;
+    margin: 0 0 0 3%;
   }
 }
 .s6 .section-heading {
