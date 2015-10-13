@@ -75,7 +75,8 @@
      z-index: 200;
      transform: translateX(100%);
      @include transform(translateX(100%));
-     transition: transform .4s ease;
+     @include transition (transform .4s ease);
+     //transition: transform .4s ease;
  }
  
  .arrow-right {
