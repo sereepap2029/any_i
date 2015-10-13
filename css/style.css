@@ -599,9 +599,8 @@ nav ul li a:active, nav ul li a:hover {
 /* section *******************************/
 .s1 {
   padding: 0rem 0 0rem;
-  background-color: #34495e;
   clip-path: url(../#clip_path);
-  -webkit-clip-path: url(../#clip_path);
+  -webkit-clip-path: ellipse(130% 100% at 50% 0%);
   z-index: 10;
   /* owl-carousel s1 *******************************/
    /*
@@ -635,7 +634,7 @@ nav ul li a:active, nav ul li a:hover {
 }
 .s1 .owl-dots {
   position: relative;
-  margin-top: -42px;
+  margin-top: -40px;
 }
 .s1 #owl-desk {
   display: none;
@@ -662,6 +661,7 @@ nav ul li a:active, nav ul li a:hover {
   min-width: 100%;
   width: inherit;
   height: auto;
+  -webkit-clip-path: ellipse(130% 100% at 50% 0%);
 }
 @media screen and (min-width: 550px) {
   .s1 .owl-carousel .owl-item img {
@@ -692,7 +692,7 @@ nav ul li a:active, nav ul li a:hover {
 .s2 {
   background-color: #e74c3c;
   clip-path: url(../#clip_path);
-  -webkit-clip-path: url(../#clip_path);
+  -webkit-clip-path: ellipse(130% 100% at 50% 0%);
   margin-top: -50px;
   z-index: 9;
 }
@@ -872,15 +872,15 @@ nav ul li a:active, nav ul li a:hover {
 .s6 {
   background-color: #bdc3c7;
   padding: 8rem 0 8rem;
-  clip-path: url(../#clip_path);
-  -webkit-clip-path: ellipse(150% 100% at 50% 0%);
+  clip-path: url(../#clip_path-s6);
+  -webkit-clip-path: ellipse(180% 100% at 50% 0%);
   margin-top: -35px;
   z-index: 5;
 }
 .s6 img {
   border-radius: 50%;
   width: 150px;
-  height: 150px;
+  height: auto;
 }
 .s6 .s6-1 {
   width: 50%;
