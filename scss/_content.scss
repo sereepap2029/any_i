@@ -130,6 +130,12 @@
     .owl-dots {
         position: relative;
         margin-top: -40px;
+        @media #{$lg} {
+            position: absolute;
+            margin-top: -70px;
+            left: 0;
+            right: 0;
+        }
     }
     #owl-desk {
         display: none;
@@ -167,7 +173,7 @@
         min-width: 100%;
         width: inherit;
         height: auto;
-        max-height: 700px;
+        //max-height: 700px;
         clip-path: url(../#clip_path);
         //-webkit-clip-path: url(../#clip_path);
         -webkit-clip-path: ellipse(150% 100% at 50% 0%);
@@ -366,6 +372,9 @@
         @media #{$sm} {
             bottom: 66%;
         }
+        @media #{$lg} {
+            bottom: 45%;
+        }
     }
     .owl-next {
         position: absolute;
@@ -373,6 +382,9 @@
         bottom: 75%;
         @media #{$sm} {
             bottom: 66%;
+        }
+        @media #{$lg} {
+            bottom: 45%;
         }
     }
     /* End owl-carousel s4 *******************************/
@@ -392,6 +404,10 @@
             margin-bottom: 0px;
             font-size: 24px;
             line-height: 28px;
+            @media #{$lg} {
+                color: #fff;
+                font-size: 30px;
+            }
         }
         h1 {
             color: $f_red;
@@ -400,11 +416,18 @@
             margin-bottom: 5px;
             line-height: 1;
             font-weight: bold;
+            @media #{$lg} {
+                color: #fff;
+                font-size: 50px;
+            }
         }
         a {
             color: $f_red;
             font-size: 24px;
             text-decoration: underline;
+            @media #{$lg} {
+                color: #fff;
+            }
         }
     }
     .s4-tag {
@@ -425,8 +448,10 @@
 
 .s4 .owl-dots {
     @media #{$lg} {
-        position: relative;
-        margin-top: -60px;
+        position: absolute;
+        margin-top: -90px;
+        left: 0;
+        right: 0;
     }
 }
 
@@ -451,6 +476,9 @@
     @media #{$sm} {
         -webkit-clip-path: ellipse(220% 100% at 50% 0%);
     }
+    @media #{$lg} {
+        padding: 12rem 0 5rem;
+    }
     img {
         border-radius: 50%;
         width: 200px;
@@ -473,6 +501,13 @@
         font-size: 40px;
         color: #666666;
         line-height: 45px;
+        width: 95%;
+        @media #{$sm} {
+            width: 100%;
+        }
+        @media #{$lg} {
+            font-size: 50px;
+        }
     }
     .section-description,
     .value-description {
@@ -481,6 +516,10 @@
         line-height: 25px;
         @media #{$sm} {
             font-size: 20px;
+        }
+        @media #{$lg} {
+            font-size: 30px;
+            margin-top: -10px;
         }
     }
     .s5-1-img {
@@ -501,6 +540,9 @@
     z-index: 5;
     @media #{$md} {
         padding: 14rem 0 16rem;
+    }
+    @media #{$lg} {
+        padding: 15rem 0 30rem;
     }
     img {
         border-radius: 50%;
@@ -530,6 +572,9 @@
         font-size: 40px;
         color: #666666;
         line-height: 45px;
+        @media #{$lg} {
+            font-size: 50px;
+        }
     }
 }
 

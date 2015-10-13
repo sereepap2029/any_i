@@ -699,6 +699,14 @@ nav ul li a:active, nav ul li a:hover {
   position: relative;
   margin-top: -40px;
 }
+@media screen and (min-width: 1000px) {
+  .s1 .owl-dots {
+    position: absolute;
+    margin-top: -70px;
+    left: 0;
+    right: 0;
+  }
+}
 .s1 #owl-desk {
   display: none;
 }
@@ -741,7 +749,6 @@ nav ul li a:active, nav ul li a:hover {
   min-width: 100%;
   width: inherit;
   height: auto;
-  max-height: 700px;
   clip-path: url(../#clip_path);
   -webkit-clip-path: ellipse(150% 100% at 50% 0%);
 }
@@ -954,6 +961,11 @@ nav ul li a:active, nav ul li a:hover {
     bottom: 66%;
   }
 }
+@media screen and (min-width: 1000px) {
+  .s4 .owl-prev {
+    bottom: 45%;
+  }
+}
 .s4 .owl-next {
   position: absolute;
   right: 0;
@@ -962,6 +974,11 @@ nav ul li a:active, nav ul li a:hover {
 @media screen and (min-width: 550px) {
   .s4 .owl-next {
     bottom: 66%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .s4 .owl-next {
+    bottom: 45%;
   }
 }
 .s4 .s4-info {
@@ -983,6 +1000,12 @@ nav ul li a:active, nav ul li a:hover {
   font-size: 24px;
   line-height: 28px;
 }
+@media screen and (min-width: 1000px) {
+  .s4 .s4-info p {
+    color: #fff;
+    font-size: 30px;
+  }
+}
 .s4 .s4-info h1 {
   color: #c0392b;
   font-size: 40px;
@@ -991,10 +1014,21 @@ nav ul li a:active, nav ul li a:hover {
   line-height: 1;
   font-weight: bold;
 }
+@media screen and (min-width: 1000px) {
+  .s4 .s4-info h1 {
+    color: #fff;
+    font-size: 50px;
+  }
+}
 .s4 .s4-info a {
   color: #c0392b;
   font-size: 24px;
   text-decoration: underline;
+}
+@media screen and (min-width: 1000px) {
+  .s4 .s4-info a {
+    color: #fff;
+  }
 }
 .s4 .s4-tag ul {
   display: -webkit-inline-flex;
@@ -1037,8 +1071,10 @@ nav ul li a:active, nav ul li a:hover {
 
 @media screen and (min-width: 1000px) {
   .s4 .owl-dots {
-    position: relative;
-    margin-top: -60px;
+    position: absolute;
+    margin-top: -90px;
+    left: 0;
+    right: 0;
   }
 }
 
@@ -1061,6 +1097,11 @@ nav ul li a:active, nav ul li a:hover {
 @media screen and (min-width: 550px) {
   .s5 {
     -webkit-clip-path: ellipse(220% 100% at 50% 0%);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .s5 {
+    padding: 12rem 0 5rem;
   }
 }
 .s5 img {
@@ -1087,6 +1128,17 @@ nav ul li a:active, nav ul li a:hover {
   font-size: 40px;
   color: #666666;
   line-height: 45px;
+  width: 95%;
+}
+@media screen and (min-width: 550px) {
+  .s5 .section-heading2 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .s5 .section-heading2 {
+    font-size: 50px;
+  }
 }
 .s5 .section-description,
 .s5 .value-description {
@@ -1098,6 +1150,13 @@ nav ul li a:active, nav ul li a:hover {
   .s5 .section-description,
   .s5 .value-description {
     font-size: 20px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .s5 .section-description,
+  .s5 .value-description {
+    font-size: 30px;
+    margin-top: -10px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -1116,6 +1175,11 @@ nav ul li a:active, nav ul li a:hover {
 @media screen and (min-width: 750px) {
   .s6 {
     padding: 14rem 0 16rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .s6 {
+    padding: 15rem 0 30rem;
   }
 }
 .s6 img {
@@ -1148,6 +1212,11 @@ nav ul li a:active, nav ul li a:hover {
   font-size: 40px;
   color: #666666;
   line-height: 45px;
+}
+@media screen and (min-width: 1000px) {
+  .s6 .section-heading2 {
+    font-size: 50px;
+  }
 }
 
 .end-bg {

@@ -171,7 +171,7 @@
 <div class="section s5">
     <div class="container">
         <h3 class="section-heading">Our Trusted Advisor</h3>
-        <h3 class="section-heading2">เชี่ยวชาญเฉพาะทาง<br>ตอบโจทย์ได้ตรงจุด</h3>
+        <h3 class="section-heading2">เชี่ยวชาญเฉพาะทาง ตอบโจทย์ได้ตรงจุด</h3>
         <p class="section-description">any i มีทีมงานที่เชี่ยวชาญใน หลากหลายด้าน สามารถให้คำปรึกษา เฉพาะทางได้สำหรับทุกช่วงการเติบโตของธุรกิจ
         </p>
         <div class="row">
