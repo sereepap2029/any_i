@@ -409,6 +409,20 @@ li {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'rsu_b';
+  src: url("rsu_bold-webfont.eot");
+  src: url("rsu_bold-webfont.eot?#iefix") format("embedded-opentype"), url("rsu_bold-webfont.woff2") format("woff2"), url("rsu_bold-webfont.woff") format("woff"), url("rsu_bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'rsu_r';
+  src: url("rsu_regular-webfont.eot");
+  src: url("rsu_regular-webfont.eot?#iefix") format("embedded-opentype"), url("rsu_regular-webfont.woff2") format("woff2"), url("rsu_regular-webfont.woff") format("woff"), url("rsu_regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /*
 $sm: "screen and (min-width: 375px)";
 
@@ -699,10 +713,15 @@ nav ul li a:active, nav ul li a:hover {
 
 .s2-info {
   text-align: left;
-  padding: 10px 40px 0px;
+}
+.s2-info p {
+  margin-bottom: 0px;
 }
 .s2-info h1 {
   margin: 0px;
+  margin-bottom: 5px;
+  line-height: 1;
+  font-weight: bold;
 }
 
 .s2-tag ul {
@@ -725,6 +744,8 @@ nav ul li a:active, nav ul li a:hover {
   display: inline-block;
   background-color: #991915;
   padding: 10px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .s3 {
@@ -825,6 +846,8 @@ nav ul li a:active, nav ul li a:hover {
   display: inline-block;
   background-color: #991915;
   padding: 10px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .msie .s4 #redtag {

@@ -64,8 +64,8 @@
                             </li>
                         </ul>
                     </div>
-                    <h1>title</h1>
-                    <p>blahhhhhhhhhhh</p>
+                    <h1>Cras in <br>fringilla nulla.</h1>
+                    <p>Phasellus fermentum, nunc sed cursus fermentum, elit felis tincidunt lorem, nec lobortis ante diam et metus. Cras pretium suscipit mauris, at egestas diam feugiat vel.</p>
                 </div>
             </div>
         </div>
@@ -100,7 +100,7 @@
         <div class="row">
             <div class="twelve columns">
                 <div id="owl-desk-s4" class="owl-carousel owl-theme owl-loaded">
-                <!-- slide1 ========= -->
+                    <!-- slide1 ========= -->
                     <div><img src="http://www.placehold.it/1280x840" alt="111">
                         <div class="s4-info">
                             <div class="s4-tag">
