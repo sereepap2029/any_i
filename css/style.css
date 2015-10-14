@@ -1346,6 +1346,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   }
 }
 .s2.headcon .s2-info h1 {
+  color: #fff;
   font-size: 36px;
 }
 @media screen and (min-width: 750px) {
@@ -1355,7 +1356,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 1000px) {
   .s2.headcon .s2-info h1 {
-    margin-top: 48%;
+    font-size: 48px;
   }
 }
 
@@ -1363,10 +1364,35 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   clip-path: none;
   -webkit-clip-path: none;
 }
+@media screen and (min-width: 750px) {
+  .s3.inaction {
+    padding: 13rem 0 12rem;
+  }
+}
 @media screen and (min-width: 1000px) {
   .s3.inaction {
     padding: 5rem 0 10rem;
   }
+}
+.s3.inaction a {
+  color: #444;
+  font-size: 24px;
+  text-decoration: underline;
+  margin-bottom: 3.5rem;
+}
+@media screen and (min-width: 1000px) {
+  .s3.inaction a {
+    color: #888;
+  }
+}
+.s3.inaction a:active, .s3.inaction a :hover {
+  opacity: .6;
+}
+.s3.inaction .value-description {
+  margin-bottom: 2rem;
+}
+.s3.inaction .columns {
+  margin-bottom: 3.5rem;
 }
 
 .s7 {

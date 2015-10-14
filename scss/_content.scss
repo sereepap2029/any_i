@@ -666,12 +666,13 @@
         margin-top: 30%;
     }
     h1 {
+        color: #fff;
         font-size: 36px;
         @media #{$md} {
             font-size: 46px;
         }
         @media #{$lg} {
-            margin-top: 48%;
+            font-size: 48px;
         }
     }
 }
@@ -679,12 +680,33 @@
 // End Head Content //////////////////////////////////
 // Inaction //////////////////////////////////
 .s3.inaction {
-	clip-path: none;
-    -webkit-clip-path:none;
-
+    clip-path: none;
+    -webkit-clip-path: none;
+    @media #{$md} {
+        //padding: 13rem 0 11rem;
+        padding: 13rem 0 12rem;
+    }
     @media #{$lg} {
         //padding: 13rem 0 11rem;
         padding: 5rem 0 10rem;
+    }
+    a {
+        color: #444;
+        font-size: 24px;
+        text-decoration: underline;
+        margin-bottom: 3.5rem;
+        @media #{$lg} {
+            color: #888;
+        }
+        &:active,:hover{
+        	opacity: .6;
+        }
+    }
+    .value-description {
+        margin-bottom: 2rem;
+    }
+    .columns {
+        margin-bottom: 3.5rem;
     }
 }
 
