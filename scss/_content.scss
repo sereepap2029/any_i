@@ -801,3 +801,47 @@
 }
 
 // End Contact Us //////////////////////////////////
+
+// Advisor //////////////////////////////////
+.s2.head-adv {
+    padding: 1rem 0 8rem;
+    background-image: url('../images/content/s1/s1-bg1.jpg');
+    background-position: center;
+    height: auto;
+    display: block;
+    min-width: 100%;
+    width: inherit;
+    height: auto;
+    @media #{$md} {
+        padding: 13rem 0 30rem;
+        margin-top: -60px;
+    }
+    @media #{$lg} {
+        //padding: 13rem 0 11rem;
+        padding: 0rem 0 27rem;
+        background-image: url('../images/content/s2/s2-bg1.jpg');
+        clip-path: url(../#clip_path);
+        -webkit-clip-path: ellipse(150% 100% at 50% 0%);
+    }
+}
+
+.s2.head-adv .s2-info {
+    margin-top: 95%;
+    @media #{$md} {
+        margin-top: 75%;
+    }
+    @media #{$lg} {
+        margin-top: 30%;
+    }
+    h1 {
+        color: #fff;
+        font-size: 36px;
+        @media #{$md} {
+            font-size: 46px;
+        }
+        @media #{$lg} {
+            font-size: 48px;
+        }
+    }
+}
+// End Advisor //////////////////////////////////

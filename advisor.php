@@ -5,7 +5,7 @@ ob_start('ob_gzhandler');
     <html lang="en">
 
     <head>
-        <title>any i | in contact</title>
+        <title>any i | advisor</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" src="js/jquery-1.11.3.min.js?v=1001"></script>
@@ -23,9 +23,9 @@ ob_start('ob_gzhandler');
 
     <body>
         <div id="wrapper">
-
+        <div id="fullpage"><!-- fullpage -->
             <?php include("views/header.php"); ?>
-                 <?php include("views/conts.php"); ?>
+                 <?php include("views/adv.php"); ?>
                     <?php include("views/footer.php"); ?>
                         <script src="js/jquery.fullpage.js"></script>
                         <script src="js/owl.carousel.min.js"></script>
