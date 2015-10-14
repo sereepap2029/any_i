@@ -521,18 +521,18 @@ p, h1 {
   }
 }
 
-nav ul {
+nav.main-nav ul {
   margin-top: 7.5rem;
 }
 @media screen and (min-width: 550px) {
-  nav ul {
+  nav.main-nav ul {
     margin-top: 11.5rem;
   }
 }
-nav ul li {
+nav.main-nav ul li {
   margin-bottom: 0px;
 }
-nav ul li a {
+nav.main-nav ul li a {
   font-family: 'rsu_b';
   font-size: 24px;
   color: #fff;
@@ -541,17 +541,17 @@ nav ul li a {
   display: block;
   padding: 10px 25px 10px 45px;
 }
-nav ul li a:active, nav ul li a:hover {
+nav.main-nav ul li a:active, nav.main-nav ul li a:hover {
   background-color: #CC0000;
   color: #fff;
 }
 @media screen and (min-width: 550px) {
-  nav ul li a {
+  nav.main-nav ul li a {
     font-size: 30px;
   }
 }
 @media screen and (min-width: 750px) {
-  nav ul li a {
+  nav.main-nav ul li a {
     padding: 10px 50px 10px 70px;
   }
 }
@@ -598,6 +598,27 @@ nav ul li a:active, nav ul li a:hover {
   -ms-transform: translateX(100%);
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
+}
+
+nav.main-nav-desk {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  z-index: 200;
+}
+nav.main-nav-desk ul li {
+  display: inline;
+  margin-right: 50px;
+  font-family: 'rsu_b';
+  font-size: 24px;
+  color: #fff;
+}
+nav.main-nav-desk ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
+  color: #999999;
 }
 
 /*  Grid

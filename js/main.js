@@ -60,7 +60,8 @@ $(document).ready(function() {
             css3:true,
             autoScrolling: false,
             //fitToSection: false,
-            
+           
+
 
         });
     }
