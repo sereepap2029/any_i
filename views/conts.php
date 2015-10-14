@@ -12,6 +12,7 @@
                         <br> Bangkok, 10400 Thailand
                         <br> Work: +66 2 248 4591 Fax: +66 2 248 2936
                     </p>
+                    <button class="email" onClick="">Email Us</button>
                 </div>
             </div>
         </div>

@@ -1417,10 +1417,12 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   min-width: 100%;
   width: inherit;
   height: auto;
+  clip-path: none;
+  -webkit-clip-path: none;
 }
 @media screen and (min-width: 750px) {
   .s2.contact {
-    padding: 13rem 0 30rem;
+    padding: 13rem 0 20rem;
     margin-top: -60px;
   }
 }
@@ -1428,15 +1430,19 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   .s2.contact {
     padding: 0rem 0 20rem;
     background-image: url("../images/content/s2/s2-bg1.jpg");
-    clip-path: none;
-    -webkit-clip-path: none;
   }
 }
 .s2.contact .conts-info {
-  margin-top: 25%;
+  margin-top: 80%;
+}
+@media screen and (min-width: 750px) {
+  .s2.contact .conts-info {
+    margin-top: 70%;
+  }
 }
 @media screen and (min-width: 1000px) {
   .s2.contact .conts-info {
+    margin-top: 25%;
     line-height: 30px;
   }
 }
@@ -1468,6 +1474,17 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   .s2.contact .value-heading {
     font-size: 30px;
   }
+}
+
+.email {
+  width: 155px;
+  height: 46px;
+  border-radius: 5px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url("../images/content/emailbtn.jpg");
+  vertical-align: middle;
+  background-size: 100% 100%;
 }
 
 .s7 {
