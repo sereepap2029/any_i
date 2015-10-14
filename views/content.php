@@ -1,6 +1,5 @@
 <!-- CONTENT ************************** -->
-<div id="fullpage">
-    <!-- fullpage -->
+<div id="fullpage"> <!-- fullpage -->
     <!-- S1 ========================= -->
     <div class="section s1">
         <div class="container">
@@ -8,20 +7,20 @@
                 <div class="twelve columns">
                     <!-- owl-desk ========================= -->
                     <div id="owl-desk" class="owl-carousel owl-theme owl-loaded">
-                        <div><img src="images/content/s1/s1-bg.jpg" alt="111">
+                        <div><img src="images/content/s1/s1-bg1.jpg" alt="">
                             <h1 class="s1-title">Business advisory | venture</h1></div>
-                        <div><img src="images/content/s1/s2-bg.jpg" alt="2222">
+                        <div><img src="images/content/s1/s1-bg2.jpg" alt="">
                             <h1 class="s1-title">Business advisory | venture</h1></div>
-                        <div><img src="http://www.placehold.it/1280x840" alt="333">
+                        <div><img src="http://www.placehold.it/1280x840" alt="">
                             <h1 class="s1-title">Business advisory| venture</h1></div>
                     </div>
                     <!-- owl-res ========================= -->
                     <div id="owl-res" class="owl-carousel owl-theme owl-loaded">
-                        <div><img src="http://www.placehold.it/320x480" alt="111">
+                        <div><img src="http://www.placehold.it/320x480" alt="">
                             <h1 class="s1-title">Business advisory<br>| venture</h1></div>
-                        <div><img src="http://www.placehold.it/320x480" alt="2222">
+                        <div><img src="http://www.placehold.it/320x480" alt="">
                             <h1 class="s1-title">Business advisory<br>| venture</h1></div>
-                        <div><img src="http://www.placehold.it/320x480" alt="333">
+                        <div><img src="http://www.placehold.it/320x480" alt="">
                             <h1 class="s1-title">Business advisory<br>| venture</h1></div>
                     </div>
                     <!--
@@ -106,7 +105,7 @@
                 <div class="twelve columns">
                     <div id="owl-desk-s4" class="owl-carousel owl-theme owl-loaded">
                         <!-- slide1 ========= -->
-                        <div><img src="http://www.placehold.it/1280x840" alt="111">
+                        <div><img src="images/content/s4/s4-bg1.jpg" alt="">
                             <div class="s4-info">
                                 <div class="s4-tag">
                                     <ul>
@@ -125,7 +124,7 @@
                             </div>
                         </div>
                         <!-- slide2 ========= -->
-                        <div><img src="http://www.placehold.it/1280x840" alt="2222">
+                        <div><img src="images/content/s4/s4-bg2.jpg" alt="">
                             <div class="s4-info">
                                 <div class="s4-tag">
                                     <ul>
@@ -144,7 +143,7 @@
                             </div>
                         </div>
                         <!-- slide3 ========= -->
-                        <div><img src="http://www.placehold.it/1280x840" alt="333">
+                        <div><img src="http://www.placehold.it/1280x840" alt="">
                             <div class="s4-info">
                                 <div class="s4-tag">
                                     <ul>
@@ -167,6 +166,7 @@
             </div>
         </div>
     </div>
+
     <!-- S5 ========================= -->
     <div class="section s5">
         <div class="container">
@@ -202,7 +202,9 @@
             </div>
         </div>
     </div>
+    
     <!-- S6 ========================= -->
+
     <div class="section s6">
         <div class="container">
             <h3 class="section-heading">Our Business Partner</h3>

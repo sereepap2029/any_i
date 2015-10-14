@@ -55,14 +55,16 @@ $(document).ready(function() {
     });
     /*End Superslide ***********************/
     /* Fullpage  ***********************/
-    if (winW > 1000) {
+    if (winW >= 1000) {
         $('#fullpage').fullpage({
             css3:true,
             autoScrolling: false,
-            //fitToSection: false,
-           
-
-
+            fitToSection: false,
+        });
+        $('#fullpage2').fullpage({
+            css3:true,
+            autoScrolling: false,
+            fitToSection: false,
         });
     }
     /*End Fullpage  ***********************/

@@ -469,6 +469,7 @@
 }
 
 .s4 .owl-carousel .owl-item img {
+
     -webkit-clip-path: ellipse(130% 100% at 50% 0%);
     @media #{$sm} {
         -webkit-clip-path: ellipse(120% 100% at 50% 0%);
@@ -476,6 +477,7 @@
     @media #{$lg} {
         clip-path: url(../#clip_path-s4-img);
         -webkit-clip-path: ellipse(160% 100% at 50% 0%);
+        max-height: 840px;
     }
 }
 
@@ -510,6 +512,7 @@
         -webkit-clip-path: ellipse(220% 100% at 50% 0%);
     }
     @media #{$lg} {
+    	-webkit-clip-path: ellipse(190% 100% at 50% 0%);
         padding: 12rem 0 5rem;
     }
     img {

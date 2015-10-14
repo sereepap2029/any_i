@@ -1132,6 +1132,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   .s4 .owl-carousel .owl-item img {
     clip-path: url(../#clip_path-s4-img);
     -webkit-clip-path: ellipse(160% 100% at 50% 0%);
+    max-height: 840px;
   }
 }
 
@@ -1167,6 +1168,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 1000px) {
   .s5 {
+    -webkit-clip-path: ellipse(190% 100% at 50% 0%);
     padding: 12rem 0 5rem;
   }
 }
