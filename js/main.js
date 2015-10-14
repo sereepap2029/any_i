@@ -59,12 +59,7 @@ $(document).ready(function() {
         $('#fullpage').fullpage({
             css3:true,
             autoScrolling: false,
-            fitToSection: false,
-        });
-        $('#fullpage2').fullpage({
-            css3:true,
-            autoScrolling: false,
-            fitToSection: false,
+            //fitToSection: false,
         });
     }
     /*End Fullpage  ***********************/
