@@ -1329,6 +1329,8 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   .s2.headcon {
     padding: 0rem 0 27rem;
     background-image: url("../images/content/s2/s2-bg1.jpg");
+    clip-path: url(../#clip_path);
+    -webkit-clip-path: ellipse(150% 100% at 50% 0%);
   }
 }
 
@@ -1366,12 +1368,12 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 750px) {
   .s3.inaction {
-    padding: 13rem 0 12rem;
+    padding: 13rem 0 16rem;
   }
 }
 @media screen and (min-width: 1000px) {
   .s3.inaction {
-    padding: 5rem 0 10rem;
+    padding: 5rem 0 15rem;
   }
 }
 .s3.inaction a {
@@ -1389,6 +1391,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   opacity: .6;
 }
 .s3.inaction img {
+  width: 200px;
   pointer-events: none;
 }
 .s3.inaction .value-description {

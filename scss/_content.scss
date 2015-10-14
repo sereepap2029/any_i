@@ -654,6 +654,8 @@
         //padding: 13rem 0 11rem;
         padding: 0rem 0 27rem;
         background-image: url('../images/content/s2/s2-bg1.jpg');
+        clip-path: url(../#clip_path);
+        -webkit-clip-path: ellipse(150% 100% at 50% 0%);
     }
 }
 
@@ -684,11 +686,11 @@
     -webkit-clip-path: none;
     @media #{$md} {
         //padding: 13rem 0 11rem;
-        padding: 13rem 0 12rem;
+        padding: 13rem 0 16rem;
     }
     @media #{$lg} {
         //padding: 13rem 0 11rem;
-        padding: 5rem 0 10rem;
+        padding: 5rem 0 15rem;
     }
     a {
         color: #444;
@@ -704,6 +706,7 @@
         }
     }
     img {
+        width: 200px;
         pointer-events: none;
     }
     .value-description {
