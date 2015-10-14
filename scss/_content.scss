@@ -466,8 +466,11 @@
     .s4-tag {
         @include redtag;
     }
-}
 
+}
+.firefox .s4 #redtag{
+    	height: 58px;
+    }
 .msie .s4 #redtag {
     height: 58px;
 }

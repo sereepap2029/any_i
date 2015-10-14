@@ -1122,6 +1122,10 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   color: #fff;
 }
 
+.firefox .s4 #redtag {
+  height: 58px;
+}
+
 .msie .s4 #redtag {
   height: 58px;
 }
