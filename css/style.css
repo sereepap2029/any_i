@@ -715,6 +715,11 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   position: relative;
   margin-top: -43px;
 }
+@media screen and (min-width: 750px) {
+  .s1 .owl-dots {
+    margin-top: -170px;
+  }
+}
 @media screen and (min-width: 1000px) {
   .s1 .owl-dots {
     position: absolute;
@@ -758,7 +763,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 @media screen and (min-width: 750px) {
   .s1 .s1-title {
     font-size: 70px;
-    bottom: 27%;
+    bottom: 33%;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -911,11 +916,6 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 @media screen and (min-width: 550px) {
   .s3 {
     -webkit-clip-path: ellipse(160% 100% at 50% 0%);
-  }
-}
-@media screen and (min-width: 1000px) {
-  .s3 {
-    padding: 3rem 0 0rem;
   }
 }
 .s3 img {
@@ -1309,6 +1309,66 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 
 /* End section *******************************/
+.s2.headcon {
+  padding: 1rem 0 8rem;
+  background-image: url("../images/content/s1/s1-bg1.jpg");
+  background-position: center;
+  height: auto;
+  display: block;
+  min-width: 100%;
+  width: inherit;
+  height: auto;
+}
+@media screen and (min-width: 750px) {
+  .s2.headcon {
+    padding: 13rem 0 30rem;
+    margin-top: -60px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .s2.headcon {
+    padding: 0rem 0 27rem;
+    background-image: url("../images/content/s2/s2-bg1.jpg");
+  }
+}
+
+.s2.headcon .s2-info {
+  margin-top: 95%;
+}
+@media screen and (min-width: 750px) {
+  .s2.headcon .s2-info {
+    margin-top: 75%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .s2.headcon .s2-info {
+    margin-top: 30%;
+  }
+}
+.s2.headcon .s2-info h1 {
+  font-size: 36px;
+}
+@media screen and (min-width: 750px) {
+  .s2.headcon .s2-info h1 {
+    font-size: 46px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .s2.headcon .s2-info h1 {
+    margin-top: 48%;
+  }
+}
+
+.s3.inaction {
+  clip-path: none;
+  -webkit-clip-path: none;
+}
+@media screen and (min-width: 1000px) {
+  .s3.inaction {
+    padding: 5rem 0 10rem;
+  }
+}
+
 .s7 {
   padding: 5rem 0 4rem;
 }
