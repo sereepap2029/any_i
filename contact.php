@@ -23,8 +23,7 @@ ob_start('ob_gzhandler');
 
     <body>
         <div id="wrapper">
-        <div id="fullpage"><!-- fullpage -->
-        
+
             <?php include("views/header.php"); ?>
                  <?php include("views/conts.php"); ?>
                     <?php include("views/footer.php"); ?>

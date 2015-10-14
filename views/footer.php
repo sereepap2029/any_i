@@ -6,4 +6,3 @@
     </div>
 </div>
 <!-- End Footer ************************** -->
-</div> <!--end fullpage-->
