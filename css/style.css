@@ -1477,6 +1477,9 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 
 .email {
+  font-family: 'rsu_b';
+  font-size: 30px;
+  color: #fff;
   width: 155px;
   height: 46px;
   border-radius: 5px;
@@ -1487,6 +1490,9 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   background-size: 100% 100%;
   outline-style: none;
   border-style: none;
+}
+.email:active, .email:hover {
+  color: #888888;
 }
 
 .s7 {
