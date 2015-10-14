@@ -19,4 +19,6 @@
     </div>
     <img src="images/footer/footer-bg.png" class="end-bg">
 </div>
+
 <!-- END HEAD CONTENT ************************** -->
+<div> 
