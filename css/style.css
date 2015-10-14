@@ -1382,11 +1382,14 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 1000px) {
   .s3.inaction a {
-    color: #888;
+    color: #444;
   }
 }
-.s3.inaction a:active, .s3.inaction a :hover {
+.s3.inaction a:active, .s3.inaction a:hover {
   opacity: .6;
+}
+.s3.inaction img {
+  pointer-events: none;
 }
 .s3.inaction .value-description {
   margin-bottom: 2rem;

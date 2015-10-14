@@ -696,11 +696,15 @@
         text-decoration: underline;
         margin-bottom: 3.5rem;
         @media #{$lg} {
-            color: #888;
+            color: #444;
         }
-        &:active,:hover{
-        	opacity: .6;
+        &:active,
+        &:hover {
+            opacity: .6;
         }
+    }
+    img {
+        pointer-events: none;
     }
     .value-description {
         margin-bottom: 2rem;
