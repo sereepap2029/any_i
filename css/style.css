@@ -684,11 +684,6 @@ nav ul li a:active, nav ul li a:hover {
    */
   /* End owl-carousel s1 *******************************/
 }
-@media screen and (min-width: 1000px) {
-  .s1 {
-    margin-top: -35px;
-  }
-}
 .s1 .container {
   width: 100%;
   max-width: none;
@@ -697,7 +692,7 @@ nav ul li a:active, nav ul li a:hover {
 }
 .s1 .owl-dots {
   position: relative;
-  margin-top: -40px;
+  margin-top: -43px;
 }
 @media screen and (min-width: 1000px) {
   .s1 .owl-dots {
@@ -730,7 +725,7 @@ nav ul li a:active, nav ul li a:hover {
   left: 0;
   right: 0;
   font-size: 50px;
-  bottom: 30%;
+  bottom: 28%;
 }
 @media screen and (min-width: 550px) {
   .s1 .s1-title {
@@ -744,18 +739,24 @@ nav ul li a:active, nav ul li a:hover {
     bottom: 27%;
   }
 }
+@media screen and (min-width: 1000px) {
+  .s1 .s1-title {
+    bottom: 40%;
+    line-height: 1;
+  }
+}
 .s1 .owl-carousel .owl-item img {
   display: block;
   min-width: 100%;
   width: inherit;
   height: auto;
-  clip-path: url(../#clip_path);
-  -webkit-clip-path: ellipse(150% 100% at 50% 0%);
 }
 @media screen and (min-width: 1000px) {
   .s1 .owl-carousel .owl-item img {
     width: 100%;
     margin-top: -1%;
+    clip-path: url(../#clip_path);
+    -webkit-clip-path: ellipse(150% 100% at 50% 0%);
   }
 }
 .s1 .owl-item h1 {
@@ -796,20 +797,32 @@ nav ul li a:active, nav ul li a:hover {
 }
 @media screen and (min-width: 1000px) {
   .s2 {
-    padding: 20rem 0 30rem;
+    padding: 0rem 0 6rem;
   }
 }
 
 .s2-info {
   color: #666666;
   text-align: left;
+  padding-right: 15px;
+}
+@media screen and (min-width: 1000px) {
+  .s2-info {
+    width: 65%;
+  }
 }
 .s2-info p {
   margin-bottom: 0px;
   font-size: 24px;
   line-height: 28px;
 }
+@media screen and (min-width: 1000px) {
+  .s2-info p {
+    font-size: 30px;
+  }
+}
 .s2-info h1 {
+  padding-right: 16%;
   font-size: 40px;
   margin: 0px;
   margin-bottom: 5px;
@@ -819,6 +832,13 @@ nav ul li a:active, nav ul li a:hover {
 @media screen and (min-width: 550px) {
   .s2-info h1 {
     margin: 15px 0px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .s2-info h1 {
+    width: 100%;
+    font-size: 50px;
+    padding-right: 0%;
   }
 }
 
@@ -866,7 +886,7 @@ nav ul li a:active, nav ul li a:hover {
 }
 @media screen and (min-width: 1000px) {
   .s3 {
-    padding: 13rem 0 11rem;
+    padding: 3rem 0 0rem;
   }
 }
 .s3 img {
@@ -879,6 +899,11 @@ nav ul li a:active, nav ul li a:hover {
   font-size: 40px;
   line-height: 1;
 }
+@media screen and (min-width: 1000px) {
+  .s3 .section-heading {
+    font-size: 50px;
+  }
+}
 .s3 .value-heading {
   color: #c0392b;
   font-size: 36px;
@@ -886,6 +911,11 @@ nav ul li a:active, nav ul li a:hover {
 @media screen and (min-width: 550px) {
   .s3 .value-heading {
     font-size: 25px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .s3 .value-heading {
+    font-size: 36px;
   }
 }
 .s3 .section-description,
@@ -899,6 +929,13 @@ nav ul li a:active, nav ul li a:hover {
   .s3 .section-description,
   .s3 .value-description {
     font-size: 18px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .s3 .section-description,
+  .s3 .value-description {
+    font-size: 24px;
+    padding-left: 20px;
   }
 }
 .s3 .section-heading,
@@ -992,7 +1029,7 @@ nav ul li a:active, nav ul li a:hover {
   .s4 .s4-info {
     position: absolute;
     top: 40%;
-    padding: 40px 50% 0px 13%;
+    padding: 0px 50% 0px 13%;
   }
 }
 .s4 .s4-info p {
@@ -1066,6 +1103,12 @@ nav ul li a:active, nav ul li a:hover {
 @media screen and (min-width: 550px) {
   .s4 .owl-carousel .owl-item img {
     -webkit-clip-path: ellipse(120% 100% at 50% 0%);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .s4 .owl-carousel .owl-item img {
+    clip-path: url(../#clip_path-s4-img);
+    -webkit-clip-path: ellipse(160% 100% at 50% 0%);
   }
 }
 
@@ -1179,7 +1222,7 @@ nav ul li a:active, nav ul li a:hover {
 }
 @media screen and (min-width: 1000px) {
   .s6 {
-    padding: 15rem 0 30rem;
+    padding: 0rem 0 16rem;
   }
 }
 .s6 img {

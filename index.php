@@ -52,6 +52,9 @@ ob_start('ob_gzhandler');
                 <clipPath id="clip_tag" clipPathUnits="objectBoundingBox">
                     <polygon points="1 0,0.75 0.5,1 1,0 1,0 0.5,0 0"> </polygon>
                 </clipPath>
+                <clipPath id="clip_path-s4-img" clipPathUnits="objectBoundingBox">
+                    <ellipse rx="1.6" ry="1" cx="0.5" cy="0" />
+                </clipPath>
             </defs>
         </svg>
         <!--/ End SVG /***************************** -->
