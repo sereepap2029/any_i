@@ -811,7 +811,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 
 .s2 {
   padding: 10rem 0 30rem;
-  background-image: url("../images/content/values-bg.jpg");
+  background-image: url("../images/content/s2/s2-bg1.jpg");
   background-size: cover;
   clip-path: url(../#clip_path);
   -webkit-clip-path: ellipse(150% 100% at 50% 0%);
