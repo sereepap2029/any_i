@@ -638,8 +638,8 @@
             //padding: 13rem 0 11rem;
             padding: 0rem 0 27rem;
             background-image: url('../images/content/s2/s2-bg1.jpg');
-            clip-path: url(../#clip_path);
-            -webkit-clip-path: ellipse(150% 100% at 50% 0%);
+            clip-path: url(../#clip_path-sub);
+            -webkit-clip-path: ellipse(120% 100% at 50% 0%);
         }
     }
     
@@ -811,7 +811,7 @@
     }
     
     .s4.head-adv {
-        padding: 1rem 0 8rem;
+        padding: 38rem 0 8rem;
         background-image: url('../images/content/s1/s1-bg1.jpg');
         background-repeat: no-repeat;
         background-position: center;
@@ -821,6 +821,8 @@
         min-width: 100%;
         width: inherit;
         height: auto;
+        clip-path: url(../#clip_path-sub);
+        -webkit-clip-path: ellipse(120% 100% at 50% 0%);
         @media #{$md} {
             padding: 13rem 0 30rem;
             margin-top: -60px;
@@ -829,15 +831,15 @@
             //padding: 13rem 0 11rem;
             padding: 0rem 0 27rem;
             background-image: url('../images/content/s2/s2-bg1.jpg');
-            clip-path: url(../#clip_path);
-            -webkit-clip-path: ellipse(150% 100% at 50% 0%);
+            clip-path: url(../#clip_path-sub);
+            -webkit-clip-path: ellipse(120% 100% at 50% 0%);
         }
     }
     
     .adv-info {
         font-family: 'rsu_b';
         text-align: left;
-        padding: 40px 30px 0px;
+        padding: 0px 30px 0px;
         color: #666666;
         text-align: left;
         // padding: 10px 8px 0px;

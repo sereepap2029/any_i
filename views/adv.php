@@ -53,24 +53,17 @@
         <div class="container">
             <h3 class="section-heading">ผลักดันคุณ ไปสู่ฝัน</h3>
             <div class="row">
-                <div class="four columns">
+                <div class="six columns">
                     <img class="u-max-full-width" src="http://placehold.it/200x200">
                     <h5 class="value-heading">การสนับสนุน</h5>
                     <p class="value-description">เมื่อคุณมุ่งมั่นทุ่มเทลงทุนในความฝัน any i ก็พร้อมร่วมสนับสนุนให้ให้ธุรกิจ ในฝันของคุณเติบโตและแข็งแรงมากขึ้น จนกลายเป็นความจริง
                     </p>
                     <a href="#">Read more</a>
                 </div>
-                <div class="four columns">
+                <div class="six columns">
                     <img class="u-max-full-width" src="http://placehold.it/200x200">
                     <h5 class="value-heading">คำปรึกษา</h5>
                     <p class="value-description">ทีมงานของ any i มาจากการทำงาน ในหลากหลายสาขา และล้วนมี ความรู้ ความเชี่ยวชาญเฉพาะทาง ให้คุณมั่นใจได้ว่าทุกคำแนะนำใน ทุกขั้นตอนของการดำเนินธุรกิจ จะเป็นไปอย่างถูกต้องแม่นยำ</p>
-                    <a href="#">Read more</a>
-                </div>
-                <div class="four columns">
-                    <img class="u-max-full-width" src="http://placehold.it/200x200">
-                    <h5 class="value-heading">แรงบันดาลใจ</h5>
-                    <p class="value-description">เรารู้ว่าในการทำงาน เรื่องของใจ สำคัญไม่แพ้สิ่งใด any i พร้อมแชร์ ประสบการณ์และแนวคิดจากการ ทำงานเพื่อสร้างแรงบันดาลใจให้ คุณพร้อมที่จะฝ่าฟันไปให้ถึงเส้นชัย
-                    </p>
                     <a href="#">Read more</a>
                 </div>
             </div>
