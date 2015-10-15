@@ -1254,7 +1254,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 .s6 {
   font-family: 'rsu_b';
   background-color: #bdc3c7;
-  padding: 8rem 0 8rem;
+  padding: 13rem 0 13rem;
   margin-top: -11%;
   z-index: 5;
 }
@@ -1688,10 +1688,38 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 
 .adv-con .owl-dots {
-  position: absolute;
-  top: 47%;
   left: 0;
   right: 0;
+}
+.adv-con .owl-prev {
+  position: absolute;
+  left: 0;
+  bottom: 45%;
+}
+@media screen and (min-width: 550px) {
+  .adv-con .owl-prev {
+    bottom: 66%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .adv-con .owl-prev {
+    bottom: 45%;
+  }
+}
+.adv-con .owl-next {
+  position: absolute;
+  right: 0;
+  bottom: 45%;
+}
+@media screen and (min-width: 550px) {
+  .adv-con .owl-next {
+    bottom: 66%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .adv-con .owl-next {
+    bottom: 45%;
+  }
 }
 
 hr {

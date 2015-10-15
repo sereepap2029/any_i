@@ -76,86 +76,53 @@
     <div class="adv-con">
         <div class="section s4">
             <div class="container">
-                <div id="owl-adv" class="owl-carousel owl-theme owl-loaded">
-                    <!-- slide1 ========= -->
-                    <div class="row">
-                        <div class="six columns">
-                            <img src="images/content/s4/s4-bg1.jpg" alt=""></div>
-                        <div class="six columns">
-                            <div class="s4-info">
-                                <div class="s4-tag">
-                                    <ul>
-                                        <li>
-                                            <p>any i in Action</p>
-                                        </li>
-                                        <li>
-                                            <div id="redtag"></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h1>PAC SolarAire</h1>
-                                <p>“วันที่เราหยุดไม่ได้เพราะมาไกลแล้ว แต่จะเดินต่อก็ยังหาทางไปไม่ถูก การที่มีคนเดินเข้ามาช่วยชี้ทางให้ มันเหมือนกับเราเห็นทาง และโอกาสใหม่ที่จะไปต่อได้แล้ว”
-                                </p>
+                <div class="row">
+                    <div class="six columns">
+                        <div id="owl-adv" class="owl-carousel owl-theme owl-loaded">
+                            <!-- slide1 ========= -->
+                            <div><img src="images/content/s1/s1-bg1.jpg" alt="">
+                            </div>
+                            <div><img src="images/content/s1/s1-bg2.jpg" alt="">
+                            </div>
+                            <div><img src="http://www.placehold.it/1280x840" alt="">
                             </div>
                         </div>
                     </div>
-                    <!-- slide2 ========= -->
-                    <div class="row">
-                        <div class="six columns"><img src="images/content/s4/s4-bg2.jpg" alt=""></div>
-                        <div class="six columns">
-                            <div class="s4-info">
-                                <div class="s4-tag">
-                                    <ul>
-                                        <li>
-                                            <p>any i in Action</p>
-                                        </li>
-                                        <li>
-                                            <div id="redtag"></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h1>PAC SolarAire</h1>
-                                <p>“วันที่เราหยุดไม่ได้เพราะมาไกลแล้ว แต่จะเดินต่อก็ยังหาทางไปไม่ถูก การที่มีคนเดินเข้ามาช่วยชี้ทางให้ มันเหมือนกับเราเห็นทาง และโอกาสใหม่ที่จะไปต่อได้แล้ว”
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- slide3 ========= -->
-                    <div class="row">
-                        <div class="six columns"><img src="http://www.placehold.it/1280x840" alt=""></div>
-                        <div class="six columns">
-                            <div class="s4-info">
-                                <div class="s4-tag">
-                                    <ul>
-                                        <li>
-                                            <p>any i in Action</p>
-                                        </li>
-                                        <li>
-                                            <div id="redtag"></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h1>PAC SolarAire</h1>
-                                <p>“วันที่เราหยุดไม่ได้เพราะมาไกลแล้ว แต่จะเดินต่อก็ยังหาทางไปไม่ถูก การที่มีคนเดินเข้ามาช่วยชี้ทางให้ มันเหมือนกับเราเห็นทาง และโอกาสใหม่ที่จะไปต่อได้แล้ว”
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End slide ========= -->
                 </div>
+                <div class="row">
+                    <div class="six columns">
+                        <div class="s4-info">
+                            <div class="s4-tag">
+                                <ul>
+                                    <li>
+                                        <p>any i in Action</p>
+                                    </li>
+                                    <li>
+                                        <div id="redtag"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h1>PAC SolarAire</h1>
+                            <p>“วันที่เราหยุดไม่ได้เพราะมาไกลแล้ว แต่จะเดินต่อก็ยังหาทางไปไม่ถูก การที่มีคนเดินเข้ามาช่วยชี้ทางให้ มันเหมือนกับเราเห็นทาง และโอกาสใหม่ที่จะไปต่อได้แล้ว”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--End slide ========= -->
             </div>
         </div>
     </div>
-    <!--End section ========= -->
-    <hr>
-    <div class="row">
-        <div class="twelve columns">
-            <div class="adv-btn">
-                <div class="prev"><a href="#"><i class="fa fa-angle-left"></i> Previous</a></div>
-                <div class="next"><a href="#">Next <i class="fa fa-angle-right"></i></a></div>
-            </div>
+</div>
+<!--End section ========= -->
+<hr>
+<div class="row">
+    <div class="twelve columns">
+        <div class="adv-btn">
+            <div class="prev"><a href="#"><i class="fa fa-angle-left"></i> Previous</a></div>
+            <div class="next"><a href="#">Next <i class="fa fa-angle-right"></i></a></div>
         </div>
     </div>
-    <div class="section s3" style="z-index:-1">
-        <img src="images/footer/footer-bg.png" class="end-bg">
-    </div>
+</div>
+<div class="section s3" style="z-index:-1">
+    <img src="images/footer/footer-bg.png" class="end-bg">
+</div>

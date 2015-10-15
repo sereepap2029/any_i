@@ -565,7 +565,7 @@
     .s6 {
         font-family: 'rsu_b';
         background-color: #bdc3c7;
-        padding: 8rem 0 8rem;
+        padding: 13rem 0 13rem;
         //-webkit-clip-path: url(../#clip_path);
         //clip-path: url(../#clip_path-s6);
         //-webkit-clip-path: ellipse(180% 100% at 50% 0%);    
@@ -891,6 +891,8 @@
                 color: #fff;
             }
         }
+
+        
     }
     
     .adv-tag {
@@ -945,8 +947,8 @@
     .adv-con{
 
          .owl-dots {
-            position: absolute;
-            top: 47%;
+            //position: absolute;
+            //top: 47%;
             left: 0;
             right:0;
            
@@ -955,6 +957,29 @@
             }
             @media #{$lg} {
               
+            }
+        }
+
+        .owl-prev {
+            position: absolute;
+            left: 0;
+            bottom: 45%;
+            @media #{$sm} {
+                bottom: 66%;
+            }
+            @media #{$lg} {
+                bottom: 45%;
+            }
+        }
+        .owl-next {
+            position: absolute;
+            right: 0;
+            bottom: 45%;
+            @media #{$sm} {
+                bottom: 66%;
+            }
+            @media #{$lg} {
+                bottom: 45%;
             }
         }
     }
