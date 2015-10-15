@@ -794,6 +794,9 @@
         @media #{$lg} {
             bottom: -20%;
         }
+         @media #{$lgx} {
+            bottom: -6%;
+        }
     }
 }
 
@@ -857,6 +860,9 @@
     @media #{$md} {
         margin-top: 50px;
     }
+    .end-bg {
+        position: relative;
+    }
 }
 
 .s4-info.adv-desk {
@@ -896,6 +902,8 @@
     padding: 0px 30px 0px;
     color: #666666;
     text-align: left;
+    margin-top: -5%;
+    margin-bottom: 20%;
     // padding: 10px 8px 0px;
     @media #{$lg} {
         //position: absolute;
@@ -903,6 +911,8 @@
         padding: 0px 50% 0px 13%;
         // margin-top: -45%;
         z-index: 10;
+        margin-top: 0%;
+        margin-bottom: 0%;
     }
     p {
         color: #666666;
@@ -1022,7 +1032,9 @@
         left: 0;
         right: 0;
         @media #{$md} {}
-        @media #{$lg} {}
+        @media #{$lg} {
+            margin-top: 0px;
+        }
     }
     .owl-prev {
         position: absolute;
@@ -1062,6 +1074,9 @@ hr {
     padding: 0 20px;
     @media #{$md} {
         margin-bottom: 15%;
+    }
+    @media #{$lg} {
+        margin-bottom: 7%;
     }
 }
 

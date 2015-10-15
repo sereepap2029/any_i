@@ -98,18 +98,18 @@
             </div>
         </div>
     </div>
+    <hr>
+    <div class="row">
+        <div class="twelve columns">
+            <div class="adv-btn">
+                <div class="prev"><a href="#"><i class="fa fa-angle-left"></i> Previous</a></div>
+                <div class="next"><a href="#">Next <i class="fa fa-angle-right"></i></a></div>
+            </div>
+        </div>
+        <img src="images/footer/footer-bg.png" class="end-bg">
+    </div>
 </div>
 <!--End section ========= -->
-<hr>
-<div class="row">
-    <div class="twelve columns">
-        <div class="adv-btn">
-            <div class="prev"><a href="#"><i class="fa fa-angle-left"></i> Previous</a></div>
-            <div class="next"><a href="#">Next <i class="fa fa-angle-right"></i></a></div>
-        </div>
-    </div>
-    <img src="images/footer/footer-bg.png" class="end-bg">
-</div>
 <!--
 <div class="section s3" style="z-index:-1">
     <img src="images/footer/footer-bg.png" class="end-bg">

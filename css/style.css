@@ -1495,6 +1495,11 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
     bottom: -20%;
   }
 }
+@media screen and (min-width: 1400px) {
+  .s2.contact .end-bg {
+    bottom: -6%;
+  }
+}
 
 @media screen and (min-width: 1000px) {
   .s7.contact-foot {
@@ -1560,6 +1565,9 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
     margin-top: 50px;
   }
 }
+.res .end-bg {
+  position: relative;
+}
 
 .s4-info.adv-desk {
   position: relative;
@@ -1601,12 +1609,16 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   padding: 0px 30px 0px;
   color: #666666;
   text-align: left;
+  margin-top: -5%;
+  margin-bottom: 20%;
 }
 @media screen and (min-width: 1000px) {
   .adv-info {
     top: 40%;
     padding: 0px 50% 0px 13%;
     z-index: 10;
+    margin-top: 0%;
+    margin-bottom: 0%;
   }
 }
 .adv-info p {
@@ -1757,6 +1769,11 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   left: 0;
   right: 0;
 }
+@media screen and (min-width: 1000px) {
+  .adv-con .owl-dots {
+    margin-top: 0px;
+  }
+}
 .adv-con .owl-prev {
   position: absolute;
   left: 0;
@@ -1808,6 +1825,11 @@ hr {
 @media screen and (min-width: 750px) {
   .adv-btn {
     margin-bottom: 15%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .adv-btn {
+    margin-bottom: 7%;
   }
 }
 
