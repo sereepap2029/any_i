@@ -20,7 +20,7 @@ $(document).ready(function() {
 
     });
 
-    $("#owl-desk-s4").owlCarousel({
+    $("#owl-desk-s4,#owl-adv").owlCarousel({
 
         dots: true,
         loop: true,

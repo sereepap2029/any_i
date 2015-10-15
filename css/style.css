@@ -1676,6 +1676,50 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   margin-bottom: 3.5rem;
 }
 
+.adv-con .owl-dots {
+  position: absolute;
+  top: 47%;
+  left: 0;
+  right: 0;
+}
+
+hr {
+  margin-top: 0px;
+}
+
+.adv-btn {
+  padding: 0 20px;
+}
+
+.prev,
+.next {
+  background-color: #990000;
+  border-radius: 30px;
+  padding: 0px 20px;
+}
+.prev a,
+.next a {
+  color: #fff;
+  font-family: 'rsu_b';
+  font-size: 24px;
+  text-decoration: none;
+}
+.prev:hover, .prev:active,
+.next:hover,
+.next:active {
+  opacity: .7;
+}
+
+.prev {
+  float: left;
+  padding: 1px 20px 0px;
+}
+
+.next {
+  float: right;
+  padding: 1px 40px 0px;
+}
+
 .s7 {
   padding: 5rem 0 4rem;
 }
