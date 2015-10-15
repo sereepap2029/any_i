@@ -88,7 +88,7 @@
                     </div>
                     <div class="six columns">
                         <div class="s4-info">
-                            <h1>PAC SolarAire</h1>
+                            <h1>PAC SolarAire1</h1>
                             <p>“วันที่เราหยุดไม่ได้เพราะมาไกลแล้ว แต่จะเดินต่อก็ยังหาทางไปไม่ถูก การที่มีคนเดินเข้ามาช่วยชี้ทางให้ มันเหมือนกับเราเห็นทาง และโอกาสใหม่ที่จะไปต่อได้แล้ว”
                             </p>
                         </div>
@@ -108,7 +108,10 @@
             <div class="next"><a href="#">Next <i class="fa fa-angle-right"></i></a></div>
         </div>
     </div>
+    <img src="images/footer/footer-bg.png" class="end-bg">
 </div>
+<!--
 <div class="section s3" style="z-index:-1">
     <img src="images/footer/footer-bg.png" class="end-bg">
 </div>
+-->
