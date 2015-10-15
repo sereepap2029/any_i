@@ -249,7 +249,7 @@
         margin-top: -12%;
     }
     @media #{$lg} {
-        padding: 0rem 0 6rem;
+        padding: 0rem 0 18rem;
         // padding: 20rem 0 30rem;
     }
 }
@@ -361,7 +361,7 @@
     margin-top: -11%;
     z-index: 7;
     @media #{$lg} {
-        padding: 0rem 5% 0rem;
+        padding: 0rem 0 0rem;
     }
     .owl-carousel {
         margin-top: -55px;
@@ -408,7 +408,7 @@
             bottom: 66%;
         }
         @media #{$lg} {
-            bottom: 45%;
+            bottom: 38%;
         }
     }
     .owl-next {
@@ -419,7 +419,7 @@
             bottom: 66%;
         }
         @media #{$lg} {
-            bottom: 45%;
+            bottom: 38%;
         }
     }
     /* End owl-carousel s4 *******************************/
@@ -794,7 +794,7 @@
         @media #{$lg} {
             bottom: -20%;
         }
-         @media #{$lgx} {
+        @media #{$lgx} {
             bottom: -6%;
         }
     }
@@ -999,6 +999,11 @@
 }
 
 .adv-con {
+    .s4 {
+        @media #{$lg} {
+            padding: 0rem 5% 0rem;
+        }
+    }
     @media #{$md} {
         margin-top: 20%;
     }
@@ -1063,6 +1068,10 @@
         @media #{$lg} {
             bottom: 45%;
         }
+    }
+    .owl-item img {
+        clip-path: url(../#clip_path-sub) !important;
+        -webkit-clip-path: ellipse(120% 100% at 50% 0%) !important;
     }
 }
 

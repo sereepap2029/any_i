@@ -16,7 +16,7 @@
                     </div>
                     <!-- owl-res ========================= -->
                     <div id="owl-res" class="owl-carousel owl-theme owl-loaded">
-                        <div><img src="images/content/s1/s1-bg1.jpg" alt="">
+                        <div><img src="images/content/s1/res/s1-bg1.jpg" alt="">
                             <h1 class="s1-title">Business advisory<br>| venture</h1></div>
                         <div><img src="http://www.placehold.it/320x480" alt="">
                             <h1 class="s1-title">Business advisory<br>| venture</h1></div>
