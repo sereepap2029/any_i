@@ -168,7 +168,7 @@
     </div>
 
     <!-- S5 ========================= -->
-    <div class="section s5 ">
+    <div class="section s5">
         <div class="container">
             <h3 class="section-heading">Our Trusted Advisor</h3>
             <h3 class="section-heading2">เชี่ยวชาญเฉพาะทาง ตอบโจทย์ได้ตรงจุด</h3>
@@ -193,6 +193,7 @@
                     <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
                         <br> ตำแหน่ง xxxxxxxxx</p>
                 </div>
+                
                 <div class="twelve columns">
                     <img class="u-max-full-width" src="http://placehold.it/200x200">
                     <h5 class="value-heading">Finance Advisor</h5>

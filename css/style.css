@@ -820,13 +820,13 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   background-size: cover;
   clip-path: url(../#clip_path);
   -webkit-clip-path: ellipse(150% 100% at 50% 0%);
-  margin-top: -50px;
+  margin-top: -11%;
   z-index: 9;
 }
 @media screen and (min-width: 550px) {
   .s2 {
     padding: 10rem 0 25rem;
-    margin-top: -60px;
+    margin-top: -12%;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -839,6 +839,11 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   color: #666666;
   text-align: left;
   padding-right: 15px;
+}
+@media screen and (min-width: 750px) {
+  .s2-info {
+    padding-top: 10%;
+  }
 }
 @media screen and (min-width: 1000px) {
   .s2-info {
@@ -974,7 +979,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 
 .s4 {
   background-color: #fff;
-  margin-top: -35px;
+  margin-top: -11%;
   z-index: 7;
   /* owl-carousel s4 *******************************/
   /* End owl-carousel s4 *******************************/
@@ -1176,6 +1181,11 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
     -webkit-clip-path: ellipse(220% 100% at 50% 0%);
   }
 }
+@media screen and (min-width: 750px) {
+  .s5 {
+    -webkit-clip-path: ellipse(180% 100% at 50% 0%);
+  }
+}
 @media screen and (min-width: 1000px) {
   .s5 {
     -webkit-clip-path: ellipse(190% 100% at 50% 0%);
@@ -1247,7 +1257,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   font-family: 'rsu_b';
   background-color: #bdc3c7;
   padding: 8rem 0 8rem;
-  margin-top: -35px;
+  margin-top: -11%;
   z-index: 5;
 }
 @media screen and (min-width: 750px) {

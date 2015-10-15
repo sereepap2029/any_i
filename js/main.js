@@ -56,12 +56,14 @@ $(document).ready(function() {
         //play: 2000,
     });
     /*End Superslide ***********************/
+
     /* Fullpage  ***********************/
     if (winW >= 1000) {
         $('#fullpage').fullpage({
             css3:true,
             autoScrolling: false,
-            //fitToSection: false,
+            fitToSection: false,
+           //normalScrollElements: '.s5',
         });
     }
     /*End Fullpage  ***********************/
