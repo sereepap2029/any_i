@@ -1512,6 +1512,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 750px) {
   .adv-desk {
+    margin-top: 30%;
     display: block;
   }
 }
@@ -1527,6 +1528,11 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 
 .res {
   margin-top: 80px;
+}
+@media screen and (min-width: 750px) {
+  .res {
+    margin-top: 50px;
+  }
 }
 
 .s4-info.adv-desk {
@@ -1549,7 +1555,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 750px) {
   .s4.head-adv {
-    padding: 13rem 0 30rem;
+    padding: 0rem 0 6rem;
     margin-top: -60px;
   }
 }
@@ -1687,6 +1693,17 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   margin-bottom: 3.5rem;
 }
 
+@media screen and (min-width: 750px) {
+  .adv-con {
+    margin-top: 20%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .adv-con .s4-info {
+    padding: 0px;
+    margin-top: -17%;
+  }
+}
 .adv-con .owl-dots {
   left: 0;
   right: 0;
@@ -1699,6 +1716,11 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 @media screen and (min-width: 550px) {
   .adv-con .owl-prev {
     bottom: 66%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .adv-con .owl-prev {
+    bottom: 45%;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -1716,6 +1738,11 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
     bottom: 66%;
   }
 }
+@media screen and (min-width: 750px) {
+  .adv-con .owl-next {
+    bottom: 45%;
+  }
+}
 @media screen and (min-width: 1000px) {
   .adv-con .owl-next {
     bottom: 45%;
@@ -1728,6 +1755,11 @@ hr {
 
 .adv-btn {
   padding: 0 20px;
+}
+@media screen and (min-width: 750px) {
+  .adv-btn {
+    margin-bottom: 15%;
+  }
 }
 
 .prev,

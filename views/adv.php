@@ -79,7 +79,7 @@
                 <div class="row">
                     <div class="six columns">
                         <div id="owl-adv" class="owl-carousel owl-theme owl-loaded">
-                            <!-- slide1 ========= -->
+                            <!-- slide ========= -->
                             <div><img src="images/content/s1/s1-bg1.jpg" alt="">
                             </div>
                             <div><img src="images/content/s1/s1-bg2.jpg" alt="">
@@ -88,20 +88,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="six columns">
                         <div class="s4-info">
-                            <div class="s4-tag">
-                                <ul>
-                                    <li>
-                                        <p>any i in Action</p>
-                                    </li>
-                                    <li>
-                                        <div id="redtag"></div>
-                                    </li>
-                                </ul>
-                            </div>
                             <h1>PAC SolarAire</h1>
                             <p>“วันที่เราหยุดไม่ได้เพราะมาไกลแล้ว แต่จะเดินต่อก็ยังหาทางไปไม่ถูก การที่มีคนเดินเข้ามาช่วยชี้ทางให้ มันเหมือนกับเราเห็นทาง และโอกาสใหม่ที่จะไปต่อได้แล้ว”
                             </p>
