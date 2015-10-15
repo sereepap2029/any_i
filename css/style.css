@@ -1336,6 +1336,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 1000px) {
   .s2.headcon {
+    margin-top: 0px;
     padding: 0rem 0 27rem;
     background-image: url("../images/content/s2/s2-bg1.jpg");
     clip-path: url(../#clip_path-sub);
@@ -1516,6 +1517,17 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
     display: block;
   }
 }
+@media screen and (min-width: 1000px) {
+  .adv-desk {
+    margin-top: 13%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .adv-desk_p {
+    font-size: 24px !important;
+  }
+}
 
 .adv-res {
   display: block;
@@ -1561,6 +1573,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 1000px) {
   .s4.head-adv {
+    margin-top: 0px;
     padding: 0rem 0 27rem;
     background-image: url("../images/content/s2/s2-bg1.jpg");
     clip-path: url(../#clip_path-sub);
@@ -1702,6 +1715,11 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   .adv-con .s4-info {
     padding: 0px;
     margin-top: -17%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .adv-con .s4-info p {
+    font-size: 24px;
   }
 }
 .adv-con .owl-dots {
