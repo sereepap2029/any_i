@@ -26,7 +26,7 @@ ob_start('ob_gzhandler');
         <div id="fullpage"><!-- fullpage -->
             <?php include("views/header.php"); ?>
                  <?php include("views/adv.php"); ?>
-                    <?php include("views/footer.php"); ?>
+                 
                         <script src="js/jquery.fullpage.js"></script>
                         <script src="js/owl.carousel.min.js"></script>
                         <script src="js/jquery.superslides.js"></script>
