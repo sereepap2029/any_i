@@ -44,7 +44,7 @@ ob_start('ob_gzhandler');
                     <ellipse rx="2.2" ry="1" cx="0.5" cy="0" />
                 </clipPath>
                 <clipPath id="clip_path-s5" clipPathUnits="objectBoundingBox">
-                    <ellipse rx="2.7" ry="1" cx="0.5" cy="0" />
+                    <ellipse rx="1.6" ry="1" cx="0.5" cy="0" />
                 </clipPath>
                 <clipPath id="clip_path-s6" clipPathUnits="objectBoundingBox">
                     <ellipse rx="1.8" ry="1" cx="0.5" cy="0" />
@@ -53,7 +53,7 @@ ob_start('ob_gzhandler');
                     <polygon points="1 0,0.75 0.5,1 1,0 1,0 0.5,0 0"> </polygon>
                 </clipPath>
                 <clipPath id="clip_path-s4-img" clipPathUnits="objectBoundingBox">
-                    <ellipse rx="1.6" ry="1" cx="0.5" cy="0" />
+                    <ellipse rx="1.5" ry="1" cx="0.5" cy="0" />
                 </clipPath>
             </defs>
         </svg>

@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
                 <div class="twelve columns">
-                    <!-- owl-desk ========================= -->
+                    <!-- owl-desk -->
                     <div id="owl-desk" class="owl-carousel owl-theme owl-loaded">
                         <div><img src="images/content/s1/s1-bg1.jpg" alt="">
                             <h1 class="s1-title">Business advisory | venture</h1></div>
@@ -14,7 +14,7 @@
                         <div><img src="http://www.placehold.it/1280x840" alt="">
                             <h1 class="s1-title">Business advisory| venture</h1></div>
                     </div>
-                    <!-- owl-res ========================= -->
+                    <!-- owl-res -->
                     <div id="owl-res" class="owl-carousel owl-theme owl-loaded">
                         <div><img src="images/content/s1/res/s1-bg1.jpg" alt="">
                             <h1 class="s1-title">Business advisory<br>| venture</h1></div>
@@ -23,28 +23,6 @@
                         <div><img src="http://www.placehold.it/320x480" alt="">
                             <h1 class="s1-title">Business advisory<br>| venture</h1></div>
                     </div>
-                    <!--
-                <div id="slides-2">
-                    <ul class="slides-container">
-                        <li><img src="images/content/s1/fullimage1.jpg" width="100%" height="100%">
-                            <div class="container">
-                                Slide one
-                            </div>
-                        </li>
-                        <li><img src="images/content/s1/fullimage2.jpg" width="100%" height="100%">
-                        </li>
-                        <li><img src="images/content/s1/fullimage3.jpg" width="100%" height="100%">
-                        </li>
-                    </ul>
-                    <nav class="slides-navigation">
-                        <a href="#" class="next"><i class="fa fa-chevron-right"></i></a>
-                        <a href="#" class="prev"><i class="fa fa-chevron-left"></i></a>
-                    </nav>
-                    <div class="arrow_white">
-                        <a href="#"><img class="arrow_white_img" src="images/content/arrow_white.png"></a>
-                    </div>
-                </div>
-                -->
                 </div>
             </div>
         </div>
@@ -166,7 +144,6 @@
             </div>
         </div>
     </div>
-
     <!-- S5 ========================= -->
     <div class="section s5">
         <div class="container">
@@ -174,38 +151,70 @@
             <h3 class="section-heading2">เชี่ยวชาญเฉพาะทาง ตอบโจทย์ได้ตรงจุด</h3>
             <p class="section-description">any i มีทีมงานที่เชี่ยวชาญใน หลากหลายด้าน สามารถให้คำปรึกษา เฉพาะทางได้สำหรับทุกช่วงการเติบโตของธุรกิจ
             </p>
+            <!-- Normal Row -->
             <div class="row">
-                <div class="two four columns">
-                    <img class="u-max-full-width" src="http://placehold.it/200x200">
-                    <h5 class="value-heading">Accounting & Audit Advisor</h5>
-                    <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
-                        <br> ตำแหน่ง xxxxxxxxx</p>
-                </div>
-                <div class="two four columns">
-                    <img class="u-max-full-width" src="http://placehold.it/200x200">
-                    <h5 class="value-heading">IT Advisor</h5>
-                    <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
-                        <br> ตำแหน่ง xxxxxxxxx</p>
-                </div>
-                <div class="two four columns">
-                    <img class="u-max-full-width" src="http://placehold.it/200x200">
-                    <h5 class="value-heading">Finance Advisor</h5>
-                    <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
-                        <br> ตำแหน่ง xxxxxxxxx</p>
-                </div>
-                
                 <div class="twelve columns">
-                    <img class="u-max-full-width" src="http://placehold.it/200x200">
-                    <h5 class="value-heading">Finance Advisor</h5>
-                    <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
-                        <br> ตำแหน่ง xxxxxxxxx</p>
+                    <div class="row">
+                        <div class="two four columns">
+                            <img class="u-max-full-width" src="http://placehold.it/200x200">
+                            <h5 class="value-heading">Accounting & Audit Advisor</h5>
+                            <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
+                                <br> ตำแหน่ง xxxxxxxxx</p>
+                        </div>
+                        <div class="two four columns">
+                            <img class="u-max-full-width" src="http://placehold.it/200x200">
+                            <h5 class="value-heading">IT Advisor</h5>
+                            <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
+                                <br> ตำแหน่ง xxxxxxxxx</p>
+                        </div>
+                        <div class="two four columns">
+                            <img class="u-max-full-width" src="http://placehold.it/200x200">
+                            <h5 class="value-heading">Finance Advisor</h5>
+                            <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
+                                <br> ตำแหน่ง xxxxxxxxx</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!--End Normal Row -->
+            <!-- ex. 2 -->
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="row">
+                        <div class="two four columns">
+                            <img class="u-max-full-width" src="http://placehold.it/200x200">
+                            <h5 class="value-heading">Accounting & Audit Advisor</h5>
+                            <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
+                                <br> ตำแหน่ง xxxxxxxxx</p>
+                        </div>
+                        <div class="two four columns">
+                            <img class="u-max-full-width" src="http://placehold.it/200x200">
+                            <h5 class="value-heading">IT Advisor</h5>
+                            <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
+                                <br> ตำแหน่ง xxxxxxxxx</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End ex. 2 -->
+            <!-- ex. Single Item -->
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="row">
+                        <div class="twelve columns">
+                            <!--(for cms) If a single item should use the "twelve columns" class -->
+                            <img class="u-max-full-width" src="http://placehold.it/200x200">
+                            <h5 class="value-heading">Accounting & Audit Advisor</h5>
+                            <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
+                                <br> ตำแหน่ง xxxxxxxxx</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End ex. Single Item -->
         </div>
     </div>
-    
     <!-- S6 ========================= -->
-
     <div class="section s6">
         <div class="container">
             <h3 class="section-heading">Our Business Partner</h3>
