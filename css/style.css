@@ -923,9 +923,11 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-bottom: 0px;
+  clear: both;
 }
 .s2-tag ul li {
   float: left;
+  display: block;
 }
 .s2-tag #redtag {
   margin-left: -5px;
@@ -1146,9 +1148,11 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-bottom: 0px;
+  clear: both;
 }
 .s4 .s4-tag ul li {
   float: left;
+  display: block;
 }
 .s4 .s4-tag #redtag {
   margin-left: -5px;
@@ -1416,6 +1420,15 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 
 .msie .s4 #redtag {
   height: 58px;
+}
+
+.rowq {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.fiveq {
+  width: 33.3%;
 }
 
 .s2.headcon {
@@ -1774,9 +1787,11 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-bottom: 0px;
+  clear: both;
 }
 .adv-tag ul li {
   float: left;
+  display: block;
 }
 .adv-tag #redtag {
   margin-left: -5px;

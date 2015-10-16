@@ -81,8 +81,10 @@
         display: -ms-inline-flexbox;
         display: inline-flex;
         margin-bottom: 0px;
-        li{
+        clear: both;
+        li {
             float: left;
+            display: block;
         }
     }
     #redtag {
@@ -686,3 +688,12 @@
 }
 
 // End HACK ///////////////////////////////
+
+.rowq{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.fiveq{
+    width: 33.3%;
+}
