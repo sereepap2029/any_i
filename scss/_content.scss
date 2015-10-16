@@ -81,6 +81,9 @@
         display: -ms-inline-flexbox;
         display: inline-flex;
         margin-bottom: 0px;
+        li{
+            float: left;
+        }
     }
     #redtag {
         margin-left: -5px;
@@ -122,6 +125,12 @@
         padding: 0px;
         margin-top: -25px;
         // height: 500px;
+        @media #{$md} {
+            margin-top: -17%;
+        }
+        @media #{$lg} {
+            margin-top: -25px;
+        }
     }
     /* owl-carousel s1 *******************************/
     .owl-dots {
@@ -397,7 +406,7 @@
         left: 0;
         bottom: 75%;
         @media #{$sm} {
-            bottom: 66%;
+            bottom: 63%;
         }
         @media #{$lg} {
             bottom: 38%;
@@ -408,7 +417,7 @@
         right: 0;
         bottom: 75%;
         @media #{$sm} {
-            bottom: 66%;
+            bottom: 63%;
         }
         @media #{$lg} {
             bottom: 38%;
@@ -461,7 +470,6 @@
         @include redtag;
     }
 }
-
 
 .s4 .owl-carousel .owl-item img {
     -webkit-clip-path: ellipse(130% 100% at 50% 0%);
@@ -618,8 +626,8 @@
 
 
 /* End section *******************************/
-// End Content //////////////////////////////////
 
+// End Content //////////////////////////////////
 // HACK ///////////////////////////////////
 .chrome .s1 {
     overflow: hidden;

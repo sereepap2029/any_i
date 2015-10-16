@@ -747,6 +747,16 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   padding: 0px;
   margin-top: -25px;
 }
+@media screen and (min-width: 750px) {
+  .s1 .container {
+    margin-top: -17%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .s1 .container {
+    margin-top: -25px;
+  }
+}
 .s1 .owl-dots {
   position: relative;
   margin-top: -43px;
@@ -914,6 +924,9 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   display: inline-flex;
   margin-bottom: 0px;
 }
+.s2-tag ul li {
+  float: left;
+}
 .s2-tag #redtag {
   margin-left: -5px;
   background-image: url("../images/content/redtag.png");
@@ -1056,7 +1069,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 550px) {
   .s4 .owl-prev {
-    bottom: 66%;
+    bottom: 63%;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -1071,7 +1084,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 550px) {
   .s4 .owl-next {
-    bottom: 66%;
+    bottom: 63%;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -1133,6 +1146,9 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-bottom: 0px;
+}
+.s4 .s4-tag ul li {
+  float: left;
 }
 .s4 .s4-tag #redtag {
   margin-left: -5px;
@@ -1410,10 +1426,12 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   display: block;
   min-width: 100%;
   width: inherit;
+  clip-path: url(../#clip_path-sub);
+  -webkit-clip-path: ellipse(130% 100% at 50% 0%);
 }
 @media screen and (min-width: 750px) {
   .s2.headcon {
-    padding: 13rem 0 30rem;
+    padding: 13rem 0 27rem;
     margin-top: -60px;
   }
 }
@@ -1432,7 +1450,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 750px) {
   .s2.headcon .s2-info {
-    margin-top: 75%;
+    margin-top: 45%;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -1672,12 +1690,17 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   width: inherit;
   height: auto;
   clip-path: url(../#clip_path-sub);
-  -webkit-clip-path: ellipse(120% 100% at 50% 0%);
+  -webkit-clip-path: ellipse(130% 100% at 50% 0%);
 }
 @media screen and (min-width: 550px) {
   .s4.head-adv {
     padding: 0rem 0 6rem;
     margin-top: -60px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .s4.head-adv {
+    padding: 0rem 0 20rem;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -1751,6 +1774,9 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin-bottom: 0px;
+}
+.adv-tag ul li {
+  float: left;
 }
 .adv-tag #redtag {
   margin-left: -5px;

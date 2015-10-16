@@ -60,7 +60,7 @@ ob_start('ob_gzhandler');
                         <ellipse rx="1.8" ry="1" cx="0.5" cy="0" />
                     </clipPath>
                     <clipPath id="clip_path-sub" clipPathUnits="objectBoundingBox">
-                        <ellipse rx="1.2" ry="1" cx="0.5" cy="0" />
+                        <ellipse rx="1.3" ry="1" cx="0.5" cy="0" />
                     </clipPath>
                     <clipPath id="clip_tag" clipPathUnits="objectBoundingBox">
                         <polygon points="1 0,0.75 0.5,1 1,0 1,0 0.5,0 0"> </polygon>
