@@ -6,9 +6,9 @@
             <nav class="main-nav">
                 <div class="nav-toggle"><i class="fa fa-times"></i></div>
                 <ul>
-                    <li><a href="#">Home<i class="fa fa-angle-right arrow-right"></i></a></li>
-                    <li><a href="#">any i in Action<i class="fa fa-angle-right arrow-right"></i></a></li>
-                    <li><a href="#">Contact Us<i class="fa fa-angle-right arrow-right"></i></a></li>
+                    <li><a href="index.php">Home<i class="fa fa-angle-right arrow-right"></i></a></li>
+                    <li><a href="inaction.php">any i in Action<i class="fa fa-angle-right arrow-right"></i></a></li>
+                    <li><a href="contact.php">Contact Us<i class="fa fa-angle-right arrow-right"></i></a></li>
                     <li><a href="#">TH</a></li>
                     <li><a href="#">EN</a></li>
                 </ul>
@@ -36,9 +36,9 @@
         <div class="twelve columns">
             <nav class="main-nav-desk">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">any i in Action</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="inaction.php">any i in Action</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
                     <li><a href="#">TH</a><span> l </span><a href="#">EN</a></li>
                 </ul>
             </nav>
