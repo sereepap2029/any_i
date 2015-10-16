@@ -23,8 +23,13 @@
      transform: translateY(0px);
      //overflow: hidden;
      display: list-item;
+     z-index: 200;
      @media #{$sm} {
          padding: 0rem 0 45%;
+     }
+     @media #{$md} {
+         padding: 0rem 0 23%;
+
      }
  }
  
@@ -32,6 +37,7 @@
      background: url('../images/header/header-bg.jpg');
      background-position: center center;
      background-size: cover;
+     background-repeat: no-repeat;
      width: 100%;
      margin-top: -15px;
      background-color: #fff;
@@ -42,19 +48,31 @@
      // -webkit-clip-path: url(../#clip_path-head);
      //opacity: .5;
      //display: none;
+     @media #{$md} {
+         background: none;
+         z-index: 200;
+     }
      @media #{$lg} {
          position: relative;
      }
  }
  
  .headerlg-bg {
-     width: 100%;
-     padding-bottom: 30%;
-     position: absolute;
-     top: 0;
-     z-index: 200;
+     display: none;
+     @media #{$md} {
+        width: 100%;
+         padding-bottom: 30%;
+         position: absolute;
+         top: 0;
+         z-index: 200;
+         display: block;
+         pointer-events:none;
+     }
+     @media #{$lg} {
+
+     }
      img {
-         max-width: 100%;
+         width: 100%;
          height: auto;
      }
  }
@@ -67,6 +85,7 @@
      right: 15px;
      top: 30px;
      cursor: pointer;
+     z-index: 300;
      &:active,
      &:hover {
          opacity: .5;
@@ -76,6 +95,7 @@
      }
      @media #{$md} {
          right: 45px;
+         color: #fff;
      }
  }
  
@@ -135,6 +155,7 @@
  }
  
  .open {
+    z-index: 500;
      transform: translateX(0%);
      @include transform(translateX(0%));
  }

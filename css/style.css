@@ -474,10 +474,16 @@ p, h1 {
   -webkit-transform: translateY(0px);
   transform: translateY(0px);
   display: list-item;
+  z-index: 200;
 }
 @media screen and (min-width: 550px) {
   .section-header {
     padding: 0rem 0 45%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .section-header {
+    padding: 0rem 0 23%;
   }
 }
 
@@ -485,6 +491,7 @@ p, h1 {
   background: url("../images/header/header-bg.jpg");
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   margin-top: -15px;
   background-color: #fff;
@@ -493,6 +500,12 @@ p, h1 {
   clip-path: url(../#clip_path-head);
   -webkit-clip-path: ellipse(90% 100% at 50% 0%);
 }
+@media screen and (min-width: 750px) {
+  .s0 {
+    background: none;
+    z-index: 200;
+  }
+}
 @media screen and (min-width: 1000px) {
   .s0 {
     position: relative;
@@ -500,14 +513,21 @@ p, h1 {
 }
 
 .headerlg-bg {
-  width: 100%;
-  padding-bottom: 30%;
-  position: absolute;
-  top: 0;
-  z-index: 200;
+  display: none;
+}
+@media screen and (min-width: 750px) {
+  .headerlg-bg {
+    width: 100%;
+    padding-bottom: 30%;
+    position: absolute;
+    top: 0;
+    z-index: 200;
+    display: block;
+    pointer-events: none;
+  }
 }
 .headerlg-bg img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -519,6 +539,7 @@ p, h1 {
   right: 15px;
   top: 30px;
   cursor: pointer;
+  z-index: 300;
 }
 .nav-toggle:active, .nav-toggle:hover {
   opacity: .5;
@@ -531,6 +552,7 @@ p, h1 {
 @media screen and (min-width: 750px) {
   .nav-toggle {
     right: 45px;
+    color: #fff;
   }
 }
 
@@ -598,6 +620,7 @@ nav.main-nav ul li a:active, nav.main-nav ul li a:hover {
 }
 
 .open {
+  z-index: 500;
   transform: translateX(0%);
   -moz-transform: translateX(0%);
   -ms-transform: translateX(0%);

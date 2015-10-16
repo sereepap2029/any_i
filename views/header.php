@@ -15,6 +15,9 @@
             </nav>
         </div>
     </div>
+    <div class="headerlg-bg">
+    <img src="images/header/headerlg-bg.png" >
+</div>
     <div class="section-header s0">
         <!-- Hamburger Res ========= -->
         <div class="nav-toggle"><i class="fa fa-bars"></i></div>
