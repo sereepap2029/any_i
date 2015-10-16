@@ -19,6 +19,7 @@ ob_start('ob_gzhandler');
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/owl.theme.css">
         <link rel="stylesheet" href="css/style.css">
+        
     </head>
 
     <body>

@@ -1326,7 +1326,6 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   display: block;
   min-width: 100%;
   width: inherit;
-  height: auto;
 }
 @media screen and (min-width: 750px) {
   .s2.headcon {
