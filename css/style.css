@@ -499,7 +499,20 @@ p, h1 {
   }
 }
 
+.headerlg-bg {
+  width: 100%;
+  padding-bottom: 30%;
+  position: absolute;
+  top: 0;
+  z-index: 200;
+}
+.headerlg-bg img {
+  max-width: 100%;
+  height: auto;
+}
+
 .nav-toggle {
+  font-family: 'rsu_r';
   position: absolute;
   font-size: 30px;
   color: #c0392b;

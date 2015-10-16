@@ -32,6 +32,9 @@
 </div>
 <!-- Nav Desk ========= -->
 <div class="nav-desk">
+<div class="headerlg-bg">
+    <img src="images/header/headerlg-bg.png" >
+</div>
     <div class="row">
         <div class="twelve columns">
             <nav class="main-nav-desk">
@@ -44,4 +47,5 @@
             </nav>
         </div>
     </div>
+  
 </div>
