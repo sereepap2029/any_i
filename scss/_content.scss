@@ -491,14 +491,6 @@
     }
 }
 
-.chrome .s4 {
-    overflow: hidden;
-}
-
-.safari .s4 {
-    overflow: hidden;
-}
-
 .s5 {
     font-family: 'rsu_b';
     background-color: #fff;
@@ -993,18 +985,20 @@
     .s4 {
         @media #{$lg} {
             padding: 0rem 5% 0rem;
+            margin-bottom: -5%;
+            //z-index: -1;
         }
     }
     @media #{$md} {
         margin-top: 20%;
     }
     @media #{$lg} {
-        margin-top: 13%;
+        margin-top: 11%;
     }
     .s4-info {
         @media #{$md} {
             padding: 0px;
-            margin-top: -17%;
+            margin-top: -63px;
         }
         @media #{$lg} {
             margin-top: -16%;
@@ -1066,6 +1060,13 @@
     }
 }
 
+.advcon-foot {
+    @media #{$lg} {
+        position: relative;
+        z-index: 10;
+    }
+}
+
 hr {
     margin-top: 0px;
 }
@@ -1117,6 +1118,22 @@ hr {
 
 .safari .s1 {
     overflow: hidden;
+}
+
+.chrome .s4 {
+    overflow: hidden;
+}
+
+.safari .s4 {
+    overflow: hidden;
+}
+
+.chrome .adv-con {
+    .s4 {
+        @media #{$md} {
+            overflow: visible;
+        }
+    }
 }
 
 .msie .s1 .owl-carousel .owl-item img {
