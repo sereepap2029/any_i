@@ -805,14 +805,6 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   background: #fff;
 }
 
-.chrome .s1 {
-  overflow: hidden;
-}
-
-.safari .s1 {
-  overflow: hidden;
-}
-
 .s2 {
   padding: 10rem 0 30rem;
   background-image: url("../images/content/s2/s2-bg1.jpg");
@@ -1868,6 +1860,56 @@ hr {
 .next {
   float: right;
   padding: 1px 40px 0px;
+}
+
+.chrome .s1 {
+  overflow: hidden;
+}
+
+.safari .s1 {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1000px) {
+  .msie .s1 .owl-carousel .owl-item img {
+    border-bottom-left-radius: 50% 50px;
+    border-bottom-right-radius: 50% 50px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .msie .s2 {
+    border-bottom-left-radius: 50% 50px;
+    border-bottom-right-radius: 50% 50px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .msie .s3 {
+    border-bottom-left-radius: 50% 50px;
+    border-bottom-right-radius: 50% 50px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .msie .s4 .owl-carousel .owl-item img {
+    border-bottom-left-radius: 50% 50px;
+    border-bottom-right-radius: 50% 50px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .msie .s5 {
+    border-bottom-left-radius: 50% 50px;
+    border-bottom-right-radius: 50% 50px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .msie .s4.head-adv {
+    border-bottom-left-radius: 50% 50px;
+    border-bottom-right-radius: 50% 50px;
+  }
 }
 
 .s7 {

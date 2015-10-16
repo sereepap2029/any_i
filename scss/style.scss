@@ -38,6 +38,14 @@ $lg: "screen and (min-width: 960px)";
     height: 100%;
 }
 
+@mixin iehack{
+    @media #{$lg} {
+
+        border-bottom-left-radius: 50% 50px;
+        border-bottom-right-radius: 50% 50px;
+    }
+}
+
 #wrapper {}
 $f_red: #c0392b;
 p,h1{

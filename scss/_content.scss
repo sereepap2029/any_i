@@ -225,14 +225,6 @@
     /* End owl-carousel s1 *******************************/
 }
 
-.chrome .s1 {
-    overflow: hidden;
-}
-
-.safari .s1 {
-    overflow: hidden;
-}
-
 .s2 {
     padding: 10rem 0 30rem;
     //background-color: #e74c3c;
@@ -1118,3 +1110,37 @@ hr {
 }
 
 // End Advisor //////////////////////////////////
+// HACK ///////////////////////////////////
+.chrome .s1 {
+    overflow: hidden;
+}
+
+.safari .s1 {
+    overflow: hidden;
+}
+
+.msie .s1 .owl-carousel .owl-item img {
+    @include iehack;
+}
+
+.msie .s2 {
+    @include iehack;
+}
+
+.msie .s3 {
+    @include iehack;
+}
+
+.msie .s4 .owl-carousel .owl-item img {
+    @include iehack;
+}
+
+.msie .s5 {
+    @include iehack;
+}
+
+.msie .s4.head-adv {
+    @include iehack;
+}
+
+// End HACK ///////////////////////////////
