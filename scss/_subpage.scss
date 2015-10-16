@@ -8,7 +8,7 @@
     min-width: 100%;
     width: inherit;
     clip-path: url(../#clip_path-sub);
-        -webkit-clip-path: ellipse(130% 100% at 50% 0%);
+    -webkit-clip-path: ellipse(130% 100% at 50% 0%);
     @media #{$md} {
         padding: 13rem 0 27rem;
         margin-top: -60px;
@@ -29,7 +29,7 @@
         margin-top: 45%;
     }
     @media #{$lg} {
-        margin-top: 9%;
+        margin-top: 12%;
     }
     h1 {
         color: #fff;
@@ -198,7 +198,7 @@
         display: block;
     }
     @media #{$lg} {
-        margin-top: 10%;
+        margin-top: 12%;
     }
 }
 
@@ -363,9 +363,13 @@
 
 .adv-con {
     .s4 {
+        @media #{$md} {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
         @media #{$lg} {
             padding: 0rem 5% 0rem;
-            margin-bottom: -5%;
+            //margin-bottom: -5%;
             //z-index: -1;
         }
     }
@@ -390,7 +394,9 @@
             }
         }
         h1 {
+            color: #666666 !important;
             @media #{$lg} {
+                //color: #666666;
                 color: $f_red;
                 font-size: 36px;
             }
@@ -438,6 +444,13 @@
         clip-path: url(../#clip_path-sub) !important;
         -webkit-clip-path: ellipse(120% 100% at 50% 0%) !important;
     }
+    .owl-theme .owl-nav [class*='owl-'] {
+        color: $f_red;
+        &:hover,
+        &:active {
+            opacity: .7;
+        }
+    }
 }
 
 .advcon-foot {
@@ -448,13 +461,20 @@
 }
 
 hr {
-    margin-top: 0px;
+    margin-top: 2px;
+    @media #{$md} {
+        width: 90%;
+    }
 }
 
 .adv-btn {
     padding: 0 20px;
     @media #{$sm} {
         margin-bottom: 15%;
+    }
+    @media #{$md} {
+        width: 90%;
+        margin: 0 auto;
     }
     @media #{$lg} {
         margin-bottom: 7%;
