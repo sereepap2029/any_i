@@ -5,7 +5,7 @@
         <div class="row">
             <div class="twelve columns">
                 <div class="conts-info">
-                    <img class="u-max-full-width" src="http://placehold.it/110x110">
+                    <img class="u-max-full-width" src="images/content/subpage/cont/jetpp.png">
                     <h5 class="value-heading">การสนับสนุน</h5>
                     <p class="value-description">
                         AIA Capital Center 89 Floor 11th Unit 1108 Ratchadaphisek Road, Dindaeng

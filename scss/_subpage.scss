@@ -1,7 +1,7 @@
 // Head Content //////////////////////////////////
 .s2.headcon {
     padding: 1rem 0 8rem;
-    background-image: url('../images/content/s1/s1-bg1.jpg');
+    background-image: url('../images/content/subpage/inac/in-bg1.jpg');
     background-position: center;
     height: auto;
     display: block;
@@ -15,7 +15,7 @@
         //padding: 13rem 0 11rem;
         margin-top: 0px;
         padding: 0rem 0 27rem;
-        background-image: url('../images/content/s2/s2-bg1.jpg');
+        background-image: url('../images/content/subpage/inac/in-bg1.jpg');
         clip-path: url(../#clip_path-sub);
         -webkit-clip-path: ellipse(120% 100% at 50% 0%);
     }
@@ -27,7 +27,7 @@
         margin-top: 75%;
     }
     @media #{$lg} {
-        margin-top: 15%;
+        margin-top: 9%;
     }
     h1 {
         color: #fff;
@@ -91,7 +91,7 @@
 
 .s2.contact {
     padding: 1rem 0 8rem;
-    background-image: url('../images/content/s1/s1-bg1.jpg');
+    background-image: url('../images/content/subpage/cont/cont-bg1.jpg');
     background-position: center;
     height: auto;
     display: block;
@@ -109,7 +109,7 @@
         display: table;
         margin-top: 0px;
         padding: 0rem 0 0rem;
-        background-image: url('../images/content/s2/s2-bg1.jpg');
+         background-image: url('../images/content/subpage/cont/cont-bg1.jpg');
     }
     .conts-info {
         margin-top: 80%;
@@ -119,6 +119,10 @@
         @media #{$lg} {
             margin-top: 15%;
             line-height: 30px;
+        }
+        img{
+            width: 100px;
+            height: 100px;
         }
     }
     .section-description,
@@ -192,7 +196,7 @@
         display: block;
     }
     @media #{$lg} {
-        margin-top: 13%;
+        margin-top: 10%;
     }
 }
 
@@ -225,7 +229,7 @@
 
 .s4.head-adv {
     padding: 38rem 0 8rem;
-    background-image: url('../images/content/s1/s1-bg1.jpg');
+     background-image: url('../images/content/subpage/adv/adv-bg1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -244,7 +248,7 @@
         //padding: 13rem 0 11rem;
         margin-top: 0px;
         padding: 0rem 0 27rem;
-        background-image: url('../images/content/s2/s2-bg1.jpg');
+         background-image: url('../images/content/subpage/adv/adv-bg1.jpg');
         clip-path: url(../#clip_path-sub);
         -webkit-clip-path: ellipse(120% 100% at 50% 0%);
     }
@@ -408,7 +412,7 @@
             bottom: 45%;
         }
         @media #{$lg} {
-            bottom: 45%;
+            bottom: 43%;
         }
     }
     .owl-next {
@@ -422,7 +426,7 @@
             bottom: 45%;
         }
         @media #{$lg} {
-            bottom: 45%;
+            bottom: 43%;
         }
     }
     .owl-item img {

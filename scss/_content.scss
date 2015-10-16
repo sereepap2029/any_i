@@ -462,13 +462,6 @@
     }
 }
 
-.firefox .s4 #redtag {
-    height: 58px;
-}
-
-.msie .s4 #redtag {
-    height: 58px;
-}
 
 .s4 .owl-carousel .owl-item img {
     -webkit-clip-path: ellipse(130% 100% at 50% 0%);
@@ -674,6 +667,14 @@
 
 .msie .s4.head-adv {
     @include iehack;
+}
+
+.firefox .s4 #redtag {
+    height: 57px;
+}
+
+.msie .s4 #redtag {
+    height: 58px;
 }
 
 // End HACK ///////////////////////////////

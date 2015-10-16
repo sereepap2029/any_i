@@ -1118,14 +1118,6 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   color: #fff;
 }
 
-.firefox .s4 #redtag {
-  height: 58px;
-}
-
-.msie .s4 #redtag {
-  height: 58px;
-}
-
 .s4 .owl-carousel .owl-item img {
   -webkit-clip-path: ellipse(130% 100% at 50% 0%);
 }
@@ -1366,9 +1358,17 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   }
 }
 
+.firefox .s4 #redtag {
+  height: 57px;
+}
+
+.msie .s4 #redtag {
+  height: 58px;
+}
+
 .s2.headcon {
   padding: 1rem 0 8rem;
-  background-image: url("../images/content/s1/s1-bg1.jpg");
+  background-image: url("../images/content/subpage/inac/in-bg1.jpg");
   background-position: center;
   height: auto;
   display: block;
@@ -1385,7 +1385,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   .s2.headcon {
     margin-top: 0px;
     padding: 0rem 0 27rem;
-    background-image: url("../images/content/s2/s2-bg1.jpg");
+    background-image: url("../images/content/subpage/inac/in-bg1.jpg");
     clip-path: url(../#clip_path-sub);
     -webkit-clip-path: ellipse(120% 100% at 50% 0%);
   }
@@ -1401,7 +1401,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 1000px) {
   .s2.headcon .s2-info {
-    margin-top: 15%;
+    margin-top: 9%;
   }
 }
 .s2.headcon .s2-info h1 {
@@ -1467,7 +1467,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 
 .s2.contact {
   padding: 1rem 0 8rem;
-  background-image: url("../images/content/s1/s1-bg1.jpg");
+  background-image: url("../images/content/subpage/cont/cont-bg1.jpg");
   background-position: center;
   height: auto;
   display: block;
@@ -1488,7 +1488,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
     display: table;
     margin-top: 0px;
     padding: 0rem 0 0rem;
-    background-image: url("../images/content/s2/s2-bg1.jpg");
+    background-image: url("../images/content/subpage/cont/cont-bg1.jpg");
   }
 }
 .s2.contact .conts-info {
@@ -1504,6 +1504,10 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
     margin-top: 15%;
     line-height: 30px;
   }
+}
+.s2.contact .conts-info img {
+  width: 100px;
+  height: 100px;
 }
 .s2.contact .section-description,
 .s2.contact .value-description {
@@ -1585,7 +1589,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 1000px) {
   .adv-desk {
-    margin-top: 13%;
+    margin-top: 10%;
   }
 }
 
@@ -1622,7 +1626,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 
 .s4.head-adv {
   padding: 38rem 0 8rem;
-  background-image: url("../images/content/s1/s1-bg1.jpg");
+  background-image: url("../images/content/subpage/adv/adv-bg1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1644,7 +1648,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   .s4.head-adv {
     margin-top: 0px;
     padding: 0rem 0 27rem;
-    background-image: url("../images/content/s2/s2-bg1.jpg");
+    background-image: url("../images/content/subpage/adv/adv-bg1.jpg");
     clip-path: url(../#clip_path-sub);
     -webkit-clip-path: ellipse(120% 100% at 50% 0%);
   }
@@ -1844,7 +1848,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 1000px) {
   .adv-con .owl-prev {
-    bottom: 45%;
+    bottom: 43%;
   }
 }
 .adv-con .owl-next {
@@ -1864,7 +1868,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 1000px) {
   .adv-con .owl-next {
-    bottom: 45%;
+    bottom: 43%;
   }
 }
 .adv-con .owl-item img {
