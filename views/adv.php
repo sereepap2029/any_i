@@ -107,8 +107,9 @@
                     <div class="next"><a href="#">Next <i class="fa fa-angle-right"></i></a></div>
                 </div>
             </div>
-            <img src="images/footer/footer-bg.png" class="end-bg">
+            
         </div>
+        
     </div>
 </div>
 <!--End section ========= -->

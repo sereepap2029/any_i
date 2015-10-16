@@ -564,6 +564,18 @@
     }
 }
 
+.row2 {
+    @media #{$sm} {
+        margin-left: 14%;
+    }
+    @media #{$md} {
+        margin-left: 15%;
+    }
+    @media #{$lg} {
+        margin-left: 14%;
+    }
+}
+
 .s6 {
     font-family: 'rsu_b';
     background-color: #bdc3c7;
@@ -688,12 +700,8 @@
 }
 
 // End HACK ///////////////////////////////
-
-.rowq{
+.fourq {
+    max-width: 30.6666666667%;
     display: inline-block;
-    margin: 0 auto;
-}
-
-.fiveq{
-    width: 33.3%;
+    // margin-left: 4%;
 }
