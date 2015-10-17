@@ -31,43 +31,23 @@ $(document).ready(function() {
             "<i class='fa fa-chevron-left'></i>",
             "<i class='fa fa-chevron-right'></i>"
         ],
-
-
     });
 
-    
+
     /*End owlCarousel ***********************/
 
-
-    /* Superslide ***********************/
-    var $slides = $('#slides-2');
-    Hammer($slide[1]).on("swipeleft", function(e) {
-        $('#slides-2').data('superslides').animate('next');
-
-    });
-
-    Hammer($slide[1]).on("swiperight", function(e) {
-        $('#slides-2').data('superslides').animate('prev');
-    });
-
-    $slides.superslides({
-        hashchange: false,
-        pagination: true,
-        //play: 2000,
-    });
-    /*End Superslide ***********************/
 
     /* Fullpage  ***********************/
     if (winW >= 1000) {
         $('#fullpage').fullpage({
-            css3:true,
+            css3: true,
             autoScrolling: false,
             fitToSection: false,
-           //normalScrollElements: '.s5',
+            //normalScrollElements: '.s5',
         });
     }
     /*End Fullpage  ***********************/
-});
+}); /*End Onload  ***********************/
 
 /* Nav ***********************/
 $(function() {
@@ -80,10 +60,14 @@ $(function() {
             $('body').unbind('touchmove');
             flag = 1;
         } else {
-            $('body,html').css("overflow", "hidden");
-            $('body').bind('touchmove', function(e) {
-                e.preventDefault()
-            });
+            //Detect viewport orientation
+            if (window.innerHeight > window.innerWidth) {
+                $('body,html').css("overflow", "hidden");
+                $('body').bind('touchmove', function(e) {
+                    e.preventDefault()
+                });
+            }
+
             flag = 0;
         }
     });

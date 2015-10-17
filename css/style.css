@@ -576,9 +576,10 @@ nav.main-nav ul li a {
   display: block;
   padding: 10px 25px 10px 45px;
 }
-nav.main-nav ul li a:active, nav.main-nav ul li a:hover {
+nav.main-nav ul li a:active {
   background-color: #CC0000;
   color: #fff;
+  outline: none;
 }
 @media screen and (min-width: 550px) {
   nav.main-nav ul li a {
@@ -626,6 +627,7 @@ nav.main-nav ul li a:active, nav.main-nav ul li a:hover {
   -ms-transform: translateX(0%);
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
+  overflow-y: overlay;
 }
 
 .close {
@@ -1890,7 +1892,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 1000px) {
   .adv-con {
-    margin-top: 11%;
+    margin-top: 12%;
   }
 }
 @media screen and (min-width: 550px) {

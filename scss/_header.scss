@@ -29,7 +29,6 @@
      }
      @media #{$md} {
          padding: 0rem 0 23%;
-
      }
  }
  
@@ -60,17 +59,15 @@
  .headerlg-bg {
      display: none;
      @media #{$md} {
-        width: 100%;
+         width: 100%;
          padding-bottom: 30%;
          position: absolute;
          top: 0;
          z-index: 200;
          display: block;
-         pointer-events:none;
+         pointer-events: none;
      }
-     @media #{$lg} {
-
-     }
+     @media #{$lg} {}
      img {
          width: 100%;
          height: auto;
@@ -115,10 +112,10 @@
                  text-decoration: none;
                  display: block;
                  padding: 10px 25px 10px 45px;
-                 &:active,
-                 &:hover {
+                 &:active{
                      background-color: #CC0000;
                      color: #fff;
+                     outline: none;
                  }
                  @media #{$sm} {
                      font-size: 30px;
@@ -155,9 +152,10 @@
  }
  
  .open {
-    z-index: 500;
+     z-index: 500;
      transform: translateX(0%);
      @include transform(translateX(0%));
+     overflow-y: overlay;
  }
  
  .close {

@@ -24,8 +24,10 @@ ob_start('ob_gzhandler');
     <body>
         <div id="wrapper">
             <?php include("views/header.php"); ?>
+            <div class="contents">
                 <?php include("views/content.php"); ?>
                     <?php include("views/footer.php"); ?>
+                    </div>
                         <script src="js/jquery.fullpage.js"></script>
                         <script src="js/owl.carousel.min.js"></script>
                         <script src="js/jquery.superslides.js"></script>
