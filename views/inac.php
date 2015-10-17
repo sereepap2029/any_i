@@ -1,6 +1,7 @@
 
 <!-- HEAD CONTENT ************************** -->
 <div class="headcon section s2">
+ <div class="redoverlay"></div>
     <div class="container">
         <div class="row">
             <div class="twelve columns">

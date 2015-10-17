@@ -1,6 +1,7 @@
 <!-- HEAD CONTENT ************************** -->
 <div class="head-adv section s4">
     <!-- Advisor info desk -->
+    <div class="redoverlay"></div>
     <div class="adv-desk">
         <div class="container">
             <div class="row">
@@ -107,9 +108,8 @@
                     <div class="next"><a href="#">Next <i class="fa fa-angle-right"></i></a></div>
                 </div>
             </div>
-             <img src="images/footer/footer-bg.png" class="end-bg">
+            <img src="images/footer/footer-bg.png" class="end-bg">
         </div>
-        
     </div>
 </div>
 <!--End section ========= -->

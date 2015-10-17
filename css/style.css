@@ -1777,6 +1777,17 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
     -webkit-clip-path: ellipse(120% 100% at 50% 0%);
   }
 }
+.s4.head-adv .redoverlay {
+  display: block;
+  clip-path: url(../#clip_path-sub);
+  -webkit-clip-path: ellipse(130% 100% at 50% 0%);
+}
+@media screen and (min-width: 1000px) {
+  .s4.head-adv .redoverlay {
+    clip-path: url(../#clip_path-sub);
+    -webkit-clip-path: ellipse(120% 100% at 50% 0%);
+  }
+}
 
 .adv-info {
   font-family: 'rsu_b';
@@ -1973,11 +1984,6 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   left: 0;
   bottom: 45%;
 }
-@media screen and (min-width: 550px) {
-  .adv-con .owl-prev {
-    bottom: 66%;
-  }
-}
 @media screen and (min-width: 750px) {
   .adv-con .owl-prev {
     bottom: 45%;
@@ -1992,11 +1998,6 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   position: absolute;
   right: 0;
   bottom: 45%;
-}
-@media screen and (min-width: 550px) {
-  .adv-con .owl-next {
-    bottom: 66%;
-  }
 }
 @media screen and (min-width: 750px) {
   .adv-con .owl-next {
