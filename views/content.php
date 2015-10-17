@@ -3,26 +3,31 @@
     <!-- fullpage -->
     <!-- S1 ========================= -->
     <div class="section s1">
-        
         <div class="container">
             <div class="row">
                 <div class="twelve columns">
                     <!-- owl-desk -->
                     <div id="owl-desk" class="owl-carousel owl-theme owl-loaded">
-                        <div><img src="images/content/s1/s1-bg1.jpg" alt=""><div class="redoverlay"></div>
+                        <div class="item"><img src="images/content/s1/s1-bg1.jpg" alt="">
+                            <div class="redoverlay"></div>
                             <h1 class="s1-title">Business advisory | venture</h1></div>
-                        <div><img src="images/content/s1/s1-bg2.jpg" alt=""><div class="redoverlay"></div>
+                        <div class="item"><img src="images/content/s1/s1-bg2.jpg" alt="">
+                            <div class="redoverlay"></div>
                             <h1 class="s1-title">Business advisory | venture</h1></div>
-                        <div><img src="http://www.placehold.it/1280x840" alt=""><div class="redoverlay"></div>
+                        <div class="item"><img src="http://www.placehold.it/1280x840" alt="">
+                            <div class="redoverlay"></div>
                             <h1 class="s1-title">Business advisory| venture</h1></div>
                     </div>
                     <!-- owl-res -->
                     <div id="owl-res" class="owl-carousel owl-theme owl-loaded">
-                        <div><img src="images/content/s1/res/s1-bg1.jpg" alt="">
+                        <div class="item"><img src="images/content/s1/res/s1-bg1.jpg" alt="">
+                            <div class="redoverlay"></div>
                             <h1 class="s1-title">Business advisory<br>| venture</h1></div>
-                        <div><img src="http://www.placehold.it/320x480" alt="">
+                        <div class="item"><img src="http://www.placehold.it/320x480" alt="">
+                            <div class="redoverlay"></div>
                             <h1 class="s1-title">Business advisory<br>| venture</h1></div>
-                        <div><img src="http://www.placehold.it/320x480" alt="">
+                        <div class="item"><img src="http://www.placehold.it/320x480" alt="">
+                            <div class="redoverlay"></div>
                             <h1 class="s1-title">Business advisory<br>| venture</h1></div>
                     </div>
                 </div>
@@ -81,13 +86,15 @@
     </div>
     <!-- S4 ========================= -->
     <div class="section s4">
-        <div class="redoverlay"></div>
         <div class="container">
             <div class="row">
                 <div class="twelve columns">
                     <div id="owl-desk-s4" class="owl-carousel owl-theme owl-loaded">
                         <!-- slide1 ========= -->
-                        <div><img src="images/content/s4/s4-bg1.jpg" alt="">
+                        <div class="item">
+                            <div class="s4-img"> <img src="images/content/s4/s4-bg1.jpg" alt="">
+                                <div class="redoverlay"></div>
+                            </div>
                             <div class="s4-info">
                                 <div class="s4-tag">
                                     <ul>
@@ -106,7 +113,8 @@
                             </div>
                         </div>
                         <!-- slide2 ========= -->
-                        <div><img src="images/content/s4/s4-bg2.jpg" alt="">
+                        <div class="item"><img src="images/content/s4/s4-bg2.jpg" alt="">
+                            <div class="redoverlay"></div>
                             <div class="s4-info">
                                 <div class="s4-tag">
                                     <ul>
@@ -125,7 +133,8 @@
                             </div>
                         </div>
                         <!-- slide3 ========= -->
-                        <div><img src="http://www.placehold.it/1280x840" alt="">
+                        <div class="item"><img src="http://www.placehold.it/1280x840" alt="">
+                            <div class="redoverlay"></div>
                             <div class="s4-info">
                                 <div class="s4-tag">
                                     <ul>
