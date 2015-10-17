@@ -855,7 +855,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 
 .s2 {
   padding: 10rem 0 30rem;
-  background-image: url("../images/content/s2/s2-bg1.jpg");
+  background: url("../images/content/s2/s2-bg1.jpg");
   background-size: cover;
   clip-path: url(../#clip_path);
   -webkit-clip-path: ellipse(150% 100% at 50% 0%);
@@ -1440,9 +1440,18 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   height: 58px;
 }
 
-.fourq {
-  max-width: 30.6666666667%;
-  display: inline-block;
+.redoverlay {
+  content: '';
+  background-image: url("http://i.imgur.com/G3yoX2f.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: .5;
 }
 
 .s2.headcon {

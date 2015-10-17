@@ -239,7 +239,7 @@
 .s2 {
     padding: 10rem 0 30rem;
     //background-color: #e74c3c;
-    background-image: url('../images/content/s2/s2-bg1.jpg');
+    background: url('../images/content/s2/s2-bg1.jpg');
     background-size: cover;
     //background-position: center;
     clip-path: url(../#clip_path);
@@ -700,8 +700,19 @@
 }
 
 // End HACK ///////////////////////////////
-.fourq {
-    max-width: 30.6666666667%;
-    display: inline-block;
-    // margin-left: 4%;
+
+.redoverlay {
+      content: '';
+   //background-color: rgba(255, 255, 255, .7);
+   background-image: url("http://i.imgur.com/G3yoX2f.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    //z-index: 200;
+    pointer-events:none;
+    opacity: .5;
 }

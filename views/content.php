@@ -1,17 +1,19 @@
 <!-- CONTENT ************************** -->
-<div id="fullpage"> <!-- fullpage -->
+<div id="fullpage">
+    <!-- fullpage -->
     <!-- S1 ========================= -->
     <div class="section s1">
+        
         <div class="container">
             <div class="row">
                 <div class="twelve columns">
                     <!-- owl-desk -->
                     <div id="owl-desk" class="owl-carousel owl-theme owl-loaded">
-                        <div><img src="images/content/s1/s1-bg1.jpg" alt="">
+                        <div><img src="images/content/s1/s1-bg1.jpg" alt=""><div class="redoverlay"></div>
                             <h1 class="s1-title">Business advisory | venture</h1></div>
-                        <div><img src="images/content/s1/s1-bg2.jpg" alt="">
+                        <div><img src="images/content/s1/s1-bg2.jpg" alt=""><div class="redoverlay"></div>
                             <h1 class="s1-title">Business advisory | venture</h1></div>
-                        <div><img src="http://www.placehold.it/1280x840" alt="">
+                        <div><img src="http://www.placehold.it/1280x840" alt=""><div class="redoverlay"></div>
                             <h1 class="s1-title">Business advisory| venture</h1></div>
                     </div>
                     <!-- owl-res -->
@@ -29,6 +31,7 @@
     </div>
     <!-- S2 ========================= -->
     <div class="section s2">
+        <div class="redoverlay"></div>
         <div class="container">
             <div class="row">
                 <div class="twelve columns">
@@ -78,6 +81,7 @@
     </div>
     <!-- S4 ========================= -->
     <div class="section s4">
+        <div class="redoverlay"></div>
         <div class="container">
             <div class="row">
                 <div class="twelve columns">
@@ -182,7 +186,7 @@
                 <div class="twelve columns">
                     <div class="row2">
                         <div class="five columns">
-                         <!--(for cms) If double items should use the "row2, twelve columns" class -->
+                            <!--(for cms) If double items should use the "row2, five columns" class -->
                             <img class="u-max-full-width" src="http://placehold.it/200x200">
                             <h5 class="value-heading">Accounting & Audit Advisor</h5>
                             <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
@@ -194,7 +198,6 @@
                             <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
                                 <br> ตำแหน่ง xxxxxxxxx</p>
                         </div>
-                       
                     </div>
                 </div>
             </div>
