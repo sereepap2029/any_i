@@ -33,14 +33,15 @@
  }
  
  .s0 {
-     background: url('../images/header/header-bg.jpg');
+     background: url('../images/header/header-bg.png');
      background-position: center center;
      background-size: cover;
      background-repeat: no-repeat;
      width: 100%;
-     margin-top: -15px;
-     background-color: #fff;
+     //margin-top: -15px;
+     //background-color: #fff;
      z-index: 12;
+     height: auto;
      position: absolute;
      clip-path: url(../#clip_path-head);
      -webkit-clip-path: ellipse(90% 100% at 50% 0%);

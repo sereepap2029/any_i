@@ -488,14 +488,13 @@ p, h1 {
 }
 
 .s0 {
-  background: url("../images/header/header-bg.jpg");
+  background: url("../images/header/header-bg.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  margin-top: -15px;
-  background-color: #fff;
   z-index: 12;
+  height: auto;
   position: absolute;
   clip-path: url(../#clip_path-head);
   -webkit-clip-path: ellipse(90% 100% at 50% 0%);
@@ -720,6 +719,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 ================================================== */
 /* section *******************************/
 .s1 {
+  position: relative;
   padding: 0rem 0 0rem;
   clip-path: url(../#clip_path);
   -webkit-clip-path: ellipse(150% 100% at 50% 0%);
@@ -857,7 +857,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 
 .s2 {
-  padding: 10rem 0 30rem;
+  padding: 10rem 0 15rem;
   background: url("../images/content/s2/s2-bg1.jpg");
   background-size: cover;
   clip-path: url(../#clip_path);
@@ -1110,7 +1110,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 .s4 .s4-info {
   font-family: 'rsu_b';
   text-align: left;
-  padding: 40px 30px 0px;
+  padding: 40px 20px 0px;
   color: #666666;
   text-align: left;
 }
@@ -1227,7 +1227,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   background-color: #fff;
   clip-path: url(../#clip_path-s5);
   -webkit-clip-path: ellipse(270% 100% at 50% 0%);
-  margin-top: -45px;
+  margin-top: -55px;
   z-index: 6;
 }
 @media screen and (min-width: 550px) {
@@ -1327,7 +1327,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   font-family: 'rsu_b';
   background-color: #bdc3c7;
   padding: 13rem 0 13rem;
-  margin-top: -11%;
+  margin-top: -15%;
   z-index: 5;
 }
 @media screen and (min-width: 750px) {

@@ -112,6 +112,7 @@
 /* section *******************************/
 
 .s1 {
+    position: relative;
     padding: 0rem 0 0rem;
     //background-color: #34495e;
     clip-path: url(../#clip_path);
@@ -240,7 +241,7 @@
 }
 
 .s2 {
-    padding: 10rem 0 30rem;
+    padding: 10rem 0 15rem;
     //background-color: #e74c3c;
     background: url('../images/content/s2/s2-bg1.jpg');
     background-size: cover;
@@ -438,7 +439,7 @@
     .s4-info {
         font-family: 'rsu_b';
         text-align: left;
-        padding: 40px 30px 0px;
+        padding: 40px 20px 0px;
         color: #666666;
         text-align: left;
         // padding: 10px 8px 0px;
@@ -521,7 +522,7 @@
     //-webkit-clip-path: url(../#clip_path-s5);
     clip-path: url(../#clip_path-s5);
     -webkit-clip-path: ellipse(270% 100% at 50% 0%);
-    margin-top: -45px;
+    margin-top: -55px;
     z-index: 6;
     @media #{$sm} {
         -webkit-clip-path: ellipse(220% 100% at 50% 0%);
@@ -602,7 +603,7 @@
     //-webkit-clip-path: url(../#clip_path);
     //clip-path: url(../#clip_path-s6);
     //-webkit-clip-path: ellipse(180% 100% at 50% 0%);    
-    margin-top: -11%;
+    margin-top: -15%;
     z-index: 5;
     @media #{$md} {
         padding: 14rem 0 16rem;
