@@ -712,17 +712,29 @@
 }
 
 /////
-
 .ios7 .s1 .owl-carousel .owl-item img {
+    @include iehack;
+}
+
+.ios7 .s1 .owl-dots {
+    margin-top: -40px;
+}
+
+.ios7 .redoverlay {
     @include iehack;
 }
 
 .ios7 .s2 {
     @include iehack;
+    margin-top: -15%;
 }
 
 .ios7 .s3 {
     @include iehack;
+}
+
+.ios7 .s4 {
+    margin-top: -15%;
 }
 
 .ios7 .s4 .owl-carousel .owl-item img {
