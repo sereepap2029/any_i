@@ -627,6 +627,8 @@ nav.main-nav ul li a:active {
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
   overflow-y: overlay;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateZ(0);
 }
 
 .close {

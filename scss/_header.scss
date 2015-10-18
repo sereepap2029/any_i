@@ -157,6 +157,9 @@
      transform: translateX(0%);
      @include transform(translateX(0%));
      overflow-y: overlay;
+     -webkit-overflow-scrolling: touch;
+     -webkit-transform: translateZ(0);
+
  }
  
  .close {
