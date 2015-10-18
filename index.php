@@ -19,6 +19,25 @@ ob_start('ob_gzhandler');
         <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/owl.theme.css">
         <link rel="stylesheet" href="css/style.css">
+        <style>
+        .s1,
+        .s2,
+        .s3 {
+            clip-path: url(#clip_path);
+        }
+        
+        .s1 .item {
+            clip-path: url(#clip_path);
+        }
+        
+        .s4 .item {
+            clip-path: url(#clip_path-s4-img);
+        }
+        
+        .s5 {
+            clip-path: url(#clip_path-s5);
+        }
+        </style>
     </head>
 
     <body>
