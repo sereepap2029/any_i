@@ -2,12 +2,12 @@
 @import 'normalize';
 @import 'compass';
 @import 'font-face';
-
 $sm: "screen and (min-width: 550px)";
 $md: "screen and (min-width: 750px)";
 //$tl: "screen and (min-width: 768px)";
 $lg: "screen and (min-width: 1000px)";
 $lgx: "screen and (min-width: 1400px)";
+
 /*
 $sm: "screen and (min-width: 375px)";
 
@@ -17,16 +17,16 @@ $lg: "screen and (min-width: 960px)";
 
 .clearfix:before,
 .clearfix:after {
-  content: " ";
-  display: table;
+    content: " ";
+    display: table;
 }
 
 .clearfix:after {
-  clear: both;
+    clear: both;
 }
 
 .clearfix {
-  *zoom: 1;
+    *zoom: 1;
 }
 
 @mixin bg_img($uri) {
@@ -38,18 +38,21 @@ $lg: "screen and (min-width: 960px)";
     height: 100%;
 }
 
-@mixin iehack{
+@mixin iehack {
+    border-bottom-left-radius: 50% 50px;
+    border-bottom-right-radius: 50% 50px;
     @media #{$lg} {
-
         border-bottom-left-radius: 50% 50px;
         border-bottom-right-radius: 50% 50px;
     }
 }
 
 #wrapper {}
+
 $f_red: #c0392b;
-p,h1{
-  font-family: 'rsu_b';
+p,
+h1 {
+    font-family: 'rsu_b';
 }
 
 @import 'header';

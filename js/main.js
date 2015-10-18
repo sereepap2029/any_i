@@ -74,7 +74,12 @@ $(function() {
 
 });
 
-/* Check browser ***********************/
+/* Detect iOS version ***********************/
+if (navigator.userAgent.match(/iPad|iPhone;.*CPU.*OS 7_\d/i)) {
+    $('html').addClass('ios7');
+}
+
+/* Detect browser ***********************/
 function get_browser_info() {
     var ua = navigator.userAgent,
         tem, M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];

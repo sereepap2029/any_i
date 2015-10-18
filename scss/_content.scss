@@ -711,6 +711,32 @@
     @include iehack;
 }
 
+/////
+
+.ios7 .s1 .owl-carousel .owl-item img {
+    @include iehack;
+}
+
+.ios7 .s2 {
+    @include iehack;
+}
+
+.ios7 .s3 {
+    @include iehack;
+}
+
+.ios7 .s4 .owl-carousel .owl-item img {
+    @include iehack;
+}
+
+.ios7 .s5 {
+    @include iehack;
+}
+
+.ios7 .s4.head-adv {
+    @include iehack;
+}
+
 .firefox .s4 #redtag {
     height: 57px;
 }
