@@ -416,7 +416,7 @@
     .owl-prev {
         position: absolute;
         left: 0;
-        bottom: 75%;
+        bottom: 73%;
         @media #{$sm} {
             bottom: 63%;
         }
@@ -427,7 +427,7 @@
     .owl-next {
         position: absolute;
         right: 0;
-        bottom: 75%;
+        bottom: 73%;
         @media #{$sm} {
             bottom: 63%;
         }

@@ -1082,7 +1082,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 .s4 .owl-prev {
   position: absolute;
   left: 0;
-  bottom: 75%;
+  bottom: 73%;
 }
 @media screen and (min-width: 550px) {
   .s4 .owl-prev {
@@ -1097,7 +1097,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 .s4 .owl-next {
   position: absolute;
   right: 0;
-  bottom: 75%;
+  bottom: 73%;
 }
 @media screen and (min-width: 550px) {
   .s4 .owl-next {
@@ -1540,6 +1540,10 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   }
 }
 
+.firefox .s2.headcon .s2-info #redtag {
+  height: 58px;
+}
+
 .s3.inaction {
   clip-path: none;
   -webkit-clip-path: none;
@@ -1789,6 +1793,10 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
     clip-path: url(../#clip_path-sub);
     -webkit-clip-path: ellipse(120% 100% at 50% 0%);
   }
+}
+
+.firefox .s4.head-adv #redtag {
+  height: 58px;
 }
 
 .adv-info {
