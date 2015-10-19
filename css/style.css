@@ -759,7 +759,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 1000px) {
   .s1 .container {
-    margin-top: -25px;
+    margin-top: -15%;
   }
 }
 .s1 .redoverlay {
@@ -822,7 +822,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 1000px) {
   .s1 .s1-title {
-    bottom: 40%;
+    bottom: 30%;
     line-height: 1;
   }
 }
@@ -884,7 +884,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 
 .s2-info {
-  color: #666666;
+  color: #fff;
   text-align: left;
   padding-right: 15px;
 }
@@ -1331,7 +1331,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 
 .s6 {
   font-family: 'rsu_b';
-  background-color: #bdc3c7;
+  background-color: #e6e6e6;
   padding: 13rem 0 13rem;
   margin-top: -15%;
   z-index: 5;

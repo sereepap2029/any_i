@@ -127,12 +127,14 @@
         max-width: none;
         padding: 0px;
         margin-top: -25px;
+
         // height: 500px;
         @media #{$md} {
             margin-top: -17%;
         }
         @media #{$lg} {
-            margin-top: -25px;
+            //margin-top: -25px;
+            margin-top: -15%;
         }
     }
     .redoverlay {
@@ -184,7 +186,7 @@
             bottom: 33%;
         }
         @media #{$lg} {
-            bottom: 40%;
+            bottom: 30%;
             line-height: 1;
         }
     }
@@ -265,7 +267,7 @@
 }
 
 .s2-info {
-    color: #666666;
+    color: #fff;
     text-align: left;
     // padding: 10px 8px 0px;
     padding-right: 15px;
@@ -601,7 +603,7 @@
 
 .s6 {
     font-family: 'rsu_b';
-    background-color: #bdc3c7;
+    background-color: #e6e6e6;
     padding: 13rem 0 13rem;
     //-webkit-clip-path: url(../#clip_path);
     //clip-path: url(../#clip_path-s6);
