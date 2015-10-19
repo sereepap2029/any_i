@@ -8,7 +8,6 @@
 
 body {
     margin: 0;
-    background: #000;
 }
 
 video {
@@ -30,6 +29,21 @@ video {
     -moz-transition: 1s opacity;
 }
 
+@media screen and (max-width: 1000px) {
+    .wel-con {
+        background: url("../../images/wel/eyeball.png");
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    video {
+        display: none;
+    }
+}
+
 .modal-footer {
     border-top: 0px;
 }
@@ -40,7 +54,6 @@ video {
     left: 50%;
     min-width: 100px;
     min-height: 100px;
-    width: 800px;
     height: auto;
     z-index: 1;
     text-align: center;
@@ -57,7 +70,8 @@ video {
 .titlebu {
     font-family: 'rsu_b';
     color: #fff;
-    font-size: 60px
+    font-size: 60px;
+    line-height: 50px;
 }
 
 .gotoindex {
@@ -140,7 +154,6 @@ h1 {
 #polina button:hover {
     background: rgba(0, 0, 0, 0.5);
 }
-
 
 @media screen and (max-width: 500px) {
     div {
