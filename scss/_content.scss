@@ -135,6 +135,9 @@
             margin-top: -25px;
         }
     }
+    .redoverlay {
+        background-image: url("../images/content/red_right.png");
+    }
     /* owl-carousel s1 *******************************/
     .owl-dots {
         position: relative;
@@ -765,8 +768,9 @@
 .redoverlay {
     content: '';
     //background-color: rgba(255, 255, 255, .7);
-    background-image: url("http://i.imgur.com/G3yoX2f.jpg");
-    background-size: cover;
+    background-image: url("../images/content/red_left.png");
+    //background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
     width: 100%;

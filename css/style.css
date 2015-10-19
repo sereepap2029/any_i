@@ -762,6 +762,9 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
     margin-top: -25px;
   }
 }
+.s1 .redoverlay {
+  background-image: url("../images/content/red_right.png");
+}
 .s1 .owl-dots {
   position: relative;
   margin-top: -43px;
@@ -1504,8 +1507,8 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 
 .redoverlay {
   content: '';
-  background-image: url("http://i.imgur.com/G3yoX2f.jpg");
-  background-size: cover;
+  background-image: url("../images/content/red_left.png");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
   width: 100%;
@@ -1541,6 +1544,9 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
     clip-path: url(../#clip_path-sub);
     -webkit-clip-path: ellipse(120% 100% at 50% 0%);
   }
+}
+.s2.headcon .redoverlay {
+  background-image: url("../images/content/red_right.png");
 }
 
 .s2.headcon .s2-info {
@@ -1817,6 +1823,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 .s4.head-adv .redoverlay {
   display: block;
   clip-path: url(../#clip_path-sub);
+  background-image: url("../images/content/red_right.png");
   -webkit-clip-path: ellipse(130% 100% at 50% 0%);
 }
 @media screen and (min-width: 1000px) {

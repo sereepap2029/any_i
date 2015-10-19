@@ -21,6 +21,9 @@
         clip-path: url(../#clip_path-sub);
         -webkit-clip-path: ellipse(120% 100% at 50% 0%);
     }
+    .redoverlay {
+        background-image: url("../images/content/red_right.png");
+    }
 }
 
 .s2.headcon .s2-info {
@@ -41,7 +44,6 @@
             font-size: 48px;
         }
     }
-
 }
 
 .firefox .s2.headcon .s2-info #redtag {
@@ -266,6 +268,7 @@
     .redoverlay {
         display: block;
         clip-path: url(../#clip_path-sub);
+        background-image: url("../images/content/red_right.png");
         -webkit-clip-path: ellipse(130% 100% at 50% 0%);
         @media #{$lg} {
             clip-path: url(../#clip_path-sub);
@@ -277,7 +280,6 @@
 .firefox .s4.head-adv #redtag {
     height: 58px;
 }
-
 
 .adv-info {
     font-family: 'rsu_b';
@@ -437,7 +439,7 @@
         left: 0;
         bottom: 45%;
         @media #{$sm} {
-           // bottom: 66%;
+            // bottom: 66%;
         }
         @media #{$md} {
             bottom: 45%;
@@ -451,7 +453,7 @@
         right: 0;
         bottom: 45%;
         @media #{$sm} {
-           // bottom: 66%;
+            // bottom: 66%;
         }
         @media #{$md} {
             bottom: 45%;
