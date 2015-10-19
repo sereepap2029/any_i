@@ -29,21 +29,6 @@ video {
     -moz-transition: 1s opacity;
 }
 
-@media screen and (max-width: 1000px) {
-    .wel-con {
-        background: url("../../images/wel/eyeball.png");
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
-    video {
-        display: none;
-    }
-}
-
 .modal-footer {
     border-top: 0px;
 }
@@ -89,11 +74,15 @@ video {
     background-size: 100% 100%;
     outline-style: none;
     border-style: none;
+    -webkit-transition: color ease .1s;
+    -moz-transition: color ease .1s;
+    -o-transition: color ease .1s;
+    transition: color ease .1s;
 }
 
 .gotoindex:active,
 .gotoindex:hover {
-    color: #888888;
+    color: #444444;
 }
 
 .top_band {
@@ -155,9 +144,9 @@ h1 {
     background: rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
     div {
-        width: 70%;
+        width: 100%;
     }
 }
 
@@ -170,3 +159,24 @@ h1 {
             display: none;
         }
     }*/
+
+@media screen and (max-width: 550px) {
+    .titlebu {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .wel-con {
+        background: url("../../images/wel/eyeball.jpg");
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    video {
+        display: none;
+    }
+}
