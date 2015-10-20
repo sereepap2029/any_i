@@ -759,7 +759,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 1000px) {
   .s1 .container {
-    margin-top: -15%;
+    margin-top: -11%;
   }
 }
 .s1 .redoverlay {
@@ -777,7 +777,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 @media screen and (min-width: 1000px) {
   .s1 .owl-dots {
     position: absolute;
-    margin-top: -70px;
+    margin-top: -130px;
     left: 0;
     right: 0;
   }
