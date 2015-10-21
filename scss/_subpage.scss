@@ -28,6 +28,7 @@
 
 .s2.headcon .s2-info {
     margin-top: 95%;
+    padding-right: 0px;
     @media #{$md} {
         margin-top: 45%;
     }
@@ -285,7 +286,7 @@
 .adv-info {
     font-family: 'rsu_b';
     text-align: left;
-    padding: 0px 30px 0px;
+    padding: 0px 16px 0px;
     color: #666666;
     text-align: left;
     margin-top: -5%;
