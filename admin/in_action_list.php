@@ -1,8 +1,8 @@
 <?
 include("views/admin_header.php");
-require_once("../model/m_advisor.php");
-$m_advisor = new M_advisor;
-$advisor=$m_advisor->get_all_advisor(100000,0);
+require_once("../model/m_action.php");
+$m_action = new M_action;
+$action=$m_action->get_all_action(100000,0);
 ?>
 <style type="text/css">
 	.ui-state-highlight { position: relative;
@@ -19,13 +19,13 @@ $advisor=$m_advisor->get_all_advisor(100000,0);
                         <!-- block -->
                         <div class="block">
                             <div class="navbar navbar-inner block-header">
-                                <div class="muted pull-left">Any I Advisor</div>
+                                <div class="muted pull-left">Any I in action</div>
                             </div>
                             <div class="block-content collapse in">
                                 <div class="span12">
                                    <div class="table-toolbar">
                                       <div class="btn-group">
-                                         <a href="advisor_add.php"><button class="btn btn-success">Add Advisor <i class="icon-plus icon-white"></i></button></a>
+                                         <a href="in_action_add.php"><button class="btn btn-success">Add Any I in action <i class="icon-plus icon-white"></i></button></a>
                                       </div>                                      
                                    </div>
                                     
@@ -34,32 +34,25 @@ $advisor=$m_advisor->get_all_advisor(100000,0);
                                             <tr>
                                               <th>Picture</th>
                                               <th>Title</th>
-                                              <th>Name</th>
-                                              <th>Position</th>
                                               <th>Action</th>
                                           </tr>
                                         </thead>
                                         <tbody id="table_sort">
                                              <?
-                                             foreach ($advisor->result as $key => $value) {
+                                             foreach ($action->result as $key => $value) {
+                                                $photo=$m_action->get_all_action_photo($value['id'])->result;
                                              	?>
                                              	<tr>
                                              		<td>
-                                             			<img src="../media/advisor/<?=$value['picture']?>" style="width:200px">
+                                             			<img src="../media/action/<?=$photo[0]['filename']?>" style="width:200px">
                                              		</td>
                                              		<td>
                                              		<input type="hidden" name="id[]" value="<?=$value['id']?>">
                                              			<?=$value['title']."(".$value['title_en'].")"?>
                                              		</td>
                                              		<td>
-                                             			<?=$value['name']."(".$value['name_en'].")"?>
-                                             		</td>
-                                             		<td>
-                                             			<?=$value['Position']."(".$value['Position_en'].")"?>
-                                             		</td>
-                                             		<td>
-                                             			<a href="advisor_add.php?edit=yes&id=<?=$value['id']?>" class="btn btn-info"><i class="icon-pencil icon-white"></i></a>
-                                             			<a href="javascript:del_advisor('advisor_add.php?delete=yes&id=<?=$value['id']?>');" class="btn btn-danger">x</a>
+                                             			<a href="in_action_add.php?edit=yes&id=<?=$value['id']?>" class="btn btn-info"><i class="icon-pencil icon-white"></i></a>
+                                             			<a href="javascript:del_action('in_action_add.php?delete=yes&id=<?=$value['id']?>');" class="btn btn-danger">x</a>
                                              		</td>
                                              	</tr>
                                              	<?
@@ -83,20 +76,20 @@ $advisor=$m_advisor->get_all_advisor(100000,0);
         	$( "#table_sort" ).sortable({
 		      placeholder: "ui-state-highlight",
 		      update: function( event, ui ) {
-		      	sort_adv();
+		      	sort_action();
 		      },
 		    });
 		    $( "#table_sort" ).disableSelection();
-		    function del_advisor(link){
+		    function del_action(link){
 		    	if(confirm("แน่ใจ๋")){
 		    		window.open(link,"_self");
 		    	}
 		    }
-		    function sort_adv() {
+		    function sort_action() {
 			  var id=$("input[name='id[]']").serialize()
 			  $.ajax({
 			                method: "POST",
-			                url: "./sort_adv.php",
+			                url: "./sort_action.php",
 			                data: id
 			            })
 			            .done(function(data) {

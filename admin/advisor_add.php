@@ -109,7 +109,7 @@ if (isset($_GET['edit'])) {
                 <!-- block -->
                 <div class="block">
                     <div class="navbar navbar-inner block-header">
-                        <div class="muted pull-left">Add admin Account </div>
+                        <div class="muted pull-left">Add Advisor </div>
                     </div>
                     <div class="block-content collapse in">
                         <div class="span12">
@@ -186,7 +186,7 @@ if (isset($_GET['edit'])) {
                                                         <span>เลือกไฟล์</span>
                                         <!-- The file input field used as target for the file upload widget -->
                                         <input id="fileupload" type="file" name="files[]">
-                                        </span>
+                                        </span>&nbsp;&nbsp;&nbsp;<font style="color:red">200px X 200px</font>
                                         <br>
                                         <br>
                                         <!-- The global progress bar -->

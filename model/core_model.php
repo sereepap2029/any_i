@@ -12,7 +12,7 @@
 		public $where_flag=false;
 		public $active_where_array = array();
 		public $active_limit="";
-		public $active_order="ORDER BY ";
+		public $active_order=" ORDER BY ";
 		public $order_flag=false;
 		public function select($str){
 			$this->active_select.=$str;
@@ -45,10 +45,14 @@
 			if ($this->where_flag) {
 				$this->active_record.=substr($this->active_where, 0, -4);
 			}
+
 			if ($this->order_flag) {
-				$this->active_order.=substr($this->active_order, 0, -1);
+				$this->active_record.=substr($this->active_order, 0, -1);
 			}
+			
 			$this->active_record.=$this->active_limit;
+
+			
 			try{
 				$stm=$this->db->prepare($this->active_record);
 				foreach ($this->active_where_array as $key => $value) {

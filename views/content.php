@@ -1,3 +1,8 @@
+<?
+require_once("./model/m_advisor.php");
+$m_advisor = new M_advisor;
+$advisor=$m_advisor->get_all_advisor(100000,0);
+?>
 <!-- CONTENT ************************** -->
 <div id="fullpage">
     <!-- fullpage -->
@@ -165,67 +170,61 @@
             <p class="section-description">any i มีทีมงานที่เชี่ยวชาญใน หลากหลายด้าน สามารถให้คำปรึกษา เฉพาะทางได้สำหรับทุกช่วงการเติบโตของธุรกิจ
             </p>
             <!-- Normal Row -->
-            <div class="row">
-                <div class="twelve columns">
-                    <div class="row">
-                        <div class="four columns">
-                            <img class="u-max-full-width" src="http://placehold.it/200x200">
-                            <h5 class="value-heading">Accounting & Audit Advisor</h5>
-                            <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
-                                <br> ตำแหน่ง xxxxxxxxx</p>
-                        </div>
-                        <div class="four columns">
-                            <img class="u-max-full-width" src="http://placehold.it/200x200">
-                            <h5 class="value-heading">IT Advisor</h5>
-                            <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
-                                <br> ตำแหน่ง xxxxxxxxx</p>
-                        </div>
-                        <div class="four columns">
-                            <img class="u-max-full-width" src="http://placehold.it/200x200">
-                            <h5 class="value-heading">Finance Advisor</h5>
-                            <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
-                                <br> ตำแหน่ง xxxxxxxxx</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End Normal Row -->
-            <!-- ex. 2 -->
-            <div class="row">
-                <div class="twelve columns">
-                    <div class="row2">
-                        <div class="five columns">
-                            <!--(for cms) If double items should use the "row2, five columns" class -->
-                            <img class="u-max-full-width" src="http://placehold.it/200x200">
-                            <h5 class="value-heading">Accounting & Audit Advisor</h5>
-                            <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
-                                <br> ตำแหน่ง xxxxxxxxx</p>
-                        </div>
-                        <div class="five columns">
-                            <img class="u-max-full-width" src="http://placehold.it/200x200">
-                            <h5 class="value-heading">IT Advisor</h5>
-                            <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
-                                <br> ตำแหน่ง xxxxxxxxx</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End ex. 2 -->
-            <!-- ex. Single Item -->
-            <div class="row">
-                <div class="twelve columns">
+            <?        
+            $num_max=(int)(count($advisor->result)/3);    
+            $num_remain=(int)(count($advisor->result)%3);
+            $inner_cls="";
+            if ($num_remain==1) {
+                $inner_cls="twelve";
+            }else if($num_remain==2){
+                $inner_cls="five";
+            }
+            $cur_num=1;
+            foreach ($advisor->result as $key => $value) {                
+                if ($key%3==0) {
+                    ?>
                     <div class="row">
                         <div class="twelve columns">
-                            <!--(for cms) If a single item should use the "twelve columns" class -->
-                            <img class="u-max-full-width" src="http://placehold.it/200x200">
-                            <h5 class="value-heading">Accounting & Audit Advisor</h5>
-                            <p class="value-description">คุณ xxxxxx xxxxxxxxxxxxxxxxx
-                                <br> ตำแหน่ง xxxxxxxxx</p>
+                            <div class="row<?if(($cur_num/3)>$num_max){echo $num_remain;}?>">
+                    <?
+                }
+                ?>
+                        <div class="<?if(($cur_num/3)>$num_max){echo $inner_cls;}else{echo "four";}?> columns">
+                            <img class="u-max-full-width" src="./media/advisor/<?=$value['picture']?>">
+                            <h5 class="value-heading"><?
+                            if ($_COOKIE["lang"]=="th") {
+                                echo $value['title'];
+                            }else{
+                                echo $value['title_en'];
+                            }
+                            ?>
+                            </h5>
+                            <p class="value-description"><?
+                            if ($_COOKIE["lang"]=="th") {
+                                echo $value['name'];
+                            }else{
+                                echo $value['name_en'];
+                            }
+                            ?>
+                                <br> <?
+                            if ($_COOKIE["lang"]=="th") {
+                                echo $value['Position'];
+                            }else{
+                                echo $value['Position_en'];
+                            }
+                            ?></p>
+                        </div>
+                <?
+                if ($key%3==2||$cur_num==count($advisor->result)) {
+                    ?>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- End ex. Single Item -->
+                    <?
+                }
+                $cur_num+=1;
+            }
+            ?>
         </div>
     </div>
     <!-- S6 ========================= -->

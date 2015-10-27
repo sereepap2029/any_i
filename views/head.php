@@ -1,3 +1,16 @@
+<?
+if (isset($_GET['setlang'])) {
+	setcookie("lang",$_GET['setlang'],time()+(60*60*24*10));
+	?>
+	<script type="text/javascript">
+	window.open("./index-in.php","_self");
+	</script>
+	<?
+}
+if (!isset($_COOKIE["lang"])) {
+	setcookie("lang","th",time()+(60*60*24*10));
+}
+?>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/javascript" src="js/jquery-1.11.3.min.js?v=1001"></script>
