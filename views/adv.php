@@ -1,3 +1,18 @@
+<?
+require_once("./model/m_action.php");
+$m_action = new M_action;
+$action=$m_action->get_action_by_id($_GET['info'])->result;
+if (!isset($action[0]['id'])) {
+    ?>
+    <script type="text/javascript">
+        window.open("./index-in.php","_self");
+        </script>
+    <?
+}
+$photo_arr=$m_action->get_all_action_photo($action[0]['id']);
+$action[0]['photo']=$photo_arr->result;
+
+?>
 <!-- HEAD CONTENT ************************** -->
 <div class="head-adv section s4">
     <!-- Advisor info desk -->
@@ -17,8 +32,20 @@
                                 </li>
                             </ul>
                         </div>
-                        <h1>PAC SolarAire</h1>
-                        <p class="adv-desk_p">“วันที่เราหยุดไม่ได้เพราะมาไกลแล้ว แต่จะเดินต่อก็ยังหาทางไปไม่ถูก การที่มีคนเดินเข้ามาช่วยชี้ทางให้ มันเหมือนกับเราเห็นทาง และโอกาสใหม่ที่จะไปต่อได้แล้ว”
+                        <h1><?
+                            if ($_COOKIE["lang"]=="th") {
+                                echo $action[0]['title'];
+                            }else{
+                                echo $action[0]['title_en'];
+                            }
+                            ?></h1>
+                        <p class="adv-desk_p"><?
+                            if ($_COOKIE["lang"]=="th") {
+                                echo $action[0]['description'];
+                            }else{
+                                echo $action[0]['description_en'];
+                            }
+                            ?>
                         </p>
                     </div>
                 </div>
@@ -41,8 +68,20 @@
                     </li>
                 </ul>
             </div>
-            <h1>PAC SolarAire</h1>
-            <p>“วันที่เราหยุดไม่ได้เพราะมาไกลแล้ว แต่จะเดินต่อก็ยังหาทางไปไม่ถูก การที่มีคนเดินเข้ามาช่วยชี้ทางให้ มันเหมือนกับเราเห็นทาง และโอกาสใหม่ที่จะไปต่อได้แล้ว”
+            <h1><?
+                            if ($_COOKIE["lang"]=="th") {
+                                echo $action[0]['title'];
+                            }else{
+                                echo $action[0]['title_en'];
+                            }
+                            ?></h1>
+            <p><?
+                            if ($_COOKIE["lang"]=="th") {
+                                echo $action[0]['description'];
+                            }else{
+                                echo $action[0]['description_en'];
+                            }
+                            ?>
             </p>
         </div>
     </div>
@@ -79,18 +118,36 @@
                     <div class="six columns">
                         <div id="owl-adv" class="owl-carousel owl-theme owl-loaded">
                             <!-- slide ========= -->
-                            <div><img src="images/content/s1/s1-bg1.jpg" alt="">
-                            </div>
-                            <div><img src="images/content/s1/s1-bg2.jpg" alt="">
-                            </div>
-                            <div><img src="http://www.placehold.it/1280x840" alt="">
-                            </div>
+                            <?
+                            foreach ($action[0]['photo'] as $key => $value) {
+                                if ($key==0) {
+
+                                }else{
+                                    ?>
+                                    <div><img src="./media/action/<?=$value['filename']?>" alt="">
+                                    </div>
+                                    <?
+                                }
+                            }
+                            ?>
                         </div>
                     </div>
                     <div class="six columns">
                         <div class="s4-info">
-                            <h1>PAC SolarAire1</h1>
-                            <p>“วันที่เราหยุดไม่ได้เพราะมาไกลแล้ว แต่จะเดินต่อก็ยังหาทางไปไม่ถูก การที่มีคนเดินเข้ามาช่วยชี้ทางให้ มันเหมือนกับเราเห็นทาง และโอกาสใหม่ที่จะไปต่อได้แล้ว”
+                            <h1><?
+                            if ($_COOKIE["lang"]=="th") {
+                                echo $action[0]['title'];
+                            }else{
+                                echo $action[0]['title_en'];
+                            }
+                            ?></h1>
+                            <p><?
+                            if ($_COOKIE["lang"]=="th") {
+                                echo $action[0]['description'];
+                            }else{
+                                echo $action[0]['description_en'];
+                            }
+                            ?>
                             </p>
                         </div>
                     </div>
@@ -104,8 +161,22 @@
         <div class="row">
             <div class="twelve columns">
                 <div class="adv-btn">
-                    <div class="prev"><a href="#"><i class="fa fa-angle-left"></i> Previous</a></div>
-                    <div class="next"><a href="#">Next <i class="fa fa-angle-right"></i></a></div>
+                <?
+                $next=$m_action->get_action_by_sort_order((int)$action[0]['sort_order']+1)->result;
+                $prev=$m_action->get_action_by_sort_order((int)$action[0]['sort_order']-1)->result;
+                if (isset($prev[0]['id'])) {
+                    ?>
+                    <div class="prev"><a href="advisor.php?info=<?=$prev[0]['id']?>"><i class="fa fa-angle-left"></i> Previous</a></div>
+                    <?
+                }
+                if (isset($next[0]['id'])) {
+                    ?>
+                    <div class="next"><a href="advisor.php?info=<?=$next[0]['id']?>">Next <i class="fa fa-angle-right"></i></a></div>
+                    <?
+                }
+                ?>
+                    
+                    
                 </div>
             </div>
             <img src="images/footer/footer-bg.png" class="end-bg">

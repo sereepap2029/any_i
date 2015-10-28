@@ -85,7 +85,11 @@
 			$where = array('id' => $id);
 			$this->delete("action_photo",$where);	
 		}
-
+		public function get_action_by_sort_order($id){
+			$this->where("sort_order",$id);
+			$res=$this->get("action");
+			return $res;
+		}
 		
 	}
 

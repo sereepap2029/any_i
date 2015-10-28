@@ -2,6 +2,17 @@
 require_once("./model/m_advisor.php");
 $m_advisor = new M_advisor;
 $advisor=$m_advisor->get_all_advisor(100000,0);
+
+require_once("./model/m_action.php");
+$m_action = new M_action;
+$action=$m_action->get_all_action(100000,0)->result;
+foreach ($action as $key => $value) {
+    $photo_arr=$m_action->get_all_action_photo($action[$key]['id']);
+    $action[$key]['photo']=$photo_arr->result;
+}
+require_once("./model/m_partner.php");
+$m_partner = new M_partner;
+$partner=$m_partner->get_all_partner(10000,0)->result;
 ?>
 <!-- CONTENT ************************** -->
 <div id="fullpage">
@@ -95,9 +106,21 @@ $advisor=$m_advisor->get_all_advisor(100000,0);
             <div class="row">
                 <div class="twelve columns">
                     <div id="owl-desk-s4" class="owl-carousel owl-theme owl-loaded">
-                        <!-- slide1 ========= -->
+                    <?
+                    foreach ($action as $key => $value) {
+                     ?>
                         <div class="item">
-                            <div class="s4-img"> <img src="images/content/s4/s4-bg1.jpg" alt="">
+                            <div class="s4-img"> <?
+                            if (isset($value['photo'][1])) {
+                                ?>
+                                <img src="./media/action/<?=$value['photo'][1]['filename']?>" alt="">
+                                <?
+                            }else{
+                                ?>
+                                <img src="http://www.placehold.it/1280x840" alt="">
+                                <?
+                            }
+                            ?>
                                 <div class="redoverlay"></div>
                             </div>
                             <div class="s4-info">
@@ -111,52 +134,27 @@ $advisor=$m_advisor->get_all_advisor(100000,0);
                                         </li>
                                     </ul>
                                 </div>
-                                <h1>PAC SolarAire</h1>
-                                <p>“วันที่เราหยุดไม่ได้เพราะมาไกลแล้ว แต่จะเดินต่อก็ยังหาทางไปไม่ถูก การที่มีคนเดินเข้ามาช่วยชี้ทางให้ มันเหมือนกับเราเห็นทาง และโอกาสใหม่ที่จะไปต่อได้แล้ว”
+                                <h1><?
+                            if ($_COOKIE["lang"]=="th") {
+                                echo $value['title'];
+                            }else{
+                                echo $value['title_en'];
+                            }
+                            ?></h1>
+                                <p><?
+                            if ($_COOKIE["lang"]=="th") {
+                                echo $value['description'];
+                            }else{
+                                echo $value['description_en'];
+                            }
+                            ?>
                                 </p>
-                                <br><a href="advisor.php">Read more</a>
+                                <br><a href="advisor.php?info=<?=$value['id']?>">Read more</a>
                             </div>
                         </div>
-                        <!-- slide2 ========= -->
-                        <div class="item"><img src="images/content/s4/s4-bg2.jpg" alt="">
-                            <div class="redoverlay"></div>
-                            <div class="s4-info">
-                                <div class="s4-tag">
-                                    <ul>
-                                        <li>
-                                            <p>any i in Action</p>
-                                        </li>
-                                        <li>
-                                            <div id="redtag"></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h1>PAC SolarAire</h1>
-                                <p>“วันที่เราหยุดไม่ได้เพราะมาไกลแล้ว แต่จะเดินต่อก็ยังหาทางไปไม่ถูก การที่มีคนเดินเข้ามาช่วยชี้ทางให้ มันเหมือนกับเราเห็นทาง และโอกาสใหม่ที่จะไปต่อได้แล้ว”
-                                </p>
-                                <br><a href="advisor.php">Read more</a>
-                            </div>
-                        </div>
-                        <!-- slide3 ========= -->
-                        <div class="item"><img src="http://www.placehold.it/1280x840" alt="">
-                            <div class="redoverlay"></div>
-                            <div class="s4-info">
-                                <div class="s4-tag">
-                                    <ul>
-                                        <li>
-                                            <p>any i in Action</p>
-                                        </li>
-                                        <li>
-                                            <div id="redtag"></div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <h1>PAC SolarAire</h1>
-                                <p>“วันที่เราหยุดไม่ได้เพราะมาไกลแล้ว แต่จะเดินต่อก็ยังหาทางไปไม่ถูก การที่มีคนเดินเข้ามาช่วยชี้ทางให้ มันเหมือนกับเราเห็นทาง และโอกาสใหม่ที่จะไปต่อได้แล้ว”
-                                </p>
-                                <br><a href="advisor.php">Read more</a>
-                            </div>
-                        </div>
+                     <?
+                    }
+                    ?>
                     </div>
                 </div>
             </div>
@@ -233,18 +231,16 @@ $advisor=$m_advisor->get_all_advisor(100000,0);
             <h3 class="section-heading">Our Business Partner</h3>
             <h3 class="section-heading2">ผู้ร่วมลงทุนของเรา</h3>
             <div class="row">
-                <div class="three columns s6-1">
-                    <img class="u-max-full-width" src="images/content/s6/s6-ico1.jpg">
-                </div>
-                <div class="three columns s6-1">
-                    <img class="u-max-full-width" src="images/content/s6/s6-ico1.jpg">
-                </div>
-                <div class="three columns s6-1">
-                    <img class="u-max-full-width" src="images/content/s6/s6-ico1.jpg">
-                </div>
-                <div class="three columns s6-1">
-                    <img class="u-max-full-width" src="images/content/s6/s6-ico1.jpg">
-                </div>
+                <?
+                foreach ($partner as $key => $value) {
+                    ?>
+                    <div class="three columns s6-1">
+                        <img class="u-max-full-width" src="./media/partner/<?=$value['filename']?>">
+                    </div>
+                    <?
+                }
+                ?>            
+               
             </div>
         </div>
         <img src="images/footer/footer-bg.png" class="end-bg">

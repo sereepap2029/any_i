@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50702
 File Encoding         : 65001
 
-Date: 2015-10-27 18:37:39
+Date: 2015-10-28 13:07:31
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -54,6 +54,17 @@ CREATE TABLE `advisor` (
   `Position_en` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   `sort_order` bigint(11) DEFAULT '0',
   `picture` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Table structure for `partner`
+-- ----------------------------
+DROP TABLE IF EXISTS `partner`;
+CREATE TABLE `partner` (
+  `id` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `filename` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `sort_order` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 

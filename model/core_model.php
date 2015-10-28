@@ -79,7 +79,7 @@
 			$this->where_flag=false;
 			$this->active_where_array = array();
 			$this->active_limit="";
-			$this->active_order="ORDER BY ";
+			$this->active_order=" ORDER BY ";
 			$this->order_flag=false;
 		}
 		public function insert($table,$val_array){

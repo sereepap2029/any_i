@@ -59,8 +59,8 @@ if (!isset($user_data['username'])) {
                         <ul class="nav pull-right">
                         </ul>
                         <ul class="nav">
-                            <li class="active">
-                                <a href="#">Dashboard</a>
+                            <li class="">
+                                <a href="main.php">Dashboard</a>
                             </li>
                             <li class="dropdown">
                                 <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Advisor <i class="caret"></i>
@@ -87,6 +87,9 @@ if (!isset($user_data['username'])) {
                                         <a tabindex="-1" href="in_action_list.php">List</a>
                                     </li>
                                 </ul>
+                            </li>
+                            <li class="">
+                                <a href="business_partner.php">Business Partner</a>
                             </li>
                         </ul>
                     </div>
