@@ -1,33 +1,29 @@
 
 <?
 include("views/admin_header.php");
-require_once("../model/m_advisor.php");
-$m_advisor = new M_advisor;
+require_once("../model/m_banner.php");
+$m_banner = new M_banner;
 $edit=false;
-$advisor=null;
+$banner=null;
 if (isset($_GET['edit'])) {
     $edit=true;
-    $advisor=$m_advisor->get_advisor_by_id($_GET['id'])->result;
-}else if (isset($_POST['title'])) {
+    $banner=$m_banner->get_banner_by_id($_GET['id'])->result;
+}else if (isset($_POST['text'])) {
     if (isset($_POST['id'])) {
-        $advisor=$m_advisor->get_advisor_by_id($_POST['id'])->result;
-        $ad_id=$advisor[0]['id'];
+        $banner=$m_banner->get_banner_by_id($_POST['id'])->result;
+        $ad_id=$banner[0]['id'];
         $data = array(
-            'title' => $_POST['title'], 
-            'name' => $_POST['name'], 
-            'Position' => $_POST['Position'], 
-            'title_en' => $_POST['title_en'], 
-            'name_en' => $_POST['name_en'], 
-            'Position_en' => $_POST['Position_en'], 
+            'text' => $_POST['text'], 
+            'text_en' => $_POST['text_en'], 
             );
         if ($_POST['file_path']!="") {
-            @unlink("../media/advisor/" . $advisor[0]['picture']);
+            @unlink("../media/banner/" . $banner[0]['picture']);
             $filename = $_POST['file_path'];
                     $ext = explode(".", $filename);
                     $new_ext = $ext[count($ext) - 1];
                     $new_filename = $ad_id . "_".time()."." . $new_ext;
                     $file = '../media/tmp/' . $filename;
-                    $newfile = '../media/advisor/' . $new_filename;
+                    $newfile = '../media/banner/' . $new_filename;
                     
                     if (!copy($file, $newfile)) {
                         echo "failed to copy $file...\n" . $file . " to " . $newfile . "  and  ";
@@ -40,22 +36,38 @@ if (isset($_GET['edit'])) {
                         @unlink("../media/tmp/" . $filename);
                     }
         }
-        $m_advisor->update_advisor($data,$ad_id);
+
+        if ($_POST['file_path2']!="") {
+            $filename = $_POST['file_path2'];
+                    $ext = explode(".", $filename);
+                    $new_ext = $ext[count($ext) - 1];
+                    $new_filename = $ad_id . "_mobile_".time()."." . $new_ext;
+                    $file = '../media/tmp/' . $filename;
+                    $newfile = '../media/banner/' . $new_filename;
+                    
+                    if (!copy($file, $newfile)) {
+                        echo "failed to copy $file...\n" . $file . " to " . $newfile . "  and  ";
+                        
+                        @unlink("../media/tmp/" . $filename);
+                        $data['picture_mobile'] = "no";
+                    } 
+                    else {
+                        $data['picture_mobile'] = $new_filename;
+                        @unlink("../media/tmp/" . $filename);
+                    }
+        }
+        $m_banner->update_banner($data,$ad_id);
         ?>
         <script type="text/javascript">
-        window.open("./advisor_list.php","_self");
+        window.open("./main.php","_self");
         </script>
         <?
     }else{
-        $ad_id=$m_advisor->generate_id();
+        $ad_id=$m_banner->generate_id();
         $data = array(
             'id' => $ad_id, 
-            'title' => $_POST['title'], 
-            'name' => $_POST['name'], 
-            'Position' => $_POST['Position'], 
-            'title_en' => $_POST['title_en'], 
-            'name_en' => $_POST['name_en'], 
-            'Position_en' => $_POST['Position_en'], 
+            'text' => $_POST['text'], 
+            'text_en' => $_POST['text_en'], 
             );
         if ($_POST['file_path']!="") {
             $filename = $_POST['file_path'];
@@ -63,7 +75,7 @@ if (isset($_GET['edit'])) {
                     $new_ext = $ext[count($ext) - 1];
                     $new_filename = $ad_id . "_".time()."." . $new_ext;
                     $file = '../media/tmp/' . $filename;
-                    $newfile = '../media/advisor/' . $new_filename;
+                    $newfile = '../media/banner/' . $new_filename;
                     
                     if (!copy($file, $newfile)) {
                         echo "failed to copy $file...\n" . $file . " to " . $newfile . "  and  ";
@@ -76,20 +88,40 @@ if (isset($_GET['edit'])) {
                         @unlink("../media/tmp/" . $filename);
                     }
         }
-        $m_advisor->insert_advisor($data);
+        if ($_POST['file_path2']!="") {
+            $filename = $_POST['file_path2'];
+                    $ext = explode(".", $filename);
+                    $new_ext = $ext[count($ext) - 1];
+                    $new_filename = $ad_id . "_mobile_".time()."." . $new_ext;
+                    $file = '../media/tmp/' . $filename;
+                    $newfile = '../media/banner/' . $new_filename;
+                    
+                    if (!copy($file, $newfile)) {
+                        echo "failed to copy $file...\n" . $file . " to " . $newfile . "  and  ";
+                        
+                        @unlink("../media/tmp/" . $filename);
+                        $data['picture_mobile'] = "no";
+                    } 
+                    else {
+                        $data['picture_mobile'] = $new_filename;
+                        @unlink("../media/tmp/" . $filename);
+                    }
+        }
+        $m_banner->insert_banner($data);
         ?>
         <script type="text/javascript">
-        window.open("./advisor_list.php","_self");
+        window.open("./main.php","_self");
         </script>
         <?
     }
 }else if(isset($_GET['delete'])&&isset($_GET['id'])){
-    $advisor=$m_advisor->get_advisor_by_id($_GET['id'])->result;
-    @unlink("../media/advisor/" . $advisor[0]['picture']);
-    $m_advisor->delete_advisor($advisor[0]['id']);
+    $banner=$m_banner->get_banner_by_id($_GET['id'])->result;
+    @unlink("../media/banner/" . $banner[0]['picture']);
+    @unlink("../media/banner/" . $banner[0]['picture_mobile']);
+    $m_banner->delete_banner($banner[0]['id']);
     ?>
         <script type="text/javascript">
-        window.open("./advisor_list.php","_self");
+        window.open("./main.php","_self");
         </script>
         <?
 }
@@ -109,84 +141,44 @@ if (isset($_GET['edit'])) {
                 <!-- block -->
                 <div class="block">
                     <div class="navbar navbar-inner block-header">
-                        <div class="muted pull-left">Add Advisor </div>
+                        <div class="muted pull-left">Add Banner </div>
                     </div>
                     <div class="block-content collapse in">
                         <div class="span12">
                             <h5> <?if (isset($err_msg)) {
                                         echo "*******".$err_msg."*******";
                                     }?></h5>
-                            <form class="form-horizontal" method="post" action="advisor_add.php">
+                            <form class="form-horizontal" method="post" action="banner_add.php">
                                 <fieldset>
                                     <div class="control-group">
-                                        <label class="control-label" for="focusedInput">Title</label>
+                                        <label class="control-label" for="focusedInput">Text</label>
                                         <div class="controls">                                            
                                             <? if (!$edit) { ?>
-                                            <input class="focused" id="title" type="text" name="title" link="">
+                                            <input class="focused" id="text" type="text" name="text" link="">
                                             <? }else{ ?>
-                                            <input type="hidden" name="id" value="<?echo $advisor[0]['id'];?>">
-                                            <input class="focused" id="title" type="text" name="title" value="<?echo $advisor[0]['title'];?>">
-                                            <? } ?>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <label class="control-label" for="focusedInput">Name</label>
-                                        <div class="controls">
-                                            <? if (!$edit) { ?>
-                                            <input class="focused" id="" type="text" name="name">
-                                            <? }else{ ?>
-                                            <input class="focused" id="" type="text" name="name" value="<?echo $advisor[0]['name'];?>">
-                                            <? } ?>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <label class="control-label" for="focusedInput">Position</label>
-                                        <div class="controls">
-                                            <? if (!$edit) { ?>
-                                            <input class="focused" id="" type="text" name="Position">
-                                            <? }else{ ?>
-                                            <input class="focused" id="" type="text" name="Position" value="<?echo $advisor[0]['Position'];?>">
+                                            <input type="hidden" name="id" value="<?echo $banner[0]['id'];?>">
+                                            <input class="focused" id="text" type="text" name="text" value="<?echo $banner[0]['text'];?>">
                                             <? } ?>
                                         </div>
                                     </div>
                                     
                                     <div class="control-group">
-                                        <label class="control-label" for="focusedInput">Title EN</label>
+                                        <label class="control-label" for="focusedInput">Text EN</label>
                                         <div class="controls">
                                             <? if (!$edit) { ?>
-                                            <input class="focused" id="" type="text" name="title_en">
+                                            <input class="focused" id="" type="text" name="text_en">
                                             <? }else{ ?>
-                                            <input class="focused" id="" type="text" name="title_en" value="<?echo $advisor[0]['title_en'];?>">
+                                            <input class="focused" id="" type="text" name="text_en" value="<?echo $banner[0]['text_en'];?>">
                                             <? } ?>
                                         </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <label class="control-label" for="focusedInput">Name EN</label>
-                                        <div class="controls">
-                                            <? if (!$edit) { ?>
-                                            <input class="focused" id="" type="text" name="name_en">
-                                            <? }else{ ?>
-                                            <input class="focused" id="" type="text" name="name_en" value="<?echo $advisor[0]['name_en'];?>">
-                                            <? } ?>
-                                        </div>
-                                    </div>
-                                    <div class="control-group">
-                                        <label class="control-label" for="focusedInput">Position EN</label>
-                                        <div class="controls">
-                                            <? if (!$edit) { ?>
-                                            <input class="focused" id="" type="text" name="Position_en">
-                                            <? }else{ ?>
-                                            <input class="focused" id="" type="text" name="Position_en" value="<?echo $advisor[0]['Position_en'];?>">
-                                            <? } ?>
-                                        </div>
-                                    </div>                                
+                                    </div>                              
                                     <div class="control-group">
                                         <span class="btn btn-success fileinput-button">
                                                         <i class="glyphicon glyphicon-plus"></i>
                                                         <span>เลือกไฟล์</span>
                                         <!-- The file input field used as target for the file upload widget -->
                                         <input id="fileupload" type="file" name="files[]">
-                                        </span>&nbsp;&nbsp;&nbsp;<font style="color:red">200px X 200px</font>
+                                        </span>&nbsp;&nbsp;&nbsp;Desktop Image<font style="color:red">1280px X 840px</font>
                                         <br>
                                         <br>
                                         <!-- The global progress bar -->
@@ -199,7 +191,7 @@ if (isset($_GET['edit'])) {
                                     <?
                                     if ($edit) {
                                       ?>
-                                      <img src="../media/advisor/<?php echo $advisor[0]['picture']; ?>" id="file_tmp" class="span4">
+                                      <img src="../media/banner/<?php echo $banner[0]['picture']; ?>" id="file_tmp" class="span4">
                                       <?
                                     }else{
                                       ?>
@@ -209,6 +201,39 @@ if (isset($_GET['edit'])) {
                                     ?>
                                         
                                         <input type="hidden" id="file_path" name="file_path" value="">
+                                    </div>
+
+
+
+                                    <div class="control-group">
+                                        <span class="btn btn-success fileinput-button">
+                                                        <i class="glyphicon glyphicon-plus"></i>
+                                                        <span>เลือกไฟล์</span>
+                                        <!-- The file input field used as target for the file upload widget -->
+                                        <input id="fileupload2" type="file" name="files[]">
+                                        </span>&nbsp;&nbsp;&nbsp;Mobile Image<font style="color:red">320px X 480px</font>
+                                        <br>
+                                        <br>
+                                        <!-- The global progress bar -->
+                                        <div id="progress2" class="progress progress-striped progress-success active">
+                                            <div class="bar progress-bar progress-bar-success"></div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="span12 no-margin-left" style="margin-bottom:20px;">
+                                    <?
+                                    if ($edit) {
+                                      ?>
+                                      <img src="../media/banner/<?php echo $banner[0]['picture_mobile']; ?>" id="file_tmp2" class="span4">
+                                      <?
+                                    }else{
+                                      ?>
+                                      <img src="" id="file_tmp2" class="span4">
+                                      <?
+                                    }
+                                    ?>
+                                        
+                                        <input type="hidden" id="file_path2" name="file_path2" value="">
                                     </div>
                                     <div class="control-group">
                                         <button type="submit" class="btn btn-primary">บันทึก</button>
@@ -266,6 +291,48 @@ $(function() {
             progressall: function(e, data) {
                 var progress = parseInt(data.loaded / data.total * 100, 10);
                 $('#progress .progress-bar').css(
+                    'width',
+                    progress + '%'
+                );
+            }
+        }).prop('disabled', !$.support.fileInput)
+        .parent().addClass($.support.fileInput ? undefined : 'disabled');
+});
+
+
+$(function() {
+    'use strict';
+    // Change this to the location of your server-side upload handler:
+    var url = './uploadhandle/';
+    $('#fileupload2').fileupload({
+            previewThumbnail: false,
+            url: url,
+            dataType: 'json',
+            beforeSend: function() {
+                $('#progress2 .progress-bar').css(
+                    'width',
+                    '10%'
+                );
+            },
+            done: function(e, data) {
+                //console.log(data);
+
+                $.each(data.result.files, function(index, file) {
+                    //console.log(file);
+                    if (file.error == "File is too big") {
+                        $("#file_tmp2").attr("alt", "ไฟล์ขนาดไหญ่เกินไป");
+                        $("#file_tmp2").attr("src", "");
+                    } else {
+                        $("#file_tmp2").attr("alt", "Upload Complete file " + file.name);
+                        $("#file_path2").val(file.name);
+                        $("#file_tmp2").attr("src", '../media/tmp/' + file.name);
+                    }
+                });
+
+            },
+            progressall: function(e, data) {
+                var progress = parseInt(data.loaded / data.total * 100, 10);
+                $('#progress2 .progress-bar').css(
                     'width',
                     progress + '%'
                 );

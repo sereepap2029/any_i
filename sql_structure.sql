@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50702
 File Encoding         : 65001
 
-Date: 2015-10-28 13:07:31
+Date: 2015-10-29 17:32:25
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -25,6 +25,10 @@ CREATE TABLE `action` (
   `title_en` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   `description_en` text COLLATE utf8_unicode_ci,
   `sort_order` bigint(11) DEFAULT '0',
+  `detail_title` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `detail_description` text COLLATE utf8_unicode_ci,
+  `detail_title_en` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `detail_description_en` text COLLATE utf8_unicode_ci,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -54,6 +58,20 @@ CREATE TABLE `advisor` (
   `Position_en` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   `sort_order` bigint(11) DEFAULT '0',
   `picture` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Table structure for `banner`
+-- ----------------------------
+DROP TABLE IF EXISTS `banner`;
+CREATE TABLE `banner` (
+  `id` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `picture` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `text` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `text_en` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `sort_order` int(11) DEFAULT '0',
+  `picture_mobile` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 

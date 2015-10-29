@@ -37,15 +37,21 @@ foreach ($action as $key => $value) {
     <?
     $num_max=(int)(count($action)/3);    
             $num_remain=(int)(count($action)%3);
+            $inner_cls="";
+            if ($num_remain==1) {
+                $inner_cls="twelve";
+            }else if($num_remain==2){
+                $inner_cls="five";
+            }
             $cur_num=1;
     foreach ($action as $key => $value) {
         if ($key%3==0) {
             ?>
-            <div class="row">
+            <div class="row<?if(($cur_num/3)>$num_max){echo $num_remain;}?>">
             <?
         }
         ?>
-            <div class="four columns">
+            <div class="<?if(($cur_num/3)>$num_max){echo $inner_cls;}else{echo "four";}?> columns">
                 <img class="u-max-full-width" src="./media/action/<?=$value['photo'][0]['filename']?>">
                 <h5 class="value-heading"><?
                             if ($_COOKIE["lang"]=="th") {

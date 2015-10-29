@@ -59,8 +59,18 @@ if (!isset($user_data['username'])) {
                         <ul class="nav pull-right">
                         </ul>
                         <ul class="nav">
-                            <li class="">
-                                <a href="main.php">Dashboard</a>
+                            <li class="dropdown">
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Home Banner <i class="caret"></i>
+
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a tabindex="-1" href="banner_add.php">add</a>
+                                    </li>
+                                    <li>
+                                        <a tabindex="-1" href="main.php">List</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Advisor <i class="caret"></i>

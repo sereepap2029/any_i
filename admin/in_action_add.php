@@ -16,6 +16,10 @@ if (isset($_GET['edit'])) {
             'description' => $_POST['description'], 
             'title_en' => $_POST['title_en'], 
             'description_en' => $_POST['description_en'], 
+            'detail_title' => $_POST['detail_title'], 
+            'detail_description' => $_POST['detail_description'], 
+            'detail_title_en' => $_POST['detail_title_en'], 
+            'detail_description_en' => $_POST['detail_description_en'], 
             );
         $m_action->update_action($data,$_POST['id']);
         $sort_order=0;
@@ -70,6 +74,10 @@ if (isset($_GET['edit'])) {
             'description' => $_POST['description'], 
             'title_en' => $_POST['title_en'], 
             'description_en' => $_POST['description_en'], 
+            'detail_title' => $_POST['detail_title'], 
+            'detail_description' => $_POST['detail_description'], 
+            'detail_title_en' => $_POST['detail_title_en'], 
+            'detail_description_en' => $_POST['detail_description_en'], 
             );
         $m_action->insert_action($data);
         foreach ($_POST['file_path'] as $key => $value) {
@@ -163,7 +171,7 @@ if (isset($_GET['edit'])) {
                             <form class="form-horizontal" method="post" action="in_action_add.php">
                                 <fieldset>
                                     <div class="control-group">
-                                        <label class="control-label" for="focusedInput">title</label>
+                                        <label class="control-label" for="focusedInput">Title</label>
                                         <div class="controls">                                            
                                             <? if (!$edit) { ?>
                                             <input class="focused" id="title" type="text" name="title" link="">
@@ -174,7 +182,7 @@ if (isset($_GET['edit'])) {
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <label class="control-label" for="focusedInput">description</label>
+                                        <label class="control-label" for="focusedInput">Description</label>
                                         <div class="controls">
                                             <? if (!$edit) { ?>                                            
                                             <textarea class="span7 focused" style="height:200px" name="description"></textarea>
@@ -183,9 +191,31 @@ if (isset($_GET['edit'])) {
                                             <? } ?>
                                         </div>
                                     </div>
+
+                                    <div class="control-group">
+                                        <label class="control-label" for="focusedInput">Detail title &nbsp;&nbsp;&nbsp;<font style="color:red">เป็นหัวข้อที่ใช้ในหน้า รายละเอียดของ Any i incation</font></label>
+                                        <div class="controls">                                            
+                                            <? if (!$edit) { ?>
+                                            <input class="focused" id="detail_title" type="text" name="detail_title" link="">
+                                            <? }else{ ?>
+                                            <input type="hidden" name="id" value="<?echo $action[0]['id'];?>">
+                                            <input class="focused" id="detail_title" type="text" name="detail_title" value="<?echo $action[0]['detail_title'];?>">
+                                            <? } ?>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="focusedInput">Detail description &nbsp;&nbsp;&nbsp;<font style="color:red">เป็นรายละเอียดที่ใช้ในหน้า รายละเอียดของ Any i incation</font></label>
+                                        <div class="controls">
+                                            <? if (!$edit) { ?>                                            
+                                            <textarea class="span7 focused" style="height:200px" name="detail_description"></textarea>
+                                            <? }else{ ?>
+                                            <textarea class="span7 focused" style="height:200px" name="detail_description"><?echo $action[0]['detail_description'];?></textarea>                                            
+                                            <? } ?>
+                                        </div>
+                                    </div>
                                     
                                     <div class="control-group">
-                                        <label class="control-label" for="focusedInput">title_en</label>
+                                        <label class="control-label" for="focusedInput">Title EN</label>
                                         <div class="controls">
                                             <? if (!$edit) { ?>
                                             <input class="focused" id="" type="text" name="title_en">
@@ -195,7 +225,7 @@ if (isset($_GET['edit'])) {
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <label class="control-label" for="focusedInput">description_en</label>
+                                        <label class="control-label" for="focusedInput">Description EN</label>
                                         <div class="controls">
                                             <? if (!$edit) { ?>
                                             
@@ -204,14 +234,36 @@ if (isset($_GET['edit'])) {
                                             <textarea class="span7 focused" style="height:200px" name="description_en"><?echo $action[0]['description_en'];?></textarea>                                            
                                             <? } ?>
                                         </div>
-                                    </div>                                
+                                    </div>             
+
+                                    <div class="control-group">
+                                        <label class="control-label" for="focusedInput">Detail title EN &nbsp;&nbsp;&nbsp;<font style="color:red">เป็นหัวข้อที่ใช้ในหน้า รายละเอียดของ Any i incation</font></label>
+                                        <div class="controls">                                            
+                                            <? if (!$edit) { ?>
+                                            <input class="focused" id="detail_title_en" type="text" name="detail_title_en" link="">
+                                            <? }else{ ?>
+                                            <input type="hidden" name="id" value="<?echo $action[0]['id'];?>">
+                                            <input class="focused" id="detail_title_en" type="text" name="detail_title_en" value="<?echo $action[0]['detail_title_en'];?>">
+                                            <? } ?>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label" for="focusedInput">Detail description EN &nbsp;&nbsp;&nbsp;<font style="color:red">เป็นรายละเอียดที่ใช้ในหน้า รายละเอียดของ Any i incation</font></label>
+                                        <div class="controls">
+                                            <? if (!$edit) { ?>                                            
+                                            <textarea class="span7 focused" style="height:200px" name="detail_description_en"></textarea>
+                                            <? }else{ ?>
+                                            <textarea class="span7 focused" style="height:200px" name="detail_description_en"><?echo $action[0]['detail_description_en'];?></textarea>                                            
+                                            <? } ?>
+                                        </div>
+                                    </div>                   
                                     <div class="control-group">
                                         <span class="btn btn-success fileinput-button">
                                                         <i class="glyphicon glyphicon-plus"></i>
                                                         <span>เลือกไฟล์</span>
                                         <!-- The file input field used as target for the file upload widget -->
                                         <input id="fileupload" type="file" name="files[]" multiple>
-                                        </span>&nbsp;&nbsp;&nbsp;<font style="color:red">รูปแรกขนาด 200px X 200px ที่เหลือขนาด 1280px X 840px</font>
+                                        </span>&nbsp;&nbsp;&nbsp;<font style="color:red">รูปแรกขนาด 200px X 200px ที่เหลือขนาด 1280px X 840px<br> รูปขนาด 1280px X 840px ต้องมีอย่างน้อย 3 รูป โดยที่รูปแรกที่ขนาด 1280px X 840px จะเป็นรูปที่โชวหน้า Home</font>
                                         <br>
                                         <br>
                                         <!-- The global progress bar -->

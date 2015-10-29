@@ -14,6 +14,11 @@ $action[0]['photo']=$photo_arr->result;
 
 ?>
 <!-- HEAD CONTENT ************************** -->
+<style type="text/css">
+    .s4.head-adv {
+        background-image: url("./media/action/<?=$action[0]['photo'][1]['filename']?>");
+    }
+</style>
 <div class="head-adv section s4">
     <!-- Advisor info desk -->
     <div class="redoverlay"></div>
@@ -120,7 +125,7 @@ $action[0]['photo']=$photo_arr->result;
                             <!-- slide ========= -->
                             <?
                             foreach ($action[0]['photo'] as $key => $value) {
-                                if ($key==0) {
+                                if ($key==0||$key==1) {
 
                                 }else{
                                     ?>
@@ -136,16 +141,16 @@ $action[0]['photo']=$photo_arr->result;
                         <div class="s4-info">
                             <h1><?
                             if ($_COOKIE["lang"]=="th") {
-                                echo $action[0]['title'];
+                                echo $action[0]['detail_title'];
                             }else{
-                                echo $action[0]['title_en'];
+                                echo $action[0]['detail_title_en'];
                             }
                             ?></h1>
                             <p><?
                             if ($_COOKIE["lang"]=="th") {
-                                echo $action[0]['description'];
+                                echo $action[0]['detail_description'];
                             }else{
-                                echo $action[0]['description_en'];
+                                echo $action[0]['detail_description_en'];
                             }
                             ?>
                             </p>

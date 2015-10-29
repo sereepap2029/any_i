@@ -13,6 +13,10 @@ foreach ($action as $key => $value) {
 require_once("./model/m_partner.php");
 $m_partner = new M_partner;
 $partner=$m_partner->get_all_partner(10000,0)->result;
+
+require_once("./model/m_banner.php");
+$m_banner = new M_banner;
+$banner=$m_banner->get_all_banner(100000,0);
 ?>
 <!-- CONTENT ************************** -->
 <div id="fullpage">
@@ -24,27 +28,62 @@ $partner=$m_partner->get_all_partner(10000,0)->result;
                 <div class="twelve columns">
                     <!-- owl-desk -->
                     <div id="owl-desk" class="owl-carousel owl-theme owl-loaded">
-                        <div class="item"><img src="images/content/s1/s1-bg1.jpg" alt="">
+                        <?
+                        foreach ($banner->result as $key => $value) {
+                            ?>
+                            <div class="item">
+                            <?
+                            if ($value['picture']!="") {
+                                ?>
+                                <img src="./media/banner/<?=$value['picture']?>" alt="">
+                                <?
+                            }else{
+                                ?>
+                                <img src="http://www.placehold.it/1280x840" alt="">
+                                <?
+                            }
+                            ?>
+                            
                             <div class="redoverlay"></div>
-                            <h1 class="s1-title">Business advisory | venture</h1></div>
-                        <div class="item"><img src="images/content/s1/s1-bg2.jpg" alt="">
-                            <div class="redoverlay"></div>
-                            <h1 class="s1-title">Business advisory | venture</h1></div>
-                        <div class="item"><img src="http://www.placehold.it/1280x840" alt="">
-                            <div class="redoverlay"></div>
-                            <h1 class="s1-title">Business advisory| venture</h1></div>
+                            <h1 class="s1-title"><?
+                            if ($_COOKIE["lang"]=="th") {
+                                echo $value['text'];
+                            }else{
+                                echo $value['text_en'];
+                            }
+                            ?></h1></div>
+                            <?
+                        }
+                        ?>
                     </div>
                     <!-- owl-res -->
                     <div id="owl-res" class="owl-carousel owl-theme owl-loaded">
-                        <div class="item"><img src="images/content/s1/res/s1-bg1.jpg" alt="">
+                        <?
+                        foreach ($banner->result as $key => $value) {
+                            ?>
+                            <div class="item">
+                            <?
+                            if ($value['picture_mobile']!="") {
+                                ?>
+                                <img src="./media/banner/<?=$value['picture_mobile']?>" alt="">
+                                <?
+                            }else{
+                                ?>
+                                <img src="http://www.placehold.it/320x480" alt="">
+                                <?
+                            }
+                            ?>
                             <div class="redoverlay"></div>
-                            <h1 class="s1-title">Business advisory<br>| venture</h1></div>
-                        <div class="item"><img src="http://www.placehold.it/320x480" alt="">
-                            <div class="redoverlay"></div>
-                            <h1 class="s1-title">Business advisory<br>| venture</h1></div>
-                        <div class="item"><img src="http://www.placehold.it/320x480" alt="">
-                            <div class="redoverlay"></div>
-                            <h1 class="s1-title">Business advisory<br>| venture</h1></div>
+                            <h1 class="s1-title"><?
+                            if ($_COOKIE["lang"]=="th") {
+                                echo $value['text'];
+                            }else{
+                                echo $value['text_en'];
+                            }
+                            ?></h1></div>
+                            <?
+                        }
+                        ?>
                     </div>
                 </div>
             </div>
