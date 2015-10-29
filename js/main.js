@@ -5,6 +5,7 @@ $(document).ready(function() {
     winW = $window.width();
     //$slide.height(winH);
     var browser = get_browser_info();
+
     //console.log(browser);
     $('html').addClass(browser.toLowerCase());
 
@@ -48,10 +49,16 @@ $(document).ready(function() {
     }
     /*End Fullpage  ***********************/
     //Detect iOS version
-    ver = iOSversion();
-    if (ver[0] < 8) {
-        $('html').addClass('ios7');
+    var vers = iOSversion();
+    if (typeof vers != 'undefined') {
+        if (typeof vers[0] != 'undefined') {
+            if (vers[0] < 8) {
+                $('html').addClass('ios7');
+                //alert(vers[0]);
+            }
+        }
     }
+
 
 }); /*End Onload  ***********************/
 
@@ -88,7 +95,6 @@ function iOSversion() {
         return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
     }
 }
-
 
 /*
 if (navigator.userAgent.match(/iPad|iPhone;.*os 7_\d/i)) {
