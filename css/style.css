@@ -661,6 +661,37 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   color: #999999;
 }
 
+.gohome {
+  position: absolute;
+  width: 50%;
+  height: 25%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: transparent;
+  opacity: .5;
+  z-index: 400;
+}
+@media screen and (min-width: 750px) {
+  .gohome {
+    width: 17%;
+    height: 10%;
+    margin-left: 35px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .gohome {
+    width: 17%;
+    height: 25%;
+    margin-left: 60px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .gohome {
+    height: 19%;
+  }
+}
+
 /*  Grid
 ================================================== */
 /* Shared
@@ -976,6 +1007,11 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
     -webkit-clip-path: ellipse(160% 100% at 50% 0%);
   }
 }
+@media screen and (min-width: 1400px) {
+  .s3 {
+    padding: 0rem 0 8rem;
+  }
+}
 .s3 img {
   border-radius: 50%;
   width: 150px;
@@ -1255,6 +1291,11 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
     padding: 12rem 0 5rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  .s5 {
+    padding: 17rem 0 5rem;
+  }
+}
 .s5 img {
   border-radius: 50%;
   width: 200px;
@@ -1341,10 +1382,15 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 750px) {
   .s6 {
-    padding: 14rem 0 16rem;
+    padding: 22rem 0 16rem;
   }
 }
 @media screen and (min-width: 1000px) {
+  .s6 {
+    padding: 12rem 0 13rem;
+  }
+}
+@media screen and (min-width: 1400px) {
   .s6 {
     padding: 7rem 0 13rem;
   }
@@ -2151,9 +2197,32 @@ hr {
 .s7 .section-description {
   font-family: 'rsu_r';
   font-size: 18px;
-  width: 60%;
+  width: 80%;
   /* text-align: center; */
   margin: 0 auto;
+}
+@media screen and (min-width: 750px) {
+  .s7 .section-description {
+    width: 60%;
+  }
+}
+
+.footdesk {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .footdesk {
+    display: block;
+  }
+}
+
+.footres {
+  display: block;
+}
+@media screen and (min-width: 1000px) {
+  .footres {
+    display: none;
+  }
 }
 
 /* 

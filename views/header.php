@@ -1,6 +1,9 @@
 <!-- Header ************************** -->
 <!-- Nav Res ========= -->
 <div class="nav-res">
+    <a href="index-th.php">
+        <div class="gohome"></div>
+    </a>
     <div class="row">
         <div class="twelve columns">
             <nav class="main-nav">
@@ -35,9 +38,12 @@
 </div>
 <!-- Nav Desk ========= -->
 <div class="nav-desk">
-<div class="headerlg-bg">
-    <img src="images/header/headerlg-bg.png" >
-</div>
+    <a href="index-in.php">
+        <div class="gohome"></div>
+    </a>
+    <div class="headerlg-bg">
+        <img src="images/header/headerlg-bg.png">
+    </div>
     <div class="row">
         <div class="twelve columns">
             <nav class="main-nav-desk">
