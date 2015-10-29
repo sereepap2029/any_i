@@ -2030,6 +2030,14 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   margin-bottom: 3.5rem;
 }
 
+.adv-con {
+  /*
+   .owl-stage-outer {
+      clip-path: url(../#clip_path-sub) !important;
+      -webkit-clip-path: ellipse(120% 100% at 50% 0%) !important;
+  }
+  */
+}
 @media screen and (min-width: 750px) {
   .adv-con .s4 {
     padding-left: 5%;

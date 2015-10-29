@@ -17,6 +17,8 @@ $(document).ready(function() {
         //nav: true,
         items: 1,
         center: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
 
 
     });
@@ -28,6 +30,8 @@ $(document).ready(function() {
         items: 1,
         center: true,
         nav: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
         navText: [
             "<i class='fa fa-chevron-left'></i>",
             "<i class='fa fa-chevron-right'></i>"
