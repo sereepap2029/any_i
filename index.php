@@ -1,3 +1,9 @@
+<?
+include("views/admin_header.php");
+require_once("../model/m_welcome.php");
+$m_welcome = new M_welcome;
+$welcome=$m_welcome->get_all_welcome()->result;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,14 +25,14 @@
     <div class="wel-con">
         <video autoplay id="bgvid" loop>
             <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-            <source src="./media/video/eye.mp4" type="video/mp4">
+            <source src="./media/video/<?echo $welcome[0]['vdo'];?>" type="video/mp4">
         </video>
          <div class="blackoverlay"></div>
         <div class="top_band">
             <img src="images/wel/landingpage-logo.png" style="width:100%">
         </div>
         <div class="cen_but">
-            <h1 class="titlebu">The Business Scaner</h1>
+            <h1 class="titlebu"><?echo $welcome[0]['text'];?></h1>
             <a href="index-in.php">
                 <button class="gotoindex" onClick="">Enter</button>
             </a>

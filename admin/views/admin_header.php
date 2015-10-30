@@ -101,6 +101,9 @@ if (!isset($user_data['username'])) {
                             <li class="">
                                 <a href="business_partner.php">Business Partner</a>
                             </li>
+                            <li class="">
+                                <a href="welcome_page.php">Edit welcome page</a>
+                            </li>
                         </ul>
                     </div>
                     <!--/.nav-collapse -->
