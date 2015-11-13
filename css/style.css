@@ -457,11 +457,13 @@ h1 {
   }
 }
 
-.nav-desk {
+.nav-desk,
+.main-nav-desk {
   display: none;
 }
 @media screen and (min-width: 1081px) {
-  .nav-desk {
+  .nav-desk,
+  .main-nav-desk {
     display: block;
   }
 }
@@ -531,7 +533,8 @@ h1 {
   height: auto;
 }
 
-.nav-toggle {
+.nav-toggle,
+.nav-toggle-sres {
   font-family: 'rsu_r';
   position: absolute;
   font-size: 30px;
@@ -541,16 +544,20 @@ h1 {
   cursor: pointer;
   z-index: 300;
 }
-.nav-toggle:active, .nav-toggle:hover {
+.nav-toggle:active, .nav-toggle:hover,
+.nav-toggle-sres:active,
+.nav-toggle-sres:hover {
   opacity: .5;
 }
 @media screen and (min-width: 550px) {
-  .nav-toggle {
+  .nav-toggle,
+  .nav-toggle-sres {
     font-size: 35px;
   }
 }
 @media screen and (min-width: 750px) {
-  .nav-toggle {
+  .nav-toggle,
+  .nav-toggle-sres {
     right: 45px;
     color: #fff;
   }
@@ -658,7 +665,7 @@ nav.main-nav-desk ul li a {
   text-decoration: none;
 }
 nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
-  color: #999999;
+  color: #ffcccc;
 }
 
 .gohome {
@@ -689,6 +696,45 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 @media screen and (min-width: 1400px) {
   .gohome {
     height: 19%;
+  }
+}
+
+.nav-desk-scroll {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  height: 78px;
+  z-index: 10;
+  display: none;
+}
+.nav-desk-scroll img {
+  width: 90px;
+  height: 64px;
+  margin: 6px 30px;
+}
+@media screen and (min-width: 1081px) {
+  .nav-desk-scroll img {
+    margin: 6px 122px;
+  }
+}
+.nav-desk-scroll nav.main-nav-desk a {
+  color: #57585A;
+}
+.nav-desk-scroll nav.main-nav-desk a:active, .nav-desk-scroll nav.main-nav-desk a:hover {
+  color: #9F0208;
+}
+.nav-desk-scroll nav.main-nav-desk span {
+  color: #9F0208;
+}
+
+.nav-toggle-sres {
+  color: #c0392b;
+  top: 20px;
+}
+@media screen and (min-width: 1081px) {
+  .nav-toggle-sres {
+    top: 30px;
+    display: none;
   }
 }
 
@@ -727,7 +773,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 
 .value-heading {
-  margin-bottom: .3rem;
+  margin-bottom: 1.5rem;
 }
 
 .value-description {
@@ -916,7 +962,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 
 .s2-info {
-  color: #fff;
+  color: #444444;
   text-align: left;
   padding-right: 15px;
 }
@@ -1199,7 +1245,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
     color: #fff;
   }
   .s4 .s4-info a:hover, .s4 .s4-info a:active {
-    opacity: .7;
+    color: #ffcccc;
   }
 }
 .s4 .s4-tag ul {
@@ -1559,9 +1605,9 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   border-bottom-right-radius: 50% 50px;
 }
 
-.redoverlay {
+.redoverlay,
+.whiteoverlay {
   content: '';
-  background-image: url("../images/content/red_left.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -1570,7 +1616,16 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   top: 0;
   left: 0;
   pointer-events: none;
+}
+
+.redoverlay {
+  background-image: url("../images/content/red_left.png");
   opacity: .5;
+}
+
+.whiteoverlay {
+  background-image: url("../images/content/white.png");
+  opacity: 1;
 }
 
 .s2.headcon {
@@ -1600,7 +1655,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   }
 }
 .s2.headcon .redoverlay {
-  background-image: url("../images/content/red_right.png");
+  background-image: url("../images/content/red_left.png");
 }
 
 .s2.headcon .s2-info {
@@ -1610,6 +1665,11 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 @media screen and (min-width: 750px) {
   .s2.headcon .s2-info {
     margin-top: 45%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .s2.headcon .s2-info {
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1081px) {
@@ -1662,7 +1722,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   }
 }
 .s3.inaction a:active, .s3.inaction a:hover {
-  opacity: .6;
+  color: #ffcccc;
 }
 .s3.inaction img {
   width: 200px;
@@ -1696,8 +1756,14 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 750px) {
   .s2.contact {
-    padding: 13rem 0 20rem;
+    padding: 0rem 0 20rem;
     margin-top: -60px;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .s2.contact {
+    display: flex;
+    float: left;
   }
 }
 @media screen and (min-width: 1081px) {
@@ -1713,7 +1779,12 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 750px) {
   .s2.contact .conts-info {
-    margin-top: 70%;
+    margin-top: 60%;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .s2.contact .conts-info {
+    margin-top: 30%;
   }
 }
 @media screen and (min-width: 1081px) {
@@ -1795,7 +1866,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   transition: color 0.1s ease;
 }
 .email:active, .email:hover {
-  color: #444444;
+  color: #ffcccc;
 }
 
 /* Advisor Head */
@@ -1806,6 +1877,11 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   .adv-desk {
     margin-top: 30%;
     display: block;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .adv-desk {
+    margin-top: 10%;
   }
 }
 @media screen and (min-width: 1081px) {
@@ -1843,6 +1919,20 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 
 .s4-info.adv-desk {
   position: relative;
+  color: #fff;
+}
+.s4-info.adv-desk p {
+  width: 100%;
+}
+@media screen and (min-width: 750px) {
+  .s4-info.adv-desk p {
+    width: 92%;
+  }
+}
+@media screen and (min-width: 1081px) {
+  .s4-info.adv-desk p {
+    width: 100%;
+  }
 }
 
 .s4.head-adv {
@@ -1882,7 +1972,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 .s4.head-adv .redoverlay {
   display: block;
   clip-path: url(../#clip_path-sub);
-  background-image: url("../images/content/red_right.png");
+  background-image: url("../images/content/red_left.png");
   -webkit-clip-path: ellipse(130% 100% at 50% 0%);
 }
 @media screen and (min-width: 1081px) {
@@ -2018,7 +2108,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   }
 }
 .s3.adv a:active, .s3.adv a:hover {
-  opacity: .6;
+  color: #ffcccc;
 }
 .s3.adv img {
   width: 200px;

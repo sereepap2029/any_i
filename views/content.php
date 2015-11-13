@@ -92,6 +92,7 @@ $banner=$m_banner->get_all_banner(100000,0);
     <!-- S2 ========================= -->
     <div class="section s2">
         <div class="redoverlay"></div>
+        <div class="whiteoverlay"></div>
         <div class="container">
             <div class="row">
                 <div class="twelve columns">

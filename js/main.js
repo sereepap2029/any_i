@@ -52,7 +52,7 @@ $(document).ready(function() {
         });
     }
     /*End Fullpage  ***********************/
-    //Detect iOS version
+    /* Detect iOS version  ***********************/
     var vers = iOSversion();
     if (typeof vers != 'undefined') {
         if (typeof vers[0] != 'undefined') {
@@ -62,14 +62,40 @@ $(document).ready(function() {
             }
         }
     }
+    /*End Detect iOS version  ***********************/
+    /* Fix navbar  ***********************/
+    if (winW < 550) {
+        var scn = 680;
+    }if (winW < 1080) {
+        var scn = 1100;
+    } else {
+        var scn = 720;
+    }
+    $(window).bind('scroll', function() {
+        if ($(window).scrollTop() > scn) {
+            //Detect Scroll Stop
+            $(".nav-desk-scroll").slideUp(100);
+            clearTimeout($.data(this, 'scrollTimer'));
+            $.data(this, 'scrollTimer', setTimeout(function() {
+                //console.log("hey");
+                $(".nav-desk-scroll").slideDown(260);
+                //$(".nav-desk-scroll").css("display","block");
+            }, 450));
+        } else {
+            $(".nav-desk-scroll").slideUp(100);
+            $(".nav-desk-scroll").css("display", "none");
+            //console.log("ohh");
+        }
+    });
+    /*End Fix navbar  ***********************/
 
-
-}); /*End Onload  ***********************/
+});
+/*End Onload  ********************************************************************/
 
 /* Nav ***********************/
 $(function() {
     var flag = 1;
-    $('.nav-toggle').on('click', function() {
+    $('.toggle').on('click', function() {
         $('.main-nav').toggleClass('open');
         /* disable scrolling *************/
         if (flag < 1) {
