@@ -107,8 +107,8 @@ $banner=$m_banner->get_all_banner(100000,0);
                                 </li>
                             </ul>
                         </div>
-                        <h1>เพราะ “โอกาส” คือสิ่งที่เราเชื่อมั่น </h1>
-                        <p>any i ตั้งมั่นที่จะช่วยเหลือเรื่องการให้ โอกาสในการลงทุนกับคนที่มีความฝัน มีความมุ่งมั่นอยากให้ธุรกิจของตัวเอง เติบโตและประสบความสำเร็จ โดยมีเรา เป็นส่วนหนึ่งในการผลักดันให้ฝัน ของคุณเป็นจริง
+                        <h1><?=$any_lang[$_COOKIE["lang"]]['Philosophy_h1']?></h1>
+                        <p><?=$any_lang[$_COOKIE["lang"]]['Philosophy_p']?>
                         </p>
                     </div>
                 </div>
@@ -118,23 +118,23 @@ $banner=$m_banner->get_all_banner(100000,0);
     <!-- S3 ========================= -->
     <div class="section s3">
         <div class="container">
-            <h3 class="section-heading">ผลักดันคุณ ไปสู่ฝัน</h3>
+            <h3 class="section-heading"><?=$any_lang[$_COOKIE["lang"]]['Dreams_h3']?></h3>
             <div class="row">
                 <div class="four columns">
                     <img class="u-max-full-width" src="images/content/s3/s3-ico1.jpg">
-                    <h5 class="value-heading">การสนับสนุน</h5>
-                    <p class="value-description">เมื่อคุณมุ่งมั่นทุ่มเทลงทุนในความฝัน any i ก็พร้อมร่วมสนับสนุนให้ให้ธุรกิจ ในฝันของคุณเติบโตและแข็งแรงมากขึ้น จนกลายเป็นความจริง
+                    <h5 class="value-heading"><?=$any_lang[$_COOKIE["lang"]]['Dreams_support']?></h5>
+                    <p class="value-description"><?=$any_lang[$_COOKIE["lang"]]['Dreams_support_des']?>
                     </p>
                 </div>
                 <div class="four columns">
                     <img class="u-max-full-width" src="images/content/s3/s3-ico2.jpg">
-                    <h5 class="value-heading">คำปรึกษา</h5>
-                    <p class="value-description">ทีมงานของ any i มาจากการทำงาน ในหลากหลายสาขา และล้วนมี ความรู้ ความเชี่ยวชาญเฉพาะทาง ให้คุณมั่นใจได้ว่าทุกคำแนะนำใน ทุกขั้นตอนของการดำเนินธุรกิจ จะเป็นไปอย่างถูกต้องแม่นยำ</p>
+                    <h5 class="value-heading"><?=$any_lang[$_COOKIE["lang"]]['Dreams_advice']?></h5>
+                    <p class="value-description"><?=$any_lang[$_COOKIE["lang"]]['Dreams_advice_des']?></p>
                 </div>
                 <div class="four columns">
                     <img class="u-max-full-width" src="images/content/s3/s3-ico3.jpg">
-                    <h5 class="value-heading">แรงบันดาลใจ</h5>
-                    <p class="value-description">เรารู้ว่าในการทำงาน เรื่องของใจ สำคัญไม่แพ้สิ่งใด any i พร้อมแชร์ ประสบการณ์และแนวคิดจากการ ทำงานเพื่อสร้างแรงบันดาลใจให้ คุณพร้อมที่จะฝ่าฟันไปให้ถึงเส้นชัย
+                    <h5 class="value-heading"><?=$any_lang[$_COOKIE["lang"]]['Dreams_Inspiration']?></h5>
+                    <p class="value-description"><?=$any_lang[$_COOKIE["lang"]]['Dreams_Inspiration_des']?>
                     </p>
                 </div>
             </div>
@@ -204,8 +204,8 @@ $banner=$m_banner->get_all_banner(100000,0);
     <div class="section s5">
         <div class="container">
             <h3 class="section-heading">Our Trusted Advisor</h3>
-            <h3 class="section-heading2">เชี่ยวชาญเฉพาะทาง ตอบโจทย์ได้ตรงจุด</h3>
-            <p class="section-description">any i มีทีมงานที่เชี่ยวชาญใน หลากหลายด้าน สามารถให้คำปรึกษา เฉพาะทางได้สำหรับทุกช่วงการเติบโตของธุรกิจ
+            <h3 class="section-heading2"><?=$any_lang[$_COOKIE["lang"]]['Trusted_Advisor_h3']?></h3>
+            <p class="section-description"><?=$any_lang[$_COOKIE["lang"]]['Trusted_Advisor_des']?>
             </p>
             <!-- Normal Row -->
             <?        

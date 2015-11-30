@@ -24,7 +24,7 @@ foreach ($action as $key => $value) {
                             </li>
                         </ul>
                     </div>
-                    <h1>เราจะอยู่เคียงข้าง ในการเดินทางสู่ ความสำเร็จของทุกฝัน </h1>
+                    <h1><?=$any_lang[$_COOKIE["lang"]]['inaction_des']?></h1>
                 </div>
             </div>
         </div>
