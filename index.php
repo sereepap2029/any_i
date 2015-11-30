@@ -33,7 +33,7 @@ $welcome=$m_welcome->get_all_welcome()->result;
         </div>
         <div class="cen_but">
             <h1 class="titlebu"><?echo $welcome[0]['text'];?></h1>
-            <a href="index-in.php">
+            <a href="./index-in.php">
                 <button class="gotoindex" onClick="">Enter</button>
             </a>
         </div>
