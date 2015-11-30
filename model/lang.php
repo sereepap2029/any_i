@@ -16,8 +16,9 @@ $any_lang['th']['Dreams_Inspiration_des']="เรารู้ว่าในก�
 $any_lang['th']['Trusted_Advisor_h3']="เชี่ยวชาญเฉพาะทาง ตอบโจทย์ได้ตรงจุด";
 $any_lang['th']['Trusted_Advisor_des']="any i มีทีมงานที่เชี่ยวชาญใน หลากหลายด้าน สามารถให้คำปรึกษา เฉพาะทางได้สำหรับทุกช่วงการเติบโตของธุรกิจ";
 
-
 $any_lang['th']['inaction_des']="เราจะอยู่เคียงข้าง ในการเดินทางสู่ ความสำเร็จของทุกฝัน";
+
+$any_lang['th']['Business_Partner']="ผู้ร่วมลงทุนของเรา";
 // en region
 $any_lang['en']['']="";
 $any_lang['en']['Philosophy_h1']="Because We Believe in Opportunity";
@@ -35,3 +36,5 @@ $any_lang['en']['Trusted_Advisor_h3']="Focused Expertise for The Exact Answers Y
 $any_lang['en']['Trusted_Advisor_des']="any i is staffed with experts in a wide range of fields to give timely and beneficial advice for every stage of your business.";
 
 $any_lang['en']['inaction_des']="All along the challenging road to success, we will be at your side every step of the way.";
+
+$any_lang['en']['Business_Partner']="Our Business Allies";

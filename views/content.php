@@ -269,7 +269,7 @@ $banner=$m_banner->get_all_banner(100000,0);
     <div class="section s6">
         <div class="container">
             <h3 class="section-heading">Our Business Partner</h3>
-            <h3 class="section-heading2">ผู้ร่วมลงทุนของเรา</h3>
+            <h3 class="section-heading2"><?=$any_lang[$_COOKIE["lang"]]['Business_Partner']?></h3>
             <div class="row">
                 <?
                 foreach ($partner as $key => $value) {
