@@ -178,7 +178,7 @@ if (isset($_GET['edit'])) {
                                                         <span>เลือกไฟล์</span>
                                         <!-- The file input field used as target for the file upload widget -->
                                         <input id="fileupload" type="file" name="files[]">
-                                        </span>&nbsp;&nbsp;&nbsp;Desktop Image<font style="color:red">1280px X 840px</font>
+                                        </span>&nbsp;&nbsp;&nbsp;Desktop Image<font style="color:red">1280px X 700px</font>
                                         <br>
                                         <br>
                                         <!-- The global progress bar -->
