@@ -22,7 +22,7 @@ if (isset($_GET['edit'])) {
             'detail_description_en' => $_POST['detail_description_en'], 
             );
         $m_action->update_action($data,$_POST['id']);
-        $sort_order=0;
+        $sort_order=1;
         foreach ($_POST['file_path'] as $key => $value) {
             $filename = $value;
             $pos = strpos($filename, "old_file_picture__");
@@ -193,7 +193,7 @@ if (isset($_GET['edit'])) {
                                     </div>
 
                                     <div class="control-group">
-                                        <label class="control-label" for="focusedInput">Detail title &nbsp;&nbsp;&nbsp;<font style="color:red">เป็นหัวข้อที่ใช้ในหน้า รายละเอียดของ Any i incation</font></label>
+                                        <label class="control-label" for="focusedInput">Detail title &nbsp;&nbsp;&nbsp;<font style="color:red">เป็นหัวข้อที่ใช้ในหน้า รายละเอียดของ any i in action</font></label>
                                         <div class="controls">                                            
                                             <? if (!$edit) { ?>
                                             <input class="focused" id="detail_title" type="text" name="detail_title" link="">
@@ -204,7 +204,7 @@ if (isset($_GET['edit'])) {
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <label class="control-label" for="focusedInput">Detail description &nbsp;&nbsp;&nbsp;<font style="color:red">เป็นรายละเอียดที่ใช้ในหน้า รายละเอียดของ Any i incation</font></label>
+                                        <label class="control-label" for="focusedInput">Detail description &nbsp;&nbsp;&nbsp;<font style="color:red">เป็นรายละเอียดที่ใช้ในหน้า รายละเอียดของ any i in action</font></label>
                                         <div class="controls">
                                             <? if (!$edit) { ?>                                            
                                             <textarea class="span7 focused" style="height:200px" name="detail_description"></textarea>
@@ -237,7 +237,7 @@ if (isset($_GET['edit'])) {
                                     </div>             
 
                                     <div class="control-group">
-                                        <label class="control-label" for="focusedInput">Detail title EN &nbsp;&nbsp;&nbsp;<font style="color:red">เป็นหัวข้อที่ใช้ในหน้า รายละเอียดของ Any i incation</font></label>
+                                        <label class="control-label" for="focusedInput">Detail title EN &nbsp;&nbsp;&nbsp;<font style="color:red">เป็นหัวข้อที่ใช้ในหน้า รายละเอียดของ any i in action</font></label>
                                         <div class="controls">                                            
                                             <? if (!$edit) { ?>
                                             <input class="focused" id="detail_title_en" type="text" name="detail_title_en" link="">
@@ -248,7 +248,7 @@ if (isset($_GET['edit'])) {
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <label class="control-label" for="focusedInput">Detail description EN &nbsp;&nbsp;&nbsp;<font style="color:red">เป็นรายละเอียดที่ใช้ในหน้า รายละเอียดของ Any i incation</font></label>
+                                        <label class="control-label" for="focusedInput">Detail description EN &nbsp;&nbsp;&nbsp;<font style="color:red">เป็นรายละเอียดที่ใช้ในหน้า รายละเอียดของ any i in action</font></label>
                                         <div class="controls">
                                             <? if (!$edit) { ?>                                            
                                             <textarea class="span7 focused" style="height:200px" name="detail_description_en"></textarea>
@@ -256,14 +256,98 @@ if (isset($_GET['edit'])) {
                                             <textarea class="span7 focused" style="height:200px" name="detail_description_en"><?echo $action[0]['detail_description_en'];?></textarea>                                            
                                             <? } ?>
                                         </div>
-                                    </div>                   
+                                    </div>              
+                                    <div class="control-group">
+                                        <span class="btn btn-success fileinput-button">
+                                                        <i class="glyphicon glyphicon-plus"></i>
+                                                        <span>เลือกไฟล์</span>
+                                        <!-- The file input field used as target for the file upload widget -->
+                                        <input id="fileupload_first" type="file" name="files[]" multiple>
+                                        </span>&nbsp;&nbsp;&nbsp;<font style="color:red">รูปหน้า listing ขนาด 200px X 200px </font>
+                                        <br>
+                                        <br>
+                                        <!-- The global progress bar -->
+                                        <div id="progress_first" class="progress progress-striped progress-success active">
+                                            <div class="bar progress-bar progress-bar-success"></div>
+                                        </div>
+                                    </div>
+                                                <div id="img_list_hold_parent" class="span12 no-margin-left" style="margin-bottom:100px;">
+                                                    <?
+                                                    if ($edit) {
+                                                        $photo=$m_action->get_all_action_photo($action[0]['id'])->result;
+                                                        $value=$photo[0];
+                                                        ?>
+                                                        <div id="first_img" class="img_hold">
+                                                            <img src="../media/action/<?=$value['filename']?>" class="span10 file_tmp">
+                                                            <input type="hidden" class="file_path" name="file_path[]" value="<?="old_file_picture__".$value['id']?>">
+                                                            <div id="old_200" type="hidden" file="<?=$value['filename']?>" value="<?=$value['id']?>" style="display:none"></div>
+                                                        </div>
+                                                        <?
+                                                    }else{
+                                                        ?>
+                                                        <div id="first_img" class="img_hold">
+                                                            <img src="" class="span10 file_tmp">
+                                                            <input type="hidden" class="file_path" name="file_path[]" value="">
+                                                            <div id="old_200" type="hidden" file="" value="" style="display:none"></div>
+                                                        </div>
+                                                        <?
+                                                    }
+                                                    ?>
+                                                    
+                                                </div>
+
+                                                <hr>
+                                    <div class="control-group">
+                                        <span class="btn btn-success fileinput-button">
+                                                        <i class="glyphicon glyphicon-plus"></i>
+                                                        <span>เลือกไฟล์</span>
+                                        <!-- The file input field used as target for the file upload widget -->
+                                        <input id="fileupload_seccond" type="file" name="files[]" multiple>
+                                        </span>&nbsp;&nbsp;&nbsp;<font style="color:red">รูปหน้า Home,Detail รูปขนาด 1280px X 840px </font>
+                                        <br>
+                                        <br>
+                                        <!-- The global progress bar -->
+                                        <div id="progress_seccond" class="progress progress-striped progress-success active">
+                                            <div class="bar progress-bar progress-bar-success"></div>
+                                        </div>
+                                    </div>
+                                                <div id="img_list_hold_parent" class="span12 no-margin-left" style="margin-bottom:100px;">
+                                                    <?
+                                                    if ($edit) {
+                                                        $photo=$m_action->get_all_action_photo($action[0]['id'])->result;
+                                                        $value=$photo[1];
+                                                        ?>
+                                                        <div id="seccond_img" class="img_hold">
+                                                            <img src="../media/action/<?=$value['filename']?>" class="span10 file_tmp">
+                                                            <input type="hidden" class="file_path" name="file_path[]" value="<?="old_file_picture__".$value['id']?>">
+                                                            <div id="old_seccond" type="hidden" file="<?=$value['filename']?>" value="<?=$value['id']?>" style="display:none"></div>
+                                                        </div>
+                                                        <?
+                                                    }else{
+                                                        ?>
+                                                        <div id="seccond_img" class="img_hold">
+                                                            <img src="" class="span10 file_tmp">
+                                                            <input type="hidden" class="file_path" name="file_path[]" value="">
+                                                            <div id="old_seccond" type="hidden" file="" value="" style="display:none"></div>
+                                                        </div>
+                                                        <?
+                                                    }
+                                                    ?>
+                                                    
+                                                </div>     
+
+
+                                                <hr>
+
+
+
                                     <div class="control-group">
                                         <span class="btn btn-success fileinput-button">
                                                         <i class="glyphicon glyphicon-plus"></i>
                                                         <span>เลือกไฟล์</span>
                                         <!-- The file input field used as target for the file upload widget -->
                                         <input id="fileupload" type="file" name="files[]" multiple>
-                                        </span>&nbsp;&nbsp;&nbsp;<font style="color:red">รูปแรกขนาด 200px X 200px ที่เหลือขนาด 1280px X 840px<br> รูปขนาด 1280px X 840px ต้องมีอย่างน้อย 3 รูป โดยที่รูปแรกที่ขนาด 1280px X 840px จะเป็นรูปที่โชวหน้า Home</font>
+                                        </span>&nbsp;&nbsp;&nbsp;<font style="color:red">Gallery ในหน้า Detail รูปขนาด 1280px X 840px</font>
                                         <br>
                                         <br>
                                         <!-- The global progress bar -->
@@ -271,12 +355,12 @@ if (isset($_GET['edit'])) {
                                             <div class="bar progress-bar progress-bar-success"></div>
                                         </div>
                                     </div>
-                                    <hr>
                                                 <div id="img_hold_parent" class="span12 no-margin-left" style="margin-bottom:20px;">
                                                     <?
                                                     if ($edit) {
                                                         $photo=$m_action->get_all_action_photo($action[0]['id'])->result;
                                                       foreach ($photo as $key => $value) {
+                                                        if ($key!=0&&$key!=1) {
                                                         ?>
                                                         <div class="img_hold">
                                                             <img src="../media/action/<?=$value['filename']?>" class="span10 file_tmp">
@@ -284,6 +368,7 @@ if (isset($_GET['edit'])) {
                                                             <button id="<?=$value['id']?>" file="<?=$value['filename']?>" type="button" class="btn btn-success del_pic"><i class="icon-remove icon-white"></i></button>
                                                         </div>
                                                         <?
+                                                        }
                                                       }
                                                     }
                                                     ?>
@@ -362,7 +447,7 @@ $(function() {
             beforeSend: function() {
                 $('#progress .progress-bar').css(
                     'width',
-                    '10%'
+                    '0%'
                 );
             },
             done: function(e, data) {
@@ -403,6 +488,133 @@ $(function() {
             progressall: function(e, data) {
                 var progress = parseInt(data.loaded / data.total * 100, 10);
                 $('#progress .progress-bar').css(
+                    'width',
+                    progress + '%'
+                );
+            }
+        }).prop('disabled', !$.support.fileInput)
+        .parent().addClass($.support.fileInput ? undefined : 'disabled');
+});
+
+
+
+
+$(function() {
+    'use strict';
+    // Change this to the location of your server-side upload handler:
+    var url = './uploadhandle/';
+    $('#fileupload_first').fileupload({
+            previewThumbnail: false,
+            url: url,
+            dataType: 'json',
+            beforeSend: function() {
+                $('#progress_first .progress-bar').css(
+                    'width',
+                    '10%'
+                );
+            },
+            done: function(e, data) {
+                //console.log(data);
+
+                $.each(data.result.files, function(index, file) {
+                    //console.log(file);
+                   if (file.error=="File is too big") {
+                                $.ajax({
+                                    method: "POST",
+                                    url: "./action_image_hold.php",
+                                    data: {
+                                        "file": "",
+                                        "file_path": "",
+                                        "alt": "ไฟล์ "+file.name+" ขนาดไหญ่เกินไป",
+                                    }
+                                })
+                                .done(function(data) {
+                                    $("#img_hold_parent").append(data);
+                                });
+                            }else{
+                                    $("#first_img img").attr("src","../media/tmp/"+file.name);
+                                    $("#first_img input").val(file.name);
+                                    $.ajax({
+                                        method: "POST",
+                                        url: "./del_image.php",
+                                        data: {
+                                            "type":"real",
+                                            "id": $("#old_200").attr("value"),
+                                            "filename": $("#old_200").attr("file"),
+                                        }
+                                    })
+                                    .done(function(data) {
+
+                                    });
+                            }
+                });
+
+            },
+            progressall: function(e, data) {
+                var progress = parseInt(data.loaded / data.total * 100, 10);
+                $('#progress_first .progress-bar').css(
+                    'width',
+                    progress + '%'
+                );
+            }
+        }).prop('disabled', !$.support.fileInput)
+        .parent().addClass($.support.fileInput ? undefined : 'disabled');
+});
+
+$(function() {
+    'use strict';
+    // Change this to the location of your server-side upload handler:
+    var url = './uploadhandle/';
+    $('#fileupload_seccond').fileupload({
+            previewThumbnail: false,
+            url: url,
+            dataType: 'json',
+            beforeSend: function() {
+                $('#progress_seccond .progress-bar').css(
+                    'width',
+                    '10%'
+                );
+            },
+            done: function(e, data) {
+                //console.log(data);
+
+                $.each(data.result.files, function(index, file) {
+                    //console.log(file);
+                   if (file.error=="File is too big") {
+                                $.ajax({
+                                    method: "POST",
+                                    url: "./action_image_hold.php",
+                                    data: {
+                                        "file": "",
+                                        "file_path": "",
+                                        "alt": "ไฟล์ "+file.name+" ขนาดไหญ่เกินไป",
+                                    }
+                                })
+                                .done(function(data) {
+                                    $("#img_hold_parent").append(data);
+                                });
+                            }else{
+                                    $("#seccond_img img").attr("src","../media/tmp/"+file.name);
+                                    $("#seccond_img input").val(file.name);
+                                    $.ajax({
+                                        method: "POST",
+                                        url: "./del_image.php",
+                                        data: {
+                                            "type":"real",
+                                            "id": $("#old_seccond").attr("value"),
+                                            "filename": $("#old_seccond").attr("file"),
+                                        }
+                                    })
+                                    .done(function(data) {
+
+                                    });
+                            }
+                });
+
+            },
+            progressall: function(e, data) {
+                var progress = parseInt(data.loaded / data.total * 100, 10);
+                $('#progress_seccond .progress-bar').css(
                     'width',
                     progress + '%'
                 );

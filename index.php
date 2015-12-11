@@ -1,5 +1,4 @@
 <?
-include("views/admin_header.php");
 require_once("./model/m_welcome.php");
 $m_welcome = new M_welcome;
 $welcome=$m_welcome->get_all_welcome()->result;

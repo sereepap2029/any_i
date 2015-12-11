@@ -19,13 +19,13 @@ $action=$m_action->get_all_action(100000,0);
                         <!-- block -->
                         <div class="block">
                             <div class="navbar navbar-inner block-header">
-                                <div class="muted pull-left">Any I in action</div>
+                                <div class="muted pull-left">any i in action</div>
                             </div>
                             <div class="block-content collapse in">
                                 <div class="span12">
                                    <div class="table-toolbar">
                                       <div class="btn-group">
-                                         <a href="in_action_add.php"><button class="btn btn-success">Add Any I in action <i class="icon-plus icon-white"></i></button></a>
+                                         <a href="in_action_add.php"><button class="btn btn-success">Add any i in action <i class="icon-plus icon-white"></i></button></a>
                                       </div>                                      
                                    </div>
                                     

@@ -28,7 +28,7 @@ if (!isset($user_data['username'])) {
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Admin Home Page</title>
+        <title>any i Admin </title>
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
@@ -37,6 +37,7 @@ if (!isset($user_data['username'])) {
         <link href="css/jquery-ui.css" rel="stylesheet" media="screen">
         <link href="css/jquery-ui.structure.css" rel="stylesheet" media="screen">
         <link href="css/jquery-ui.theme.css" rel="stylesheet" media="screen">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -54,11 +55,9 @@ if (!isset($user_data['username'])) {
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="#">Admin Panel</a>
+                    <a class="brand" href="#" style="padding:2px"><img src="./images/logo.png" width="130px"></a>
                     <div class="nav-collapse collapse">
-                        <ul class="nav pull-right">
-                        </ul>
-                        <ul class="nav">
+                        <ul class="nav pull-right" style="font-size:16px;margin-top:2%">
                             <li class="dropdown">
                                 <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Home Banner <i class="caret"></i>
 
@@ -86,7 +85,7 @@ if (!isset($user_data['username'])) {
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Any I in action <i class="caret"></i>
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">any i in action <i class="caret"></i>
 
                                 </a>
                                 <ul class="dropdown-menu">
