@@ -111,6 +111,11 @@
   .offset-by-one-half.columns     { margin-left: 52%; }
 
 }
+/* New column by atom  for FIX ADV*/
+@media (min-width: 1300px) {
+  .six-new.columns                   { width: 48%;            }
+
+}
 
 
 /* Base Styles

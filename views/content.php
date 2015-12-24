@@ -145,7 +145,7 @@ $banner=$m_banner->get_all_banner(100000,0);
         <div class="container">
             <div class="row">
                 <div class="twelve columns">
-                    <div id="owl-desk-s4" class="owl-carousel owl-theme owl-loaded">
+                    <div <? if(count($action)>1){?>id="owl-desk-s4"<?}?> class="owl-carousel owl-theme owl-loaded">
                     <?
                     foreach ($action as $key => $value) {
                      ?>
@@ -153,11 +153,11 @@ $banner=$m_banner->get_all_banner(100000,0);
                             <div class="s4-img"> <?
                             if (isset($value['photo'][1])) {
                                 ?>
-                                <img src="./media/action/<?=$value['photo'][1]['filename']?>" alt="">
+                                <img src="./media/action/<?=$value['photo'][1]['filename']?>" alt="" <? if(count($action)==1){?>style="width: 100%;"<?}?>>
                                 <?
                             }else{
                                 ?>
-                                <img src="http://www.placehold.it/1280x840" alt="">
+                                <img src="http://www.placehold.it/1280x840" alt="" <? if(count($action)==1){?>style="width: 100%;"<?}?>>
                                 <?
                             }
                             ?>

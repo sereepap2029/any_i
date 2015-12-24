@@ -1270,6 +1270,18 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
   -webkit-clip-path: none;
   clip-path: none;
 }
+@media screen and (min-width: 1081px) {
+  .s4 .s4-tag #redtag {
+  margin-left: 15px;
+  background-image: url("../images/content/redtag.png");
+  width: 42px;
+  height: 56px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-clip-path: none;
+  clip-path: none;
+  }
+}
 .s4 .s4-tag p {
   font-size: 36px;
   line-height: 1.6;
@@ -2163,7 +2175,7 @@ nav.main-nav-desk ul li a:active, nav.main-nav-desk ul li a:hover {
 }
 @media screen and (min-width: 1081px) {
   .adv-con .s4-info p {
-    font-size: 24px;
+    font-size: 18px;
     color: #666666;
   }
 }
@@ -2339,6 +2351,18 @@ hr {
       background-repeat: no-repeat;
       background-position: bottom;
   }
+}
+a.no-effect{
+        text-decoration:none;
+        font-family: 'rsu_b';
+    font-size: 30px;
+    color: #fff;
+}
+.s4 .s4-info a.no-effect{
+        text-decoration:none;
+        font-family: 'rsu_b';
+    font-size: 30px;
+    color: #fff;
 }
 /* 
 by Chanala Wilangka

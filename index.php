@@ -18,14 +18,57 @@ $welcome=$m_welcome->get_all_welcome()->result;
             <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     <link href="css/wel/styles.css" rel="stylesheet">
+    <style type="text/css">
+    
+    @media screen and (max-width: 1000px) {
+        .wel-con {
+            background: url("./media/video/<?echo $welcome[0]['img'];?>");
+            position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        }
+        video {
+            display: none;
+        }
+    }
+    <?
+        if ($welcome[0]['type']=="img") {
+            ?>
+            .wel-con {
+                background: url("./media/video/<?echo $welcome[0]['img'];?>");
+                position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+            }
+            <?
+        }
+    ?>
+    </style>
 </head>
 
 <body>
     <div class="wel-con">
-        <video autoplay id="bgvid" loop>
-            <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-            <source src="./media/video/<?echo $welcome[0]['vdo'];?>" type="video/mp4">
-        </video>
+        <?
+        if ($welcome[0]['type']=="vdo") {
+            ?>
+            <video autoplay id="bgvid" loop>
+                <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+                <source src="./media/video/<?echo $welcome[0]['vdo'];?>" type="video/mp4">
+            </video>
+            <?
+        }else{
+            /*?>
+            <img class="img-welcome" src="./media/video/<?echo $welcome[0]['img'];?>">
+            <?*/
+        }
+        ?>
+        
          <div class="blackoverlay"></div>
         <div class="top_band">
             <img src="images/wel/landingpage-logo.png" style="width:100%">

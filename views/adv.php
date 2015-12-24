@@ -30,7 +30,7 @@ $action[0]['photo']=$photo_arr->result;
                         <div class="s4-tag">
                             <ul>
                                 <li>
-                                    <p>any i in Action</p>
+                                    <p><a class="no-effect" href="inaction.php">any i in Action</a></p>
                                 </li>
                                 <li>
                                     <div id="redtag"></div>
@@ -121,12 +121,17 @@ $action[0]['photo']=$photo_arr->result;
             <div class="container">
                 <div class="row">
                     <div class="six columns">
-                        <div id="owl-adv" class="owl-carousel owl-theme owl-loaded">
+                        <div <?if(count($action[0]['photo'])-2>0){?>id="owl-adv"<?}?> class="owl-carousel owl-theme owl-loaded">
                             <!-- slide ========= -->
                             <?
                             foreach ($action[0]['photo'] as $key => $value) {
                                 if ($key==0||$key==1) {
-
+                                    if ($key==1&&count($action[0]['photo'])-2<=1) {
+                                        ?>
+                                        <div><img src="http://placehold.it/1280x840" alt="">
+                                        </div>
+                                        <?
+                                    }
                                 }else{
                                     ?>
                                     <div><img src="./media/action/<?=$value['filename']?>" alt="">
@@ -140,7 +145,11 @@ $action[0]['photo']=$photo_arr->result;
                     <div class="six columns">
                         <div class="s4-info">
                             <h1><?
+                            // Order of replacement
+                            $order   = array("\r\n", "\n", "\r");
+                            $replace = array('<br>', '<br>', '<br>');
                             if ($_COOKIE["lang"]=="th") {
+
                                 echo $action[0]['detail_title'];
                             }else{
                                 echo $action[0]['detail_title_en'];
@@ -148,9 +157,13 @@ $action[0]['photo']=$photo_arr->result;
                             ?></h1>
                             <p><?
                             if ($_COOKIE["lang"]=="th") {
-                                echo $action[0]['detail_description'];
+                                $newstr = str_replace($order, $replace, $action[0]['detail_description']);
+                                $newstr = str_replace(" ", "&nbsp;", $newstr);
+                                echo $newstr;//."--".strlen($action[0]['detail_description']);
                             }else{
-                                echo $action[0]['detail_description_en'];
+                                $newstr = str_replace($order, $replace, $action[0]['detail_description_en']);
+                                $newstr = str_replace(" ", "&nbsp;", $newstr);
+                                echo $newstr;
                             }
                             ?>
                             </p>

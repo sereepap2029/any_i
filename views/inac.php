@@ -30,6 +30,12 @@ foreach ($action as $key => $value) {
         </div>
     </div>
 </div>
+<style type="text/css">
+    .value-description{
+        max-width: 300px;
+        margin: 0px auto;
+    }
+</style>
 <!-- END HEAD CONTENT ************************** -->
 <!-- in action ========================= -->
 <div class="inaction section s3 ">

@@ -9,11 +9,11 @@ if (isset($_GET['setlang'])) {
 }
 if (!isset($_COOKIE["lang"])) {
 	setcookie("lang","th",time()+(60*60*24*10));
-	?>
+	/*?>
 	<script type="text/javascript">
 	window.open("./index-in.php","_self");
 	</script>
-	<?
+	<?*/
 }
 include("./model/lang.php");
 ?>

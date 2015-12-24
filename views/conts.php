@@ -1,4 +1,12 @@
 <!-- HEAD CONTENT ************************** -->
+<style type="text/css">
+    a.no-effect{
+        text-decoration:none;
+        font-family: 'rsu_b';
+    font-size: 30px;
+    color: #fff;
+}
+</style>
 <div class="contact section s2 ">
     <div class="overlay"></div>
     <div class="container">
@@ -12,7 +20,7 @@
                         <br> Bangkok, 10400 Thailand
                         <br> Work: +66 2 248 4591 Fax: +66 2 248 2936
                     </p>
-                    <button class="email" onClick="">Email Us</button>
+                    <button class="email" onclick="mailto:all@anyicorp.com"><a class="no-effect" href='mailto:all@anyicorp.com'>Email Us</a></button>
                 </div>
             </div>
         </div>

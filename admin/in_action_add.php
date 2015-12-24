@@ -17,9 +17,9 @@ if (isset($_GET['edit'])) {
             'title_en' => $_POST['title_en'], 
             'description_en' => $_POST['description_en'], 
             'detail_title' => $_POST['detail_title'], 
-            'detail_description' => $_POST['detail_description'], 
+            'detail_description' => substr($_POST['detail_description'], 0,4999), 
             'detail_title_en' => $_POST['detail_title_en'], 
-            'detail_description_en' => $_POST['detail_description_en'], 
+            'detail_description_en' => substr($_POST['detail_description_en'], 0,4999), 
             );
         $m_action->update_action($data,$_POST['id']);
         $sort_order=1;
@@ -75,9 +75,9 @@ if (isset($_GET['edit'])) {
             'title_en' => $_POST['title_en'], 
             'description_en' => $_POST['description_en'], 
             'detail_title' => $_POST['detail_title'], 
-            'detail_description' => $_POST['detail_description'], 
+            'detail_description' => substr($_POST['detail_description'], 0,4999), 
             'detail_title_en' => $_POST['detail_title_en'], 
-            'detail_description_en' => $_POST['detail_description_en'], 
+            'detail_description_en' => substr($_POST['detail_description_en'], 0,4999), 
             );
         $m_action->insert_action($data);
         foreach ($_POST['file_path'] as $key => $value) {
@@ -171,7 +171,7 @@ if (isset($_GET['edit'])) {
                             <form class="form-horizontal" method="post" action="in_action_add.php">
                                 <fieldset>
                                     <div class="control-group">
-                                        <label class="control-label" for="focusedInput">Title</label>
+                                        <label class="control-label" for="focusedInput">Title &nbsp;&nbsp;&nbsp;<font style="color:red">หัวข้อในภาพ</font></label>
                                         <div class="controls">                                            
                                             <? if (!$edit) { ?>
                                             <input class="focused" id="title" type="text" name="title" link="">
@@ -182,7 +182,7 @@ if (isset($_GET['edit'])) {
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <label class="control-label" for="focusedInput">Description</label>
+                                        <label class="control-label" for="focusedInput">Description &nbsp;&nbsp;&nbsp;<font style="color:red">รายละเอียดในภาพ</font></label>
                                         <div class="controls">
                                             <? if (!$edit) { ?>                                            
                                             <textarea class="span7 focused" style="height:200px" name="description"></textarea>
@@ -209,8 +209,10 @@ if (isset($_GET['edit'])) {
                                             <? if (!$edit) { ?>                                            
                                             <textarea class="span7 focused" style="height:200px" name="detail_description"></textarea>
                                             <? }else{ ?>
-                                            <textarea class="span7 focused" style="height:200px" name="detail_description"><?echo $action[0]['detail_description'];?></textarea>                                            
+                                            <textarea class="span7 focused" style="height:200px" name="detail_description"><?echo $action[0]['detail_description'];?></textarea>
+
                                             <? } ?>
+                                            <br><font style="color:red">ห้ามเกิน 5000 ตัวอักษร</font> 
                                         </div>
                                     </div>
                                     
@@ -233,6 +235,7 @@ if (isset($_GET['edit'])) {
                                             <? }else{ ?>
                                             <textarea class="span7 focused" style="height:200px" name="description_en"><?echo $action[0]['description_en'];?></textarea>                                            
                                             <? } ?>
+                                            
                                         </div>
                                     </div>             
 
@@ -255,6 +258,7 @@ if (isset($_GET['edit'])) {
                                             <? }else{ ?>
                                             <textarea class="span7 focused" style="height:200px" name="detail_description_en"><?echo $action[0]['detail_description_en'];?></textarea>                                            
                                             <? } ?>
+                                            <br><font style="color:red">ห้ามเกิน 5000 ตัวอักษร</font> 
                                         </div>
                                     </div>              
                                     <div class="control-group">
@@ -625,4 +629,9 @@ $(function() {
 </script>
 <?
 include("views/footer.php");
+/*
+   "คือ บริษัท แอดวานซ์ เอ็กซเชนจ์ เทคโนโลยี จำกัด ของเรา เริ่มก่อตั้งธุรกิจมาตั้งแต่ปี 2546 โดยดำเนินธุรกิจภายใต้แบรนด์ PAC เราเริ่มต้นด้วยการทำเป็นธุรกิจภายในครอบครัว คือทำเครื่องปรับอากาศ ซึ่งปฏิเสธไม่ได้หรอกว่าเป็นครื่องใช้ไฟฟ้าที่มีความจำเป็นในยุคนี้แหละ และก็เป็นเครื่องใช้ไฟฟ้าที่มีอัตราการสิ้นเปลืองพลังงานที่ค่อนข้างสูง แต่มันมีบทบาทเป็นหนึ่งในปัจจัยสำคัญในชีวิตประจำวันของเกือบทุกๆ ครัวเรือน และสำหรับธุรกิจทุกๆ ภาคส่วนด้วยใช่มั้ยคะ ซึ่งจุดนี้เองที่เกิดเป็นแรงบันดาลใจและผลักดันให้เราเกิดแนวคิดในการวิจัยและพัฒนาผลิตภัณฑ์ขึ้นมา จนในที่สุดก็กลายมาเป็น “นวัตกรรมเครื่องทำน้ำร้อนฟรีจากเครื่องปรับอากาศ” ค่ะ หลักการคือเราอาศัยเทคโนโลยีการแลกเปลี่ยนความร้อน โดยนำเอาพลังงานที่ต้องสูญเสียไปอย่างสิ้นเปลืองในระบบปรับอากาศเนี่ย นำมาปรับอุณหภูมิน้ำให้สูงขึ้นจนเป็นน้ำร้อน ซึ่งเราพัฒนาจนสามารถทดแทนการต้มน้ำร้อนจาก Heater ไฟฟ้าได้ 100% จากนั้นเราก็มีการพัฒนาผลิตภัณฑ์ประหยัดพลังงานมาเรื่อยๆ จนปัจจุบัน PAC ก็ได้รับการยอมรับให้เป็นหนึ่งในผู้นำทางด้านนวัตกรรมพลังงานสะอาดในระดับแนวหน้าของประเทศค่ะ
+
+   ต่อมา PAC ได้มีโอกาสรู้จักกับทาง any i ค่ะ และก็ได้มีโอกาสจับมือทำธุรกิจร่วมกัน โดย any i เป็นบริษัทที่มีความเชี่ยวชาญทางด้านให้คำปรึกษาทางด้านธุรกิจ การบริหารจัดการ การวางแผนกลยุทธ์ทางการตลาด การวางระบบบัญชี คลังสินค้า และระบบไอที ตลอดจนให้คำแนะนำในการแก้ปัญหาทางธุรกิจอย่างรอบด้าน ในขณะที่ตัว PAC เองก็มีความแข็งแรงและโดดเด่นทางด้านผลิตภัณฑ์ การที่ทั้ง 2 ฝ่ายได้ทำงานร่วมกันจึงเกิดการส่งเสริมซึ่งกันและกันในแต่ละด้าน ทำให้ PAC เติบโตอย่างสม่ำเสมอและต่อเนื่อง สามารถเตรียมความพร้อมรองรับการเจริญเติบโตของธุรกิจในอนาคต จากการกำหนดทิศทางของธุรกิจของตัวเองได้เองอย่างมีประสิทธิภาพมากขึ้นค่ะ"​
+*/
 ?>
