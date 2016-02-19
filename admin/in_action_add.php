@@ -204,7 +204,7 @@ if (isset($_GET['edit'])) {
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <label class="control-label" for="focusedInput">Detail description &nbsp;&nbsp;&nbsp;<font style="color:red">เป็นรายละเอียดที่ใช้ในหน้า รายละเอียดของ any i in action</font></label>
+                                        <label class="control-label" for="focusedInput">Detail description &nbsp;&nbsp;&nbsp;<font style="color:red">เป็นรายละเอียดที่ใช้ในหน้า รายละเอียดของ any i in action</font><br><font style="color:red">ห้ามเกิน 5000 ตัวอักษร</font></label>
                                         <div class="controls">
                                             <? if (!$edit) { ?>                                            
                                             <textarea class="span7 focused" style="height:200px" name="detail_description"></textarea>
@@ -212,7 +212,7 @@ if (isset($_GET['edit'])) {
                                             <textarea class="span7 focused" style="height:200px" name="detail_description"><?echo $action[0]['detail_description'];?></textarea>
 
                                             <? } ?>
-                                            <br><font style="color:red">ห้ามเกิน 5000 ตัวอักษร</font> 
+                                             
                                         </div>
                                     </div>
                                     
@@ -251,14 +251,13 @@ if (isset($_GET['edit'])) {
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <label class="control-label" for="focusedInput">Detail description EN &nbsp;&nbsp;&nbsp;<font style="color:red">เป็นรายละเอียดที่ใช้ในหน้า รายละเอียดของ any i in action</font></label>
+                                        <label class="control-label" for="focusedInput">Detail description EN &nbsp;&nbsp;&nbsp;<font style="color:red">เป็นรายละเอียดที่ใช้ในหน้า รายละเอียดของ any i in action</font><br><font style="color:red">ห้ามเกิน 5000 ตัวอักษร</font></label>
                                         <div class="controls">
                                             <? if (!$edit) { ?>                                            
                                             <textarea class="span7 focused" style="height:200px" name="detail_description_en"></textarea>
                                             <? }else{ ?>
                                             <textarea class="span7 focused" style="height:200px" name="detail_description_en"><?echo $action[0]['detail_description_en'];?></textarea>                                            
                                             <? } ?>
-                                            <br><font style="color:red">ห้ามเกิน 5000 ตัวอักษร</font> 
                                         </div>
                                     </div>              
                                     <div class="control-group">

@@ -81,7 +81,7 @@ $action=$m_action->get_all_action(100000,0);
 		    });
 		    $( "#table_sort" ).disableSelection();
 		    function del_action(link){
-		    	if(confirm("แน่ใจ๋")){
+		    	if(confirm("ยืนการลบข้อมูล")){
 		    		window.open(link,"_self");
 		    	}
 		    }

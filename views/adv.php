@@ -30,7 +30,7 @@ $action[0]['photo']=$photo_arr->result;
                         <div class="s4-tag">
                             <ul>
                                 <li>
-                                    <p><a class="no-effect" href="inaction.php">any i in Action</a></p>
+                                    <p style="width:auto;"><a class="no-effect" href="inaction.php">any i in Action</a></p>
                                 </li>
                                 <li>
                                     <div id="redtag"></div>
@@ -162,7 +162,7 @@ $action[0]['photo']=$photo_arr->result;
                                 echo $newstr;//."--".strlen($action[0]['detail_description']);
                             }else{
                                 $newstr = str_replace($order, $replace, $action[0]['detail_description_en']);
-                                $newstr = str_replace(" ", "&nbsp;", $newstr);
+                                //$newstr = str_replace(" ", "&nbsp;", $newstr);
                                 echo $newstr;
                             }
                             ?>
@@ -175,7 +175,6 @@ $action[0]['photo']=$photo_arr->result;
         </div>
     </div>
     <div class="advcon-foot">
-        <hr>
         <div class="row">
             <div class="twelve columns">
                 <div class="adv-btn">

@@ -103,6 +103,12 @@ if (!isset($user_data['username'])) {
                             <li class="">
                                 <a href="welcome_page.php">Edit welcome page</a>
                             </li>
+                            <li class="">
+                                <a href="encore_edit.php">Edit Benefit section</a>
+                            </li>
+                            <li class="">
+                                <a href="contact_edit.php">Edit Contact</a>
+                            </li>
                         </ul>
                     </div>
                     <!--/.nav-collapse -->

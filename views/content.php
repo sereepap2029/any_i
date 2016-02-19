@@ -17,6 +17,9 @@ $partner=$m_partner->get_all_partner(10000,0)->result;
 require_once("./model/m_banner.php");
 $m_banner = new M_banner;
 $banner=$m_banner->get_all_banner(100000,0);
+require_once("./model/m_encore.php");
+$m_encore = new M_encore;
+$encore=$m_encore->get_encore()->result;     
 ?>
 <!-- CONTENT ************************** -->
 <div id="fullpage">
@@ -123,18 +126,58 @@ $banner=$m_banner->get_all_banner(100000,0);
                 <div class="four columns">
                     <img class="u-max-full-width" src="images/content/s3/s3-ico1.jpg">
                     <h5 class="value-heading"><?=$any_lang[$_COOKIE["lang"]]['Dreams_support']?></h5>
-                    <p class="value-description"><?=$any_lang[$_COOKIE["lang"]]['Dreams_support_des']?>
+                    <p class="value-description">
+                    <?
+                    $order   = array("\r\n", "\n", "\r");
+                    $replace = array('<br>', '<br>', '<br>');
+                    if ($_COOKIE["lang"]=="th") {
+                                $newstr = str_replace($order, $replace, $encore[0]['support']);
+                               // $newstr = str_replace(" ", "&nbsp;", $newstr);
+                                echo $newstr;//."--".strlen($action[0]['detail_description']);
+                            }else{
+                                $newstr = str_replace($order, $replace, $encore[0]['support_en']);
+                                //$newstr = str_replace(" ", "&nbsp;", $newstr);
+                                echo $newstr;
+                            }
+                    //$any_lang[$_COOKIE["lang"]]['Dreams_support_des']
+                    ?>
                     </p>
                 </div>
                 <div class="four columns">
                     <img class="u-max-full-width" src="images/content/s3/s3-ico2.jpg">
                     <h5 class="value-heading"><?=$any_lang[$_COOKIE["lang"]]['Dreams_advice']?></h5>
-                    <p class="value-description"><?=$any_lang[$_COOKIE["lang"]]['Dreams_advice_des']?></p>
+                    <p class="value-description"><?
+                    $order   = array("\r\n", "\n", "\r");
+                    $replace = array('<br>', '<br>', '<br>');
+                    if ($_COOKIE["lang"]=="th") {
+                                $newstr = str_replace($order, $replace, $encore[0]['advice']);
+                                //$newstr = str_replace(" ", "&nbsp;", $newstr);
+                                echo $newstr;//."--".strlen($action[0]['detail_description']);
+                            }else{
+                                $newstr = str_replace($order, $replace, $encore[0]['advice_en']);
+                                //$newstr = str_replace(" ", "&nbsp;", $newstr);
+                                echo $newstr;
+                            }
+                    //$any_lang[$_COOKIE["lang"]]['Dreams_advice_des']
+                            ?></p>
                 </div>
                 <div class="four columns">
                     <img class="u-max-full-width" src="images/content/s3/s3-ico3.jpg">
                     <h5 class="value-heading"><?=$any_lang[$_COOKIE["lang"]]['Dreams_Inspiration']?></h5>
-                    <p class="value-description"><?=$any_lang[$_COOKIE["lang"]]['Dreams_Inspiration_des']?>
+                    <p class="value-description"><?
+                    $order   = array("\r\n", "\n", "\r");
+                    $replace = array('<br>', '<br>', '<br>');
+                    if ($_COOKIE["lang"]=="th") {
+                                $newstr = str_replace($order, $replace, $encore[0]['inspriation']);
+                                //$newstr = str_replace(" ", "&nbsp;", $newstr);
+                                echo $newstr;//."--".strlen($action[0]['detail_description']);
+                            }else{
+                                $newstr = str_replace($order, $replace, $encore[0]['inspriation_en']);
+                                //$newstr = str_replace(" ", "&nbsp;", $newstr);
+                                echo $newstr;
+                            }
+                    //$any_lang[$_COOKIE["lang"]]['Dreams_Inspiration_des']
+                            ?>
                     </p>
                 </div>
             </div>
@@ -270,14 +313,64 @@ $banner=$m_banner->get_all_banner(100000,0);
         <div class="container">
             <h3 class="section-heading">Our Business Partner</h3>
             <h3 class="section-heading2"><?=$any_lang[$_COOKIE["lang"]]['Business_Partner']?></h3>
-            <div class="row">
+            <div class="row">                
                 <?
+                $partner_count=count($partner);
+                $partner_remain=$partner_count%4;
+                $partner_loopnum=floor($partner_count/4);
                 foreach ($partner as $key => $value) {
-                    ?>
-                    <div class="three columns s6-1">
-                        <img class="u-max-full-width" src="./media/partner/<?=$value['filename']?>">
-                    </div>
-                    <?
+                    if (floor(($key+1)/4)<$partner_loopnum) {
+                        ?>
+                        <div class="three columns s6-1">
+                            <a href="<?=$value['link']?>"><img class="u-max-full-width" src="./media/partner/<?=$value['filename']?>" alt="<?=$key?>" loopnum="<?=$partner_loopnum?>" num="<?=(int)(($key+1)/4)?>"></a>
+                        </div>
+                        <?
+                    }else{
+                        if ($partner_remain==2) {
+                            ?>
+                            <div class="three columns s6-1 hide-mobile" style="">
+                            </div>
+                            <!--<div class="three columns s6-1" style="margin:0px 0px 0px 2.4%">-->
+                            <div class="three columns s6-1">
+                                <a href="<?=$partner[$key]['link']?>"><img class="u-max-full-width" src="./media/partner/<?=$partner[$key]['filename']?>"></a>
+                            </div>
+                            <div class="three columns s6-1">
+                                <a href="<?=$partner[$key+1]['link']?>"><img class="u-max-full-width" src="./media/partner/<?=$partner[$key+1]['filename']?>"></a>
+                            </div>
+                            <div class="three columns s6-1 hide-mobile" style="">
+                            </div>
+                            <?
+                            break;
+                        }else if ($partner_remain==3) {
+                            ?>
+                            <div class="four columns s6-1">
+                                <a href="<?=$partner[$key]['link']?>"><img class="u-max-full-width" src="./media/partner/<?=$partner[$key]['filename']?>"></a>
+                            </div>
+                            <div class="four columns s6-1">
+                                <a href="<?=$partner[$key+1]['link']?>"><img class="u-max-full-width" src="./media/partner/<?=$partner[$key+1]['filename']?>"></a>
+                            </div>
+                            <div class="four columns s6-1">
+                                <a href="<?=$partner[$key+2]['link']?>"><img class="u-max-full-width" src="./media/partner/<?=$partner[$key+2]['filename']?>"></a>
+                            </div>
+                            <?
+                            break;
+                        }else if($partner_remain==1){
+                            ?>
+                            <div class="twelve columns s6-1">
+                                <a href="<?=$partner[$key]['link']?>"><img class="u-max-full-width" src="./media/partner/<?=$partner[$key]['filename']?>"></a>
+                            </div>
+                            <?
+                        }else{
+                            ?>
+                            <div class="three columns s6-1">
+                                <img class="u-max-full-width" src="./media/partner/<?=$value['filename']?>">
+                            </div>
+                            <?
+                        }
+                        ?>
+                        
+                        <?
+                    }
                 }
                 ?>            
                

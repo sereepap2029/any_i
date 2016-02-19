@@ -30,6 +30,7 @@ if (isset($_POST['file_path'])) {
                             'id' => $ad_pid, 
                             'filename' => $new_filename, 
                             'sort_order' => $sort_order, 
+                            'link' => $_POST['link'][$key],
                             );
                         $m_partner->insert_partner($pdata);
                         @unlink("../media/tmp/" . $filename);
@@ -38,6 +39,7 @@ if (isset($_POST['file_path'])) {
                 $ext=explode("__", $filename);
                 $data_photo= array(
                         'sort_order' => $sort_order,
+                        'link' => $_POST['link'][$key],
                         );            
                     $m_partner->update_partner($data_photo,$ext[1]);     
             }
@@ -99,7 +101,7 @@ if (isset($_POST['file_path'])) {
                                                         <span>เลือกไฟล์</span>
                                         <!-- The file input field used as target for the file upload widget -->
                                         <input id="fileupload" type="file" name="files[]" multiple>
-                                        </span>&nbsp;&nbsp;&nbsp;<font style="color:red">รูปแรกขนาด 300px X 300px</font>
+                                        </span>&nbsp;&nbsp;&nbsp;<font style="color:red">รูปขนาด 300px X 300px</font>
                                         <br>
                                         <br>
                                         <!-- The global progress bar -->
@@ -117,6 +119,9 @@ if (isset($_POST['file_path'])) {
                                                             <img src="../media/partner/<?=$value['filename']?>" class="span10 file_tmp">
                                                             <input type="hidden" class="file_path" name="file_path[]" value="<?="old_file_picture__".$value['id']?>">
                                                             <button id="<?=$value['id']?>" file="<?=$value['filename']?>" type="button" class="btn btn-success del_pic"><i class="icon-remove icon-white"></i></button>
+                                                            <div class="span12 no-margin-left">
+                                                                <input type="text"  name="link[]" value="<?=$value['link']?>" style="width:120px;">
+                                                            </div>
                                                         </div>
                                                         <?
                                                       }
@@ -170,7 +175,8 @@ $( "#img_hold_parent" ).sortable({
     });
     $(document).on('click', ".img_hold .del_pic", function(){
       cue_ele=$(this);
-      $.ajax({
+      if (confirm("ยืนยันลบข้อมูล Partner")) {
+        $.ajax({
                                     method: "POST",
                                     url: "./del_image.php",
                                     data: {
@@ -184,6 +190,8 @@ $( "#img_hold_parent" ).sortable({
                                       $(this).remove();
                                     });
                                 });
+      }
+      
     });
 $(function() {
     'use strict';
@@ -207,7 +215,7 @@ $(function() {
                    if (file.error=="File is too big") {
                                 $.ajax({
                                     method: "POST",
-                                    url: "./action_image_hold.php",
+                                    url: "./action_image_hold_partner.php",
                                     data: {
                                         "file": "",
                                         "file_path": "",
@@ -220,7 +228,7 @@ $(function() {
                             }else{
                                 $.ajax({
                                     method: "POST",
-                                    url: "./action_image_hold.php",
+                                    url: "./action_image_hold_partner.php",
                                     data: {
                                         "file": file.name,
                                         "file_path": "../media/tmp/"+file.name,

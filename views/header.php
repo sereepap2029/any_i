@@ -1,3 +1,7 @@
+<?
+$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+$actual_link=explode("?", $actual_link);
+?>
 <!-- Header ************************** -->
 <!-- Nav Res ========= -->
 <div class="nav-res">
@@ -12,8 +16,8 @@
                     <li><a href="index-in.php">Home<i class="fa fa-angle-right arrow-right"></i></a></li>
                     <li><a href="inaction.php">any i in Action<i class="fa fa-angle-right arrow-right"></i></a></li>
                     <li><a href="contact.php">Contact Us<i class="fa fa-angle-right arrow-right"></i></a></li>
-                    <li><a href="./index-in.php?setlang=th">TH</a></li>
-                    <li><a href="./index-in.php?setlang=en">EN</a></li>
+                    <li><a href="<?=$actual_link[0]."?".$actual_link[1]."&"?>setlang=th">TH</a></li>
+                    <li><a href="<?=$actual_link[0]."?".$actual_link[1]."&"?>setlang=en">EN</a></li>
                 </ul>
             </nav>
         </div>
@@ -51,7 +55,7 @@
                     <li><a href="index-in.php">Home</a></li>
                     <li><a href="inaction.php">any i in Action</a></li>
                     <li><a href="contact.php">Contact Us</a></li>
-                    <li><a href="./index-in.php?setlang=th">TH</a><span> l </span><a href="./index-in.php?setlang=en">EN</a></li>
+                    <li><a href="<?=$actual_link[0]."?".$actual_link[1]."&"?>setlang=th">TH</a><span> l </span><a href="<?=$actual_link[0]."?".$actual_link[1]."&"?>setlang=en">EN</a></li>
                 </ul>
             </nav>
         </div>
@@ -71,7 +75,7 @@
                     <li><a href="index-th.php">Home</a></li>
                     <li><a href="inaction.php">any i in Action</a></li>
                     <li><a href="contact.php">Contact Us</a></li>
-                    <li><a href="./index-in.php?setlang=th">TH</a><span> l </span><a href="./index-in.php?setlang=en">EN</a></li>
+                    <li><a href="<?=$actual_link[0]."?".$actual_link[1]."&"?>setlang=th">TH</a><span> l </span><a href="<?=$actual_link[0]."?".$actual_link[1]."&"?>setlang=en">EN</a></li>
                 </ul>
             </nav>
         </div>

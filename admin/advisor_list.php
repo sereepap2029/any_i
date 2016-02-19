@@ -88,7 +88,7 @@ $advisor=$m_advisor->get_all_advisor(100000,0);
 		    });
 		    $( "#table_sort" ).disableSelection();
 		    function del_advisor(link){
-		    	if(confirm("แน่ใจ๋")){
+		    	if(confirm("ยืนการลบข้อมูล")){
 		    		window.open(link,"_self");
 		    	}
 		    }

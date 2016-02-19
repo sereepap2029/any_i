@@ -1,9 +1,11 @@
 <?
 if (isset($_GET['setlang'])) {
 	setcookie("lang",$_GET['setlang'],time()+(60*60*24*10));
+	$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+	$actual_link=explode("&setlang", $actual_link);
 	?>
 	<script type="text/javascript">
-	window.open("./index-in.php","_self");
+	window.open("<?=$actual_link[0]?>","_self");
 	</script>
 	<?
 }

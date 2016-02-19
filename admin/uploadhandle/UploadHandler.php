@@ -77,7 +77,7 @@ class UploadHandler
             'download_via_php' => false,
             // Read files in chunks to avoid memory limits when download_via_php
             // is enabled, set to 0 to disable chunked reading of files:
-            'readfile_chunk_size' => 10 * 1024 * 1024, // 10 MiB
+            'readfile_chunk_size' =>  512 * 1024, // 400 KB // point in byte
             // Defines which files can be displayed inline when downloaded:
             'inline_file_types' => '/\.(gif|jpe?g|png)$/i',
             // Defines which files (based on their names) are accepted for upload:
@@ -93,8 +93,8 @@ class UploadHandler
             // Use exif_imagetype on all files to correct file extensions:
             'correct_image_extensions' => false,
             // Image resolution restrictions:
-            'max_width' => null,
-            'max_height' => null,
+            'max_width' => 2000,
+            'max_height' => 1300,
             'min_width' => 1,
             'min_height' => 1,
             // Set the following option to false to enable resumable uploads:
