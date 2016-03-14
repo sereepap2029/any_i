@@ -15,8 +15,8 @@ ob_start('ob_gzhandler');
                 <!-- fullpage -->
                 <?php include("views/header.php"); ?>
                     <?php include("views/conts.php"); ?>
-                        <script src="js/jquery.fullpage.js"></script>
                         <script src="js/owl.carousel.min.js"></script>
+                        <script src="js/jquery.fullpage.js"></script>
                         <script type="text/javascript" src="js/main.js"></script>
             </div>
             <!--/ SVG /***************************** -->

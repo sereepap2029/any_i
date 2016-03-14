@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : AION
-Source Server Version : 50702
+Source Server         : root
+Source Server Version : 50623
 Source Host           : localhost:3306
 Source Database       : any_i
 
 Target Server Type    : MYSQL
-Target Server Version : 50702
+Target Server Version : 50623
 File Encoding         : 65001
 
-Date: 2015-10-29 17:32:25
+Date: 2016-03-14 12:46:00
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -76,6 +76,33 @@ CREATE TABLE `banner` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- ----------------------------
+-- Table structure for `contact`
+-- ----------------------------
+DROP TABLE IF EXISTS `contact`;
+CREATE TABLE `contact` (
+  `id` bigint(11) NOT NULL AUTO_INCREMENT,
+  `detail` text COLLATE utf8_unicode_ci,
+  `detail_en` text COLLATE utf8_unicode_ci,
+  `email` text COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Table structure for `encore`
+-- ----------------------------
+DROP TABLE IF EXISTS `encore`;
+CREATE TABLE `encore` (
+  `id` bigint(11) NOT NULL AUTO_INCREMENT,
+  `support` text COLLATE utf8_unicode_ci,
+  `advice` text COLLATE utf8_unicode_ci,
+  `inspriation` text COLLATE utf8_unicode_ci,
+  `support_en` text COLLATE utf8_unicode_ci,
+  `advice_en` text COLLATE utf8_unicode_ci,
+  `inspriation_en` text COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
 -- Table structure for `partner`
 -- ----------------------------
 DROP TABLE IF EXISTS `partner`;
@@ -83,6 +110,7 @@ CREATE TABLE `partner` (
   `id` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `filename` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   `sort_order` int(11) DEFAULT NULL,
+  `link` varchar(500) COLLATE utf8_unicode_ci DEFAULT 'javascript:;',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -101,3 +129,16 @@ CREATE TABLE `user` (
   `phone` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Table structure for `welcome`
+-- ----------------------------
+DROP TABLE IF EXISTS `welcome`;
+CREATE TABLE `welcome` (
+  `id` bigint(11) NOT NULL AUTO_INCREMENT,
+  `vdo` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `text` text COLLATE utf8_unicode_ci,
+  `img` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `type` enum('vdo','img') COLLATE utf8_unicode_ci DEFAULT 'vdo',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

@@ -22,6 +22,16 @@ ob_start('ob_gzhandler');
             .s4 .item {
                 clip-path: url(#clip_path-s4-img);
             }
+
+            .s4 .owl-carousel .owl-item img {
+                -webkit-clip-path: url(#clip_path-s4-img2);
+                clip-path: url(#clip_path-s4-img2);
+
+                @media screen and (min-width: 550px) {
+                    -webkit-clip-path: none;
+                    clip-path: none;
+                 }
+            }
             
             .s5 {
                 clip-path: url(#clip_path-s5);
@@ -62,6 +72,9 @@ ob_start('ob_gzhandler');
                 </clipPath>
                 <clipPath id="clip_path-s4-img" clipPathUnits="objectBoundingBox">
                     <ellipse rx="1.5" ry="1" cx="0.5" cy="0" />
+                </clipPath>
+                  <clipPath id="clip_path-s4-img2" clipPathUnits="objectBoundingBox">
+                    <ellipse rx="1.2" ry="1" cx="0.5" cy="0" />
                 </clipPath>
             </defs>
         </svg>
